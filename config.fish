@@ -16,8 +16,6 @@ set fish_plugins theme git
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
 
-
-
 set fish_greeting ""
 
 #user alias#{{{
