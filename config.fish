@@ -39,8 +39,8 @@ function remove
     mv -f $argv ~/.Trash;
 end
 
-#alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app;cd ~'
-#alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app;cd ~'
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false'
 
 #}}}
   
