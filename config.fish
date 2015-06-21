@@ -28,21 +28,19 @@ alias c='gitStatus.sh | grep "git add"'
 alias sqlog='/home/hsong/folder/util/sqlog'
 alias svnstart='svnserve -d -r /home/svn'
 alias vim='/usr/local/bin/vim'
+alias vi='/usr/local/bin/vim'
 
 alias gvim='gvim -f'
 alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 alias su='su -'
-#alias free='free -h'
-#alias rm='mv -f --target-directory=/tmp'
-#alias srm='sudo rm -rf
 alias rm='remove'
 function remove
     mv -f $argv ~/.Trash;
 end
 
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app'
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app;cd ~'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder;/System/Library/CoreServices/Finder.app;open /Applications/XtraFinder.app;cd ~'
 
 #}}}
   
