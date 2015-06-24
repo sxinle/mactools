@@ -39,8 +39,9 @@ function remove
     mv -f $argv ~/.Trash;
 end
 
-alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true'
-alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false'
+#stupid alias
+#alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true'
+#alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false'
 
 #}}}
   
