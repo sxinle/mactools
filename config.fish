@@ -33,7 +33,7 @@ alias vi='/usr/local/bin/vim'
 alias gvim='gvim -f'
 alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
-alias su='su -'
+alias su='sudo su -'
 alias rm='remove'
 function remove
     mv -f $argv ~/.Trash;
