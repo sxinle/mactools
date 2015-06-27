@@ -39,9 +39,8 @@ function remove
     mv -f $argv ~/.Trash;
 end
 
-#stupid alias
-#alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true'
-#alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false'
+alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
+alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;killall Dock'
 
 #}}}
   
