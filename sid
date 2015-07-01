@@ -2,7 +2,7 @@
 
 cd ~/folder/util/mactools
 if [ $# != 0  ] ; then
-    git commit -am "update config" && git push origin master
+    git add . && git commit -am "update config" && git push origin master
 else
     git status&&git pull
 fi 
