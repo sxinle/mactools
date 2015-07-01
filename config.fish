@@ -41,6 +41,8 @@ end
 
 alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
 alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;killall Dock'
+alias disSpolight='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle Search.Bundle.hide;killall SystemUIServer'
+alias openSpolight='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle.hide Search.Bundle'
 
 #}}}
   
@@ -83,6 +85,6 @@ set -x SCALA_HOME /usr/local/scala-2.11.6/bin/
 set -x BREW_HOME /usr/local/homebrew
 set -x CLASSPATH . $JAVA_HOME/lib/tools.jar
 set -x ANDROID_HOME /usr/local/android-sdk-linux/tools
-set -x PATH $PATH $JAVA_HOME/bin ~/folder/util /usr/local/android-sdk-linux/platform-tools/ $ANDROID_HOME $SCALA_HOME $BREW_HOME/bin /usr/local/scala-2.11.6/bin
+set -x PATH $PATH $JAVA_HOME/bin ~/folder/util/mactools /usr/local/android-sdk-linux/platform-tools/ $ANDROID_HOME $SCALA_HOME $BREW_HOME/bin /usr/local/scala-2.11.6/bin
 #}}}
 
