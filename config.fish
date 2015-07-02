@@ -78,12 +78,13 @@ alias lm='ls -Alh --color=auto'
 #}}}
 
 #environment{{{
+set -x UTIL_ROOT ~/folder/util/
 set -x ANDROID_SDK_ROOT /usr/local/android-sdk
 set -x JAVA_HOME /usr/lib/jvm/jdk-8u5
-set -x SCALA_HOME /usr/local/scala-2.11.6/bin/
+set -x SCALA_HOME /usr/local/scala-2.11.6/
 set -x BREW_HOME /usr/local/homebrew
 set -x CLASSPATH . $JAVA_HOME/lib/tools.jar
 set -x ANDROID_HOME /usr/local/android-sdk-linux/tools
-set -x PATH $PATH $JAVA_HOME/bin ~/folder/util/mactools /usr/local/android-sdk-linux/platform-tools/ $ANDROID_HOME $SCALA_HOME $BREW_HOME/bin /usr/local/scala-2.11.6/bin
+set -x PATH $PATH $JAVA_HOME/bin $UTIL_ROOT/mactools $UTIL_ROOT $ANDROID_SDK_ROOT/platform-tools/ $ANDROID_HOME $BREW_HOME/bin $SCALA_HOME/bin
 #}}}
 
