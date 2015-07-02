@@ -16,6 +16,7 @@ fi;
 
 echo "$color$cpu% $(basename "$comm")"$'\e[0m'"";
 done
+echo -e "-------------------------------------------"
 }
 
 
