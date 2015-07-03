@@ -19,12 +19,19 @@ done
 echo -e "-------------------------------------------"
 }
 
+function fans() {
+    istats cpu temp
+    istats fan speed
+}
+
 
 
 if [ $# != 0  ] ; then
     for((j=1;j<10;j++))
     do
-        sensorMonitor
+        #sensorMonitor
+        fans
+        echo -e "-----------------------------------"
         SLEEP 1
     done
 else
