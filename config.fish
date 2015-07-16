@@ -20,18 +20,20 @@ set fish_greeting ""
 
 #user alias#{{{
 
+alias reboot='sudo reboot'
 alias halt='sudo halt'
 alias ..='cd .. ;and ls'
-alias reboot='sudo reboot'
-alias vi='vim -u NONE '
-alias sqlog='/home/hsong/folder/util/sqlog'
-alias svnstart='svnserve -d -r /home/svn'
-alias vim='/usr/local/bin/vim'
-alias vi='/usr/local/bin/vim'
 
+alias vi='/usr/local/bin/vim'
+alias vim='/usr/local/bin/vim'
+alias vin='vim -u NONE '
 alias gvim='gvim -f'
+
+alias clj='java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
+
 alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
+
 alias su='sudo su -'
 alias rm='remove'
 function remove
@@ -66,7 +68,6 @@ alias sshdp='ssh -p7862 root@124.95.160.85'
 
 alias ll='ls -lF'
 alias l.='ls -A'
-#alias l.='ls -d .* --color=auto'
 alias l='ls -CF'
 alias s='ls -F'
 alias j='ls -F'
@@ -78,11 +79,14 @@ alias lm='ls -Alh --color=auto'
 #}}}
 
 #environment{{{
-set -x UTIL_ROOT ~/folder/util/
-set -x ANDROID_SDK_ROOT /usr/local/android-sdk
-set -x SCALA_HOME /usr/local/scala-2.11.6/
+set -x UTIL_HOME ~/folder/util
+set -x ANDROID_SDK_HOME /usr/local/android-sdk
+set -x SCALA_HOME /usr/local/scala-2.11.7
 set -x BREW_HOME /usr/local/homebrew
 set -x ANDROID_HOME /usr/local/android-sdk-linux/tools
-set -x PATH $PATH $UTIL_ROOT/mactools $UTIL_ROOT $ANDROID_SDK_ROOT/platform-tools/ $ANDROID_HOME $BREW_HOME/bin $SCALA_HOME/bin
+
+set -x PATH $PATH $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools/
+set -x PATH $PATH $ANDROID_HOME $BREW_HOME/bin $SCALA_HOME/bin
+set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 #}}}
 
