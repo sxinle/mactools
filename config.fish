@@ -24,8 +24,8 @@ alias reboot='sudo reboot'
 alias halt='sudo halt'
 alias ..='cd .. ;and ls'
 
-alias vi='/usr/local/bin/vim'
-alias vim='/usr/local/bin/vim'
+#alias vi='/usr/local/bin/vim'
+#alias vim='/usr/local/bin/vim'
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
 
@@ -83,10 +83,9 @@ set -x UTIL_HOME ~/folder/util
 set -x ANDROID_SDK_HOME /usr/local/android-sdk
 set -x SCALA_HOME /usr/local/scala-2.11.7
 set -x BREW_HOME /usr/local/homebrew
-set -x ANDROID_HOME /usr/local/android-sdk-linux/tools
 
-set -x PATH $PATH $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools/
-set -x PATH $PATH $ANDROID_HOME $BREW_HOME/bin $SCALA_HOME/bin
+set -x PATH $BREW_HOME/bin $PATH 
+set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 #}}}
 
