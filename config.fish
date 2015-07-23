@@ -29,7 +29,7 @@ alias ..='cd .. ;and ls'
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
 
-alias clj='java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
+alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
 
 alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
@@ -84,8 +84,12 @@ set -x ANDROID_SDK_HOME /usr/local/android-sdk
 set -x SCALA_HOME /usr/local/scala-2.11.7
 set -x BREW_HOME /usr/local/homebrew
 
+set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -x PATH $BREW_HOME/bin $PATH 
 set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools
+
+set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman $MANPATH
+
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 #}}}
 
