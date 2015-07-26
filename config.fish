@@ -28,6 +28,8 @@ alias ..='cd .. ;and ls'
 #alias vim='/usr/local/bin/vim'
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
+alias nload='nload -m'
+
 
 alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
 
@@ -86,7 +88,7 @@ set -x BREW_HOME /usr/local/homebrew
 
 set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -x PATH $BREW_HOME/bin $PATH 
-set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools
+set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
 
 set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman $MANPATH
 
