@@ -1,0 +1,21 @@
+inoremap jj <ESC>
+
+"inoremap <C-;> ;
+
+inoremap <c-o> <ESC>o
+inoremap <C-e> <ESC>A
+inoremap <C-a> <ESC>I
+inoremap <C-b> <Left>
+
+vnoremap ii <ESC>
+"vnoremap y "+y
+"nnoremap p "+gP
+"xnoremap p pgvly
+
+nnoremap ,w :w<CR>
+nnoremap ,q :q<CR>
+nnoremap ,<Space> :nohl<CR>
+
+se hlsearch
+nnoremap # *
+
