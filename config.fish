@@ -29,6 +29,7 @@ alias ..='cd .. ;and ls'
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
 alias nload='nload -m'
+alias clang='/usr/local/clang-3.7/bin/clang'
 
 
 alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
