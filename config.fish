@@ -48,6 +48,8 @@ alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;k
 alias disSpolight='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle Search.Bundle.hide;killall SystemUIServer'
 alias openSpolight='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle.hide Search.Bundle'
 
+alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
+
 #}}}
   
 #alias for ssh# {{{
