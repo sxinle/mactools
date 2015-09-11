@@ -24,13 +24,10 @@ alias reboot='sudo reboot'
 alias halt='sudo halt'
 alias ..='cd .. ;and ls'
 
-#alias vi='/usr/local/bin/vim'
-#alias vim='/usr/local/bin/vim'
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
 alias nload='nload -m'
 alias clang='/usr/local/clang-3.7/bin/clang'
-
 
 alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
 
@@ -43,10 +40,13 @@ function remove
     mv -f $argv ~/.Trash;
 end
 
+#MacOSX alias
 alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
 alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;killall Dock'
 alias disSpolight='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle Search.Bundle.hide;killall SystemUIServer'
 alias openSpolight='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle.hide Search.Bundle'
+
+
 
 alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 
@@ -83,7 +83,7 @@ alias lm='ls -Alh --color=auto'
 
 #}}}
 
-#environment{{{
+#environment #{{{
 set -x UTIL_HOME ~/folder/util
 set -x ANDROID_SDK_HOME /usr/local/android-sdk
 set -x SCALA_HOME /usr/local/scala-2.11.7
@@ -93,7 +93,8 @@ set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -x PATH $BREW_HOME/bin $PATH 
 set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
 
-set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman $MANPATH
+set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman /usr/local/homebrew/share/man $MANPATH
+set -x PAGER /usr/local/homebrew/Cellar/most/5.0.0a/bin/most
 
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 #}}}
