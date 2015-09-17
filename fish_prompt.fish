@@ -1,0 +1,655 @@
+# name: Zish
+
+function _is_git_dirty
+  echo (command git status -s --ignore-submodules=dirty ^/dev/null)
+end
+
+function fish_prompt
+  set_color -o red
+  #printf '┌─<>'
+  #printf '-->'
+  set_color -o blue
+  ##printf '%s ' (whoami)
+  #set_color $fish_color_autosuggestion[1]
+  set_color cyan
+  ##printf '%s ' (hostname|cut -d . -f 1)
+  #set_color $fish_color_autosuggestion[1]
+  set_color green
+  printf '   '
+  set_color -o red
+  printf '[ '
+  set_color -o cyan
+  #printf '%s' (prompt_pwd)
+  echo -n (pwd|sed "s=$HOME=~=")
+  set_color -o red
+  printf ' ]'
+  set_color -o red
+  #printf '>'
+  set_color -o red
+  #printf '\n '
+
+
+  and set retc green; or set retc red
+  tty|grep -q tty; and set tty tty; or set tty pts
+  # Check if acpi exists
+#  if not set -q __fish_nim_prompt_has_acpi
+#    if type acpi > /dev/null
+#      set -g __fish_nim_prompt_has_acpi ''
+#    else
+#      set -g __fish_nim_prompt_has_acpi '' # empty string
+#    end
+#  end
+#    
+#  if test "$__fish_nim_prompt_has_acpi"
+#    if [ (acpi -a 2> /dev/null | grep off) ]
+#      echo -n '─['
+#      set_color -o red
+#      echo -n (acpi -b|cut -d' ' -f 4-)
+#      set_color -o green
+#      echo -n ']'
+#    end
+#  end
+  echo
+  set_color normal
+  for job in (jobs)
+    set_color -o brown
+    if [ $tty = tty ]
+      echo -n ' => %'
+    else
+      echo -n '│ '
+    end
+    set_color brown
+    echo $job
+  end
+  set_color normal
+
+
+  
+  set_color -o red
+  #printf '└─<'
+  set_color yellow
+  ##printf '  '
+  printf '%s' (__fish_git_prompt)
+  if [ (_is_git_dirty) ]
+    set_color blue
+    printf '* '
+  end
+  set_color -o red
+  #printf '>'
+  set_color -o yellow
+  #printf '   '
+  printf '   '
+
+  set_color normal
+end
+
+
+#e118     
+#e119     
+#e11a     
+#e11b     
+#e11c     
+#e11d     
+#e11e     
+#e11f     
+#e120     
+#e121     
+#e122     
+#e123     
+#e124     
+#e125     
+#e126     
+#e127     
+#e128     
+#e129     
+#e12a     
+#e12b     
+#e12c     
+#e12d     
+#e12e     
+#e12f     
+#e130     
+#e131     
+#e132     
+#e133     
+#e134     
+#e135     
+#e136     
+#e137     
+#e138     
+#e139     
+#e13a     
+#e13b     
+#e13c     
+#e13d     
+#e13e     
+#e13f     
+#e140     
+#e141     
+#e142     
+#e143     
+#e144     
+#e145     
+#e146     
+#e147     
+#e148     
+#e149     
+#e14a     
+#e14b     
+#e14c     
+#e14d     
+#e14e     
+#e14f     
+#e150     
+#e151     
+#e152     
+#e153     
+#e154     
+#e155     
+#e156     
+#e157     
+#e158     
+#e159     
+#e15a     
+#e15b     
+#e15c     
+#e15d     
+#e15e     
+#e15f     
+#e160     
+#e161     
+#e162     
+#e163     
+#e164     
+#e165     
+#e166     
+#e167     
+#e168     
+#e169     
+#e16a     
+#e16b     
+#e16c     
+#e16d     
+#e16e     
+#e16f     
+#e170     
+#e171     
+#e172     
+#e173     
+#e174     
+#e175     
+#e176     
+#e177     
+#e178     
+#e179     
+#e17a     
+#e17b     
+#e17c     
+#e17d     
+#e17e     
+#e17f     
+#e180     
+#e181     
+#e182     
+#e183     
+#e184     
+#e185     
+#e186     
+#e187     
+#e188     
+#e189     
+#e18a     
+#e18b     
+#e18c     
+#e18d     
+#e18e     
+#e18f     
+#e190     
+#e191     
+#e192     
+#e193     
+#e194     
+#e195     
+#e196     
+#e197     
+#e198     
+#e199     
+#e19a     
+#e19b     
+#e19c     
+#e19d     
+#e19e     
+#e19f     
+#e1a0     
+#e1a1     
+#e1a2     
+#e1a3     
+#e1a4     
+#e1a5     
+#e1a6     
+#e1a7     
+#e1a8     
+#e1a9     
+#e1aa     
+#e1ab     
+#e1ac     
+#e1ad     
+#e1ae     
+#e1af     
+#e1b0     
+#e1b1     
+#e1b2     
+#e1b3     
+#e1b4     
+#e1b5     
+#e1b6     
+#e1b7     
+#e1b8     
+#e1b9     
+#e1ba     
+#e1bb     
+#e1bc     
+#e1bd     
+#e1be     
+#e1bf     
+#e1c0     
+#e1c1     
+#e1c2     
+#e1c3     
+#e1c4     
+#e1c5     
+#e1c6     
+#e1c7     
+#e1c8     
+#e1c9     
+#e1ca     
+#e1cb     
+#e1cc     
+#e1cd     
+#e1ce     
+#e1cf     
+#e1d0     
+#e1d1     
+#e1d2     
+#e1d3     
+#e1d4     
+#e1d5     
+#e1d6     
+#e1d7     
+#e1d8     
+#e1d9     
+#e1da     
+#e1db     
+#e1dc     
+#e1dd     
+#e1de     
+#e1df     
+#e1e0     
+#e1e1     
+#e1e2     
+#e1e3     
+#e1e4     
+#e1e5     
+#e1e6     
+#e1e7     
+#e1e8     
+#e1e9     
+#e1ea     
+#e1eb     
+#e1ec     
+#e1ed     
+#e1ee     
+#e1ef     
+#e1f0     
+#e1f1     
+#e1f2     
+#e1f3     
+#e1f4     
+#e1f5     
+#e1f6     
+#e1f7     
+#e1f8     
+#e1f9     
+#e1fa     
+#e1fb     
+#e1fc     
+#e1fd     
+#e1fe     
+#e1ff     
+#e200     
+#e201     
+#e202     
+#e203     
+#e204     
+#e205     
+#e206     
+#e207     
+#e208     
+#e209     
+#e20a     
+#e20b     
+#e20c     
+#e20d     
+#e20e     
+#e20f     
+#e210     
+#e211     
+#e212     
+#e213     
+#e214     
+#e215     
+#e216     
+#e217     
+#e218     
+#e219     
+#e21a     
+#e21b     
+#e21c     
+#e21d     
+#e21e     
+#e21f     
+#e220     
+#e221     
+#e222     
+#e223     
+#e224     
+#e225     
+#e226     
+#e227     
+#e228     
+#e229     
+#e22a     
+#e22b     
+#e22c     
+#e22d     
+#e22e     
+#e22f     
+#e230     
+#e231     
+#e232     
+#e233     
+#e234     
+#e235     
+#e236     
+#e237     
+#e238     
+#e239     
+#e23a     
+#e23b     
+#e23c     
+#e23d     
+#e23e     
+#e23f     
+#e240     
+#e241     
+#e242     
+#e243     
+#e244     
+#e245     
+#e246     
+#e247     
+#e248     
+#e249     
+#e24a     
+#e24b     
+#e24c     
+#e24d     
+#e24e     
+#e24f     
+#e250     
+#e251     
+#e252     
+#e253     
+#e254     
+#e255     
+#e256     
+#e257     
+#e258     
+#e259     
+#e25a     
+#e25b     
+#e25c     
+#e25d     
+#e25e     
+#e25f     
+#e260     
+#e261     
+#e262     
+#e263     
+#e264     
+#e265     
+#e266     
+#e267     
+#e268     
+#e269     
+#e26a     
+#e26b     
+#e26c     
+#e26d     
+#e26e     
+#e26f     
+#e270     
+#e271     
+#e272     
+#e273     
+#e274     
+#e275     
+#e276     
+#e277     
+#e278     
+#e279     
+#e27a     
+#e27b     
+#e27c     
+#e27d     
+#e27e     
+#e27f     
+#e280     
+#e281     
+#e282     
+#e283     
+#e284     
+#e285     
+#e286     
+#e287     
+#e288     
+#e289     
+#e28a     
+#e28b     
+#e28c     
+#e800     
+#e801     
+#e802     
+#e803     
+#e804     
+#e805     
+#e806     
+#e807     
+#e808     
+#e809     
+#e80a     
+#e80b     
+#e80c     
+#e80d     
+#e80e     
+#e80f     
+#e810     
+#e811     
+#e812     
+#e813     
+#e814     
+#e815     
+#e816     
+#e817     
+#e818     
+#e819     
+#e81a     
+#e81b     
+#e81c     
+#e81d     
+#e81e     
+#e81f     
+#e820     
+#e821     
+#e822     
+#e823     
+#e824     
+#e825     
+#e826     
+#e827     
+#e828     
+#e829     
+#e82a     
+#e82b     
+#e82c     
+#e82d     
+#e82e     
+#e82f     
+#e830     
+#e831     
+#e832     
+#e833     
+#e834     
+#e835     
+#e836     
+#e837     
+#e838     
+#e839     
+#e83a     
+#e83b     
+#e83c     
+#e83d     
+#e83e     
+#e83f     
+#e840     
+#e841     
+#e842     
+#e843     
+#e844     
+#e845     
+#e846     
+#e847     
+#e848     
+#e849     
+#e84a     
+#e84b     
+#e84c     
+#e84d     
+#e84e     
+#e84f     
+#e850     
+#e851     
+#e852     
+#e853     
+#e854     
+#e855     
+#e856     
+#e857     
+#e858     
+#e859     
+#e85a     
+#e85b     
+#e85c     
+#e85d     
+#e85e     
+#e85f     
+#e860     
+#e861     
+#e862     
+#e863     
+#e864     
+#e865     
+#e866     
+#e867     
+#e868     
+#e869     
+#e86a     
+#e86b     
+#e86c     
+#e86d     
+#e86e     
+#e86f     
+#e870     
+#e871     
+#e872     
+#e873     
+#e874     
+#e875     
+#e876     
+#e877     
+#e878     
+#e879     
+#e87a     
+#e87b     
+#e87c     
+#e87d     
+#e87e     
+#e87f     
+#e880     
+#e881     
+#e882     
+#e883     
+#e884     
+#e885     
+#e886     
+#e887     
+#e888     
+#e889     
+#e88a     
+#e88b     
+#e88c     
+#e88d     
+#e88e     
+#e88f     
+#e890     
+#e891     
+#e892     
+#e893     
+#e894     
+#e895     
+#e896     
+#e897     
+#e898     
+#e899     
+#e89a     
+#e89b     
+#e89c     
+#e89d     
+#e89e     
+#e89f     
+#e8a0     
+#e8a1     
+#e8a2     
+#e8a3     
+#e8a4     
+#e8a5     
+#e8a6     
+#e8a7     
+#e8a8     
+#e8a9     
+#e8aa     
+#e8ab     
+#e8ac     
+#e8ad     
+#e8ae     
+#e8af     
+#e8b0     
+#e8b1     
+#e8b2     
+#e8b3     
+#e8b4     
+#e8b5     
+#e8b6     
+#e8b7     
+#e8b8     
+#e8b9     
+#f000     
+#f001     
+#f002     
+#f003     
+#f004     
+#f005     
+#f006     
+#f007     
+#f008     
+#f009     
