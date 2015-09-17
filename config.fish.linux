@@ -21,7 +21,7 @@ set fish_greeting ""
 #user alias#{{{
 
 alias reboot='sudo reboot'
-alias halt='sudo halt'
+alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
 
 alias vin='vim -u NONE '
