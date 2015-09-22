@@ -36,7 +36,8 @@ end
 alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 alias ca='catFunc'
 function catFunc
-    cat $argv | iconv -f gbk -t utf8
+    #cat $argv | iconv -f gbk -t utf8
+    head -n1000 $argv | iconv -f gbk -t utf8|most
 end
 
 #}}}
