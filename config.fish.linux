@@ -12,7 +12,6 @@ set -g OMF_CONFIG $HOME/.config/omf
 # Load oh-my-fish configuration.
 . $OMF_PATH/init.fish
 
-
 #user alias#{{{
 
 alias reboot='sudo reboot'
