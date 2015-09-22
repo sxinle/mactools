@@ -35,6 +35,10 @@ function remove
 end
 
 alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
+alias ca='catFunc'
+function catFunc
+    cat $argv | iconv -f gbk -t utf8
+end
 
 #}}}
   
@@ -74,5 +78,6 @@ set -x JAVA_HOME /usr/lib/jvm/jdk-8u25-tuxjdk-b01
 set -x UTIL_HOME ~/folder/util
 set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
+set -x PAGER /usr/bin/most
 #}}}
 
