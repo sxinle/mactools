@@ -1,6 +1,5 @@
 #!/bin/sh
 # change to your location
-GTK2_RC_FILES=/home/hsong/folder/util/mactools/.gtkrc
 IDEA_HOME=/opt/idea-IU-141.1532.4/
 export JAVA_HOME=/usr/lib/jvm/jdk-8u25-tuxjdk-b01/
 # Note: Can modify $IDEA_HOME/bin/idea{,64}.vmoptions
