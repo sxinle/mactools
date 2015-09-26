@@ -1,0 +1,12 @@
+#To set the Gtk theme
+include "/usr/share/themes/Radiance/gtk-2.0/gtkrc"
+
+
+#To set the font
+style "Sans"
+{
+    font_name = "Sans 18"
+
+}
+widget_class "*" style "Sans"
+gtk-font-name = "Sans 18"
