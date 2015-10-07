@@ -6,6 +6,11 @@
     <identifier>private.ctrl_m_Enter</identifier>
     <autogen>__KeyToKey__ KeyCode::M, VK_CONTROL, KeyCode::RETURN</autogen>
   </item>
+  <item>
+      <name>ctrl+w -> alt+backspace</name>
+    <identifier>private.ctrl_w_alt_backspace</identifier>
+    <autogen>__KeyToKey__ KeyCode::W, VK_CONTROL, KeyCode::DELETE, VK_OPTION</autogen>
+  </item>
 
   <!--<item>-->
     <!--<name>Swap Space and Tab</name>-->
