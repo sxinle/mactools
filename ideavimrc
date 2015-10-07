@@ -1,6 +1,5 @@
+"ideavim plugin's config file
 inoremap jj <ESC>
-
-"inoremap <C-;> ;
 
 inoremap <c-o> <ESC>o
 inoremap <C-e> <ESC>A
@@ -8,9 +7,6 @@ inoremap <C-a> <ESC>I
 inoremap <C-b> <Left>
 
 vnoremap ii <ESC>
-"vnoremap y "+y
-"nnoremap p "+gP
-"xnoremap p pgvly
 
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
@@ -20,3 +16,4 @@ se hlsearch
 nnoremap # *
 
 "hsong@gnome.com       83034-O2ID4-OY03U-Q0VE6-AI8IV-733T7
+

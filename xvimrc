@@ -1,6 +1,6 @@
-inoremap jj <ESC>
+"XCode vim plugin
 
-"inoremap <C-;> ;
+inoremap jj <ESC>
 
 inoremap <c-o> <ESC>o
 inoremap <C-e> <ESC>A
@@ -8,9 +8,6 @@ inoremap <C-a> <ESC>I
 inoremap <C-b> <Left>
 
 vnoremap ii <ESC>
-"vnoremap y "+y
-"nnoremap p "+gP
-"xnoremap p pgvly
 
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
