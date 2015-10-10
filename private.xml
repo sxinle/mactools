@@ -7,9 +7,14 @@
     <autogen>__KeyToKey__ KeyCode::M, VK_CONTROL, KeyCode::RETURN</autogen>
   </item>
   <item>
-      <name>ctrl+w -> alt+backspace</name>
+      <name>ctrl+w -> alt+backspace [向后删除一个单词]</name>
     <identifier>private.ctrl_w_alt_backspace</identifier>
     <autogen>__KeyToKey__ KeyCode::W, VK_CONTROL, KeyCode::DELETE, VK_OPTION</autogen>
+  </item>
+  <item>
+      <name>cmd+escape -> cmd+` [反向切换应用]</name>
+    <identifier>private.cmd_escape</identifier>
+    <autogen>__KeyToKey__ KeyCode::ESCAPE, VK_COMMAND, KeyCode::BACKQUOTE, VK_COMMAND</autogen>
   </item>
 
   <!--<item>-->
