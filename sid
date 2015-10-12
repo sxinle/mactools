@@ -6,3 +6,6 @@ if [ $# != 0  ] ; then
 else
     git status&&git pull
 fi 
+
+echo "================DOTVIM================"
+cd ~/.vim/dotvim && git status && git pull && cd ~
