@@ -46,6 +46,7 @@ end
   
 #alias for ssh# {{{
 alias ssh58='ssh root@192.168.2.58'
+alias ssh174='ssh root@192.168.3.174'
 alias sshserver1='ssh -p7862 root@121.199.43.176'
 alias sshserver2='ssh -p8726 ddosa@112.124.42.62'
 alias sshserver3='ssh -p7862 root@218.244.144.242'
