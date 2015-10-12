@@ -14,6 +14,7 @@ set -g OMF_CONFIG $HOME/.config/omf
 
 #user alias#{{{
 
+alias top='htop'
 alias reboot='sudo reboot'
 alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
