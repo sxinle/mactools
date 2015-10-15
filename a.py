@@ -1,9 +1,7 @@
 #! /usr/bin/python
-# -*- coding: UTF-8 -*-
 import re;
 import urllib;
 import urllib2;
-import json
 import sys;
 def debug():
 	xml = open("word.xml").read();
@@ -113,41 +111,13 @@ def print_translations(xml, with_color, detailed):
 
 def usage():
 	print "usage: dict.py word_to_translate";
-
-def baiduTranslate(words):
-	# d ={"query":words.decode("utf8").encode("gbk")};
-	# words = urllib.urlencode(d,"gbk");
-	url = 'http://fanyi.baidu.com/v2transapi'
-	values = {'from':'en','to':'zh','query': words,'transtype':'trans','simple_means_flag':'3'}
-	data = urllib.urlencode(values)
-	req_header = {'User-Agent':'AppleWebKit/537.11 (KHTML, like Gecko)',
-				  'Accept':'text/html;q=0.9,*/*;q=0.8',
-				  'Accept-Charset':'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-				  'Connection':'close',
-				  'Referer':None #注意如果依然不能抓取的话，这里可以设置抓取网站的host
-				}
-	req_timeout = 5
-	req = urllib2.Request(url,data,req_header)
-	resp = urllib2.urlopen(req,data,req_timeout)
-	html = resp.read()
-	return html
-
 def main(argv):
 	if len(argv) <= 0:
 		usage();
 		#debug();
 		sys.exit(1);
-	if len(argv) > 5: #argv是个数组
-		print '===百度翻译==='
-		result = baiduTranslate(' '.join(argv))
-		jsonRet = json.loads(result)
-		rets = jsonRet['trans_result']['data'][0]['result']
-		for ret in rets:
-			print ret[1].encode('utf8')
-	else:
-		xml = crawl_xml(" ".join(argv));
-		print_translations(xml, True, False);
+	xml = crawl_xml(" ".join(argv));
+	print_translations(xml, True, False);
 
 if __name__ == "__main__":
 	main(sys.argv[1:]);
-
