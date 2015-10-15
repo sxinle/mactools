@@ -131,6 +131,7 @@ def baiduTranslate(words):
 	req = urllib2.Request(url,data,req_header)
 	resp = urllib2.urlopen(req,data,req_timeout)
 	html = resp.read()
+	# print html
 	return html
 
 def main(argv):
@@ -139,12 +140,26 @@ def main(argv):
 		#debug();
 		sys.exit(1);
 	if len(argv) > 5: #argv是个数组
-		print '===百度翻译==='
-		result = baiduTranslate(' '.join(argv))
+		inputWord = ''; inputTmp = ''
+		i = 0
+		for arg in argv:#10个单词一行
+			inputTmp = inputTmp + arg + ' ';i = i + 1
+			if i % 10 == 0:
+				inputWord = inputWord + inputTmp + '\n'
+				i = 0
+				inputTmp = ''
+		if '' != inputTmp:
+			inputWord = inputWord + inputTmp + '\n'
+		# print inputWord
+
+		print BOLD + GREEN + '===百度翻译==='
+		result = baiduTranslate(inputWord)
 		jsonRet = json.loads(result)
-		rets = jsonRet['trans_result']['data'][0]['result']
+		rets = jsonRet['trans_result']['data']
 		for ret in rets:
-			print ret[1].encode('utf8')
+			print RED + ret['src']
+			print NORMAL + ret['dst'].encode('utf8')
+			# print ret[1].encode('utf8')
 	else:
 		xml = crawl_xml(" ".join(argv));
 		print_translations(xml, True, False);
