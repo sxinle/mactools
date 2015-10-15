@@ -117,6 +117,7 @@ def usage():
 def baiduTranslate(words):
 	# d ={"query":words.decode("utf8").encode("gbk")};
 	# words = urllib.urlencode(d,"gbk");
+	words = words.replace('*', '')
 	url = 'http://fanyi.baidu.com/v2transapi'
 	values = {'from':'en','to':'zh','query': words,'transtype':'trans','simple_means_flag':'3'}
 	data = urllib.urlencode(values)
