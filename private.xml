@@ -26,6 +26,11 @@
     <identifier>private.ctrl_p</identifier>
     <autogen>__KeyToKey__ KeyCode::P, VK_CONTROL, KeyCode::CURSOR_UP</autogen>
   </item>
+  <item>
+    <name>shift+ESC -> ~</name>
+    <identifier>private.shift_esc</identifier>
+    <autogen>__KeyToKey__ KeyCode::ESCAPE, VK_SHIFT, KeyCode::BACKQUOTE, VK_SHIFT</autogen>
+  </item>
 
   <!--<item>-->
     <!--<name>Swap Space and Tab</name>-->
