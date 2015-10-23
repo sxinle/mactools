@@ -42,6 +42,11 @@ function catFunc
     head -n1000 $argv | iconv -f gbk -t utf8|most
 end
 
+alias share='shareFunc'
+function shareFunc
+    chmod 777 $argv;
+    cp -r $argv ~/.share
+end
 #}}}
   
 #alias for ssh# {{{
