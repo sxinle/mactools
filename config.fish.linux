@@ -84,7 +84,7 @@ alias lm='ls -Alh --color=auto'
 #}}}
 
 #environment #{{{
-set -x JAVA_HOME /usr/lib/jvm/jdk-8u25-tuxjdk-b01
+set -x JAVA_HOME /usr/lib/jvm/tuxjdk-1.80-60
 set -x UTIL_HOME ~/folder/util
 set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
