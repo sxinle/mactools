@@ -10,11 +10,10 @@ vnoremap ii <ESC>
 
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
+nnoremap <C-w> :q<CR>
 nnoremap ,<Space> :nohl<CR>
 
 se hlsearch
 nnoremap # *
 
-"hsong@gnome.com       83034-O2ID4-OY03U-Q0VE6-AI8IV-733T7
-"VIMACER 96829-HZENX-X7FBF-0FTX6-LJM7C-AL1G3
 "L-Larry_Lau@163.com#36573-fdkscp15axjj6#25257  jprofiler
