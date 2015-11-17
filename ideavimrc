@@ -10,7 +10,6 @@ vnoremap ii <ESC>
 
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
-nnoremap <C-w> :q<CR>
 nnoremap ,<Space> :nohl<CR>
 
 se hlsearch
