@@ -2,7 +2,7 @@
 # change to your location
 #IDEA_HOME=/opt/idea-IU-143.381.42
 IDEA_HOME=/opt/idea-IU-143.382.35
-export JAVA_HOME=/usr/lib/jvm/tuxjdk-1.80-60
+export JAVA_HOME=/usr/lib/jvm/tuxjdk-1.80-66
 # Note: Can modify $IDEA_HOME/bin/idea{,64}.vmoptions
 # instead of setting here.
 # "-Dawt.useSystemAAFontSettings=on" seems worse to me
