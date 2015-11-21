@@ -8,7 +8,7 @@ cd $workdir
 function checkGitStatus(){
     echo '==========[ '$1' ]=========='
     cd $1
-    git status && git pull
+    git status 2>/dev/null && git pull
     echo $dir' syn over...'
     cd ..
 }
