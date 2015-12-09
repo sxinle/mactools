@@ -34,6 +34,7 @@ alias rm='remove'
 function remove
     mv -f $argv ~/.local/share/Trash/files/
 end
+alias rma='/bin/rm ~/.local/share/Trash/files/* -rf'
 
 alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 alias ca='catFunc'
