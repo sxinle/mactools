@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOCKS_IP=hk02-37.ssv5.net
+SOCKS_IP=hk02-37.ssv7.net
 
 function start(){
 	sudo killall redsocks
