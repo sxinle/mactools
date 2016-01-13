@@ -2,7 +2,7 @@
 cd ~/.vim/dotvim
 git status
 git pull
-vim +PluginUpdate
+vim +PlugUpgrade +PlugUpdate
 
 
 
