@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo -e "\n================sync folder/util...================\n"
 cd ~/folder/util/mactools
 if [ $# != 0  ] ; then
     git add . && git commit -am "update config" && git push origin master
@@ -7,5 +8,5 @@ else
     git status&&git pull
 fi 
 
-echo -e "\n================DOTVIM================\n"
+echo -e "\n================sync .vim/dotvim...================\n"
 cd ~/.vim/dotvim && git status && git pull && cd ~
