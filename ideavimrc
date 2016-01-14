@@ -1,18 +1,43 @@
-"ideavim plugin's config file
-inoremap jj <ESC>
+"L-Larry_Lau@163.com#36573-fdkscp15axjj6#25257  jprofiler
 
-inoremap <c-o> <ESC>o
+set hlsearch
+set ignorecase smartcase
+set clipboard=unnamed
+set scrolloff=5
+
+let mapleader = ','
+
+inoremap jj <ESC>
+vnoremap ii <ESC>
+
+"inoremap <c-o> <ESC>o
 inoremap <C-e> <ESC>A
 inoremap <C-a> <ESC>I
 inoremap <C-b> <Left>
-
-vnoremap ii <ESC>
+inoremap <C-f> <Right>
 
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
 nnoremap ,<Space> :nohl<CR>
 
-se hlsearch
 nnoremap # *
 
-"L-Larry_Lau@163.com#36573-fdkscp15axjj6#25257  jprofiler
+noremap  <c-f> <c-d>
+noremap  <c-b> <c-u>
+nnoremap <c-p> <c-i>
+nnoremap <tab> <c-w>w
+
+nnoremap Y y$
+nnoremap Q @q
+
+nnoremap [c :action VcsShowPrevChangeMarker<cr>
+nnoremap ]c :action VcsShowNextChangeMarker<cr>
+
+nnoremap <leader>fu :action FindUsages<cr>
+nnoremap <leader>cv :action ChangeView<cr>
+nnoremap <leader>br :action ViewBreakpoints<cr>
+nnoremap <leader>re :action RenameElement<cr>
+nnoremap <leader>rf :action RenameFile<cr>
+
+
+
