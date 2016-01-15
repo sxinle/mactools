@@ -16,28 +16,18 @@ inoremap <C-a> <ESC>I
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
-nnoremap ,w :w<CR>
-nnoremap ,q :q<CR>
-nnoremap ,<Space> :nohl<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader><Space> :nohl<CR>
 
 nnoremap # *
 
-noremap  <c-f> <c-d>
-noremap  <c-b> <c-u>
-nnoremap <c-p> <c-i>
 nnoremap <tab> <c-w>w
 
 nnoremap Y y$
-nnoremap Q @q
 
 nnoremap [c :action VcsShowPrevChangeMarker<cr>
 nnoremap ]c :action VcsShowNextChangeMarker<cr>
 
-nnoremap <leader>fu :action FindUsages<cr>
-nnoremap <leader>cv :action ChangeView<cr>
-nnoremap <leader>br :action ViewBreakpoints<cr>
-nnoremap <leader>re :action RenameElement<cr>
-nnoremap <leader>rf :action RenameFile<cr>
-
-
+nnoremap <leader>fu :action ShowUsages<cr>
 
