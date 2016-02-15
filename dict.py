@@ -64,9 +64,9 @@ def print_translations(xml, with_color, detailed):
 	custom_translations = get_elements(xml, "custom-translation");
 
 	if len(phonetic) > 0:
-		print BOLD + UNDERLINE + queryword + " [" + phonetic[0].decode('utf8').encode('utf8') + "]" + NORMAL;
+		print RED + BOLD + UNDERLINE + queryword + " [" + phonetic[0].decode('utf8').encode('utf8') + "]" + NORMAL;
 	else:
-		print BOLD + UNDERLINE + queryword + " [no query results]" + NORMAL;
+		print RED + BOLD + UNDERLINE + queryword + " [no query results]" + NORMAL;
 
 
 	translated = False;
@@ -77,10 +77,10 @@ def print_translations(xml, with_color, detailed):
 		contents = get_elements_by_path(cus, "translation/content");
 		if with_color:
 			for content in contents[0:5]:
-				print GREEN + get_text(content);# + DEFAULT;
+				print RED + get_text(content);# + DEFAULT;
 		else:
 			for content in contents[0:5]:
-				print get_text(content);
+				print RED + get_text(content);
 		translated = True;
 
 	yodao_translations = get_elements(xml, "yodao-web-dict");
@@ -99,13 +99,14 @@ def print_translations(xml, with_color, detailed):
 			#summary = summaries[0].strip();
                         #lines = get_elements(summary, "line");
 		        if with_color:
-			       	print BOLD +  get_text(key) + ":\t" + GREEN + get_text(value) + NORMAL;
+			       	print RED +  get_text(key) + ":\t" + RED + get_text(value) + NORMAL;
 					   #print BOLD +  get_text(key) + ":\t" +DEFAULT + GREEN + get_text(value) + NORMAL;
                                 #for line in lines:
                                 #        print GREEN + get_text(line) + DEFAULT;
 				#print get_text(summary) + DEFAULT;
 		        else:
-				print get_text(value);
+			       	print RED +  get_text(key) + ":\t" + RED + get_text(value) + NORMAL;
+				# print get_text(value);
 				#print get_text(summary);
 		        #translated = True;
 		        #if not detailed:
@@ -131,7 +132,7 @@ def baiduTranslate(words):
 	req = urllib2.Request(url,data,req_header)
 	resp = urllib2.urlopen(req,data,req_timeout)
 	html = resp.read()
-	# print html
+        # print html
 	return html
 
 def main(argv):
@@ -152,13 +153,13 @@ def main(argv):
 			inputWord = inputWord + inputTmp + '\n'
 		# print inputWord
 
-		print BOLD + GREEN + '===百度翻译==='
+		print BOLD + RED + '===百度翻译==='
 		result = baiduTranslate(inputWord)
 		jsonRet = json.loads(result)
 		rets = jsonRet['trans_result']['data']
 		for ret in rets:
 			print RED + ret['src']
-			print NORMAL + ret['dst'].encode('utf8')
+			print RED + ret['dst'].encode('utf8')
 			# print ret[1].encode('utf8')
 	else:
 		xml = crawl_xml(" ".join(argv));
