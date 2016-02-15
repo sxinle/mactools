@@ -159,7 +159,7 @@ def main(argv):
 		rets = jsonRet['trans_result']['data']
 		for ret in rets:
 			print RED + ret['src']
-			print RED + ret['dst'].encode('utf8')
+			print UNDERLINE + RED + ret['dst'].encode('utf8')
 			# print ret[1].encode('utf8')
 	else:
 		xml = crawl_xml(" ".join(argv));
