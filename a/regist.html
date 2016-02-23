@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <title>注册 - WPCOM</title>
+    <link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="form regform">
+    <div class="form-bg"></div>
+    <div class="form-inner">
+        <a class="logo" href="https://www.wpcom.cn/">
+            <img src="img/logo-blue.png" width="154" alt="WPCOM">
+        </a>
+        <div id="j-errmsg" class="errmsg alert alert-warning"></div>
+        <form id="regForm" method="post">
+            <div class="input-group">
+                <span class="input-group-addon input-label">邮<span class="vh">一一</span>箱</span>
+                <input type="text" class="form-control require" id="email" name="email" placeholder="登录邮箱" required>
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon input-label">昵<span class="vh">一一</span>称</span>
+                <input type="text" class="form-control require" id="nickname" name="nickname" placeholder="用户昵称">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon input-label">密<span class="vh">一一</span>码</span>
+                <input type="password" class="form-control require" id="password" name="password"
+                       placeholder="登录密码">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon input-label">确认密码</span>
+                <input type="password" class="form-control require" id="password2" name="password2"
+                       placeholder="确认密码">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon input-label">&nbsp;验&nbsp;证&nbsp;码</span>
+                <input type="text" class="form-control require" id="captcha" name="captcha" placeholder="验证码">
+                <a class="input-group-addon input-label captcha-img" href="javascript:;" title="点击刷新验证码">
+                    <img src="captcha" width="80" height="26">
+                </a>
+            </div>
+
+            <div class="last">
+                <input class="btn btn-primary btn-block btn-lg" type="submit" id="submit" value="提交注册">
+            </div>
+        </form>
+        <p class="alert alert-info register">已有账号？ <a href="https://www.wpcom.cn/member/login?from=%2Ffeedback">立即登录</a>
+        </p>
+    </div>
+</div>
+</body>
+
+<script src="js/login.js"></script>
+<script src="js/validator.js"></script>
+
+</html>
