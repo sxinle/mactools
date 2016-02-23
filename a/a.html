@@ -8,18 +8,28 @@
         top: 0;
         width: 100%;
     }
-    #banner {
-        background-color: yellow;
+    .banner {
+        position: relative;
+        overflow: auto;
+    }
+    .banner li {
+        list-style: none;
+    }
+    .banner ul li {
+        float: left;
     }
 </style>
 <script src="jquery.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 <script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="//unslider.com/unslider.js"></script>
 
-<div class="container" id="banner">
-    <div class="row">
-        <h1> Your banner </h1>
-    </div>
+<div class="banner" id="banner">
+    <ul>
+        <li>This is a slide.</li>
+        <li>This is another slide.</li>
+        <li>This is a final slide.</li>
+    </ul>
 </div>
 
 <nav class="navbar navbar-default navbar-static-top" role="navigation" id="topnavbar">
@@ -150,4 +160,5 @@
         var padding = e.type === 'affix' ? $(this).height() : '';
         $('body').css('padding-top', padding);
     });
+    $('.banner').unslider();
 </script>
