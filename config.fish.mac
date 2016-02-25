@@ -49,15 +49,6 @@ alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 #}}}
   
 #alias for ssh# {{{
-alias sshserver1='ssh -p7862 root@121.199.43.176'
-alias sshserver2='ssh -p8726 ddosa@112.124.42.62'
-alias sshserver3='ssh -p7862 root@218.244.144.242'
-alias sshserver4='ssh -p7862 root@121.40.190.31'
-alias sshserver5='ssh -p7862 root@120.24.219.108'
-alias sshserver6='ssh -p7862 root@120.24.240.31'
-alias sshdownload='ssh -p34529 root@110.76.40.33'
-alias ssh115='ssh -p6957 root@123.57.151.115'
-alias ssh26='ssh -p6957 root@123.56.152.26'
 alias sshdp='ssh -p7862 root@124.95.160.85'
 #alias ln68nds='sudo mount //192.168.2.68/ndsdata-release /mnt/ndsdata-release/'
 #alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
