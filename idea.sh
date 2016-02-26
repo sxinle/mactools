@@ -10,5 +10,7 @@ export JAVA_HOME=/usr/lib/jvm/tuxjdk-1.80-66
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true"
 # Having this set makes menu font size smaller (wtf?)
 export GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+# Ubuntu global menu integration
+#export JAVA_TOOL_OPTIONS=-javaagent:/usr/share/java/jayatanaag.jar
 #unset GNOME_DESKTOP_SESSION_ID
 exec $IDEA_HOME/bin/idea.sh "$@" 
