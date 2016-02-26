@@ -12,5 +12,6 @@ export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true
 export GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 # Ubuntu global menu integration
 #export JAVA_TOOL_OPTIONS=-javaagent:/usr/share/java/jayatanaag.jar
+export JAVA_TOOL_OPTIONS=
 #unset GNOME_DESKTOP_SESSION_ID
 exec $IDEA_HOME/bin/idea.sh "$@" 
