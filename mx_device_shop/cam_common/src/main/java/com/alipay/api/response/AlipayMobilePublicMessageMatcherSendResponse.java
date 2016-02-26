@@ -1,0 +1,56 @@
+package com.alipay.api.response;
+
+import com.alipay.api.internal.mapping.ApiField;
+
+import com.alipay.api.AlipayResponse;
+
+/**
+ * ALIPAY API: alipay.mobile.public.message.matcher.send response.
+ * 
+ * @author auto create
+ * @since 1.0, 2014-07-25 14:58:25
+ */
+public class AlipayMobilePublicMessageMatcherSendResponse extends AlipayResponse {
+
+	private static final long serialVersionUID = 1241932617599383196L;
+
+	/** 
+	 * 结果码
+	 */
+	@ApiField("code")
+	private String code;
+
+	/** 
+	 * 结果描述
+	 */
+	@ApiField("msg")
+	private String msg;
+
+	/** 
+	 * 消息接收人的用户ID，值取的openId
+	 */
+	@ApiField("to_user_id")
+	private String toUserId;
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public String getCode( ) {
+		return this.code;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
+	}
+	public String getMsg( ) {
+		return this.msg;
+	}
+
+	public void setToUserId(String toUserId) {
+		this.toUserId = toUserId;
+	}
+	public String getToUserId( ) {
+		return this.toUserId;
+	}
+
+}

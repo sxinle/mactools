@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>鉴权订单</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="../assets/css/font-awesome-ie7.min.css" />
+<![endif]-->
+
+<link rel="stylesheet" href="../assets/css/chosen.css" />
+<!-- page specific plugin styles -->
+<link rel="stylesheet" href="../assets/css/zTreeStyle.css" type="text/css">
+<!-- page specific plugin styles -->
+<link rel="stylesheet" href="../assets/css/jquery-ui-1.10.3.full.min.css" />
+<link rel="stylesheet" href="../assets/css/datepicker.css" />
+<link rel="stylesheet" href="../assets/css/ui.jqgrid.css" />
+<!-- ace styles -->
+<link rel="stylesheet" href="../assets/css/ace.min.css" />
+<link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+
+<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="../assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+<!-- inline styles related to this page -->
+
+<link rel="stylesheet" href="../assets/css/common.css">
+
+<!-- ace settings handler -->
+<script src="../assets/js/ace-extra.min.js"></script>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+		<script src="../assets/js/html5shiv.js"></script>
+		<script src="../assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+<!--右侧内容-->
+
+   	<div class="breadcrumbs" id="breadcrumbs">
+       	<script type="text/javascript">
+         	try{ace.settings.check("breadcrumbs","fixed")}catch(e){}
+         </script>
+     	<ul class="breadcrumb">
+         	<li><i class="icon-home"></i>
+             <a href="#">首页</a>
+             </li>
+             <li><a href="#">鉴权数据管理</a></li>
+              <li class="active">鉴权订单</li>
+         </ul>
+     </div> 
+     <!--page-content开始--> 
+     <div class="page-content">
+         <div class="row">
+         	<div class="col-xs-12">
+             	<div class="space-4"></div>
+             	<!-- <div class="page-search">
+                 	<form class="form-inline">
+                     	<div class="form-group">
+                 		   <label class=" control-label">
+                                	 车机号：
+                            </label>
+                             <input id="device_no_search" type="text" class="form-control input-medium">
+                         </div>
+                         <div class="form-group">
+                 		   <label class=" control-label">
+                                	  区域ID：
+                            </label>
+                             <input id="region_id_search" type="text" class="form-control input-medium">
+                         </div>
+                         <div class="form-group">
+                             <button class="btn btn-primary btn-sm" type="button" onclick="searchActiveLogInfo()">
+                                 <i class="icon-search"></i>
+                               		  查询</button>
+                         </div>
+                 </form>
+                 </div> -->
+                 <div class="space-10"></div>
+                 
+                 <table id="grid-table"></table>
+
+	<div id="grid-pager"></div>
+
+		<script type="text/javascript">
+			var $path_base = "/";//this will be used in gritter alerts containing images
+		</script>
+        
+             
+       </div>
+    </div>
+ </div>          
+
+
+
+		<script src="../js/jquery-1.11.1.min.js"></script>  
+		<script src="../js/common.js"></script>       
+ 		<script src="../js/authOrder.js"></script>   
+ <!-- basic scripts -->
+		<!--[if !IE]> -->
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='../assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+        <script type="text/javascript">
+         window.jQuery || document.write("<script src='../assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+        </script>
+        <![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='../assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+        
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/typeahead-bs2.min.js"></script>
+				<!--日期选择标签-->
+        
+		<script src="../assets/js/date-time/bootstrap-datepicker.min.js"></script>
+        
+        
+		<!-- page specific plugin scripts -->
+		<script src="../assets/js/ztree/jquery.ztree.core-3.5.js"></script>
+		<script src="../assets/js/jquery.placeholder.min.js"></script>
+		<!-- page specific plugin scripts -->
+
+		<!-- ace scripts -->
+		<script src="../assets/js/date-time/bootstrap-datepicker.min.js"></script>
+		<script src="../assets/js/jqGrid/jquery.jqGrid.min.js"></script>
+		<script src="../assets/js/jqGrid/i18n/grid.locale-cn.js"></script>
+		
+		<!-- ace scripts -->
+
+		<script src="../assets/js/ace-elements.min.js"></script>
+		<script src="../assets/js/ace.min.js"></script>
+		
+ 
+</body>
+</html>
+
+   
+

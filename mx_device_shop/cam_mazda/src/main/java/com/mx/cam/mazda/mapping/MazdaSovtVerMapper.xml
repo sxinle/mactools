@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mx.cam.mazda.dao.MazdaSovtVerDao">
+
+    <select id="getSoftVerManage" resultType="com.mx.cam.mazda.model.SoftVer">
+        select * from mazda_soft_ver
+        where 1=1
+        <if test = "soft_ver != null and soft_ver != ''">
+           and soft_ver like "%"#{soft_ver}"%"
+        </if>
+        <if test = "soft_name != null and soft_name != ''">
+           and soft_name like "%"#{soft_name}"%"
+        </if>
+    </select>
+    
+    <delete id="deleteSoftVerManage">
+		delete from mazda_soft_ver
+		where soft_ver in 
+ 		<foreach  item="item" collection="array" open="(" separator=","  close=")">
+			#{item}
+		</foreach>
+	</delete>
+	
+	<select id="checkSoftVerId" resultType="int">
+        SELECT count(*) FROM mazda_soft_ver where (soft_ver = #{soft_ver} or soft_name = #{soft_name})
+        <if test = "id != null and id != ''">
+           and soft_ver != #{id}
+        </if>
+    </select>
+    
+    <insert id="insertSoftVer">
+    	insert into mazda_soft_ver(
+    		soft_ver,
+    		soft_name
+    	)
+    	values(
+    		#{soft_ver},
+    		#{soft_name}
+    	)
+    </insert>
+    
+    <update id="updateSoftVer">
+    	update mazda_soft_ver set 
+    	soft_ver = #{soft_ver},
+    	soft_name = #{soft_name}
+    	where soft_ver = #{id}
+    </update>
+</mapper>

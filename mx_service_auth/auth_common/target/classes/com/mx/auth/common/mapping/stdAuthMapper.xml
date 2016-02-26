@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mx.auth.common.dao.StdAuthDao">
+
+    <!-- 查询数据版本表List -->
+    <select id="getDataVerList" resultType="com.mx.auth.common.model.NdsTopDataVer">
+        select * 
+		from te_nds_top_data_ver 
+		where product_id = #{product_id}
+		and device_no = #{device_no}
+		and region_code in
+		<foreach item="item" index="index" collection="region_ids" open="(" separator="," close=")">
+  			#{item}  
+ 		</foreach> 
+ 		order by region_code
+    </select>
+    
+    <!-- 查询数据权限表List -->
+    <select id="getDataAuthList" resultType="com.mx.auth.common.model.NdsDataServiceAuth">
+        select *
+    	from te_nds_data_service_auth
+    	where product_id = #{product_id}
+    	and device_no = #{device_no}
+    	and region_code in 
+    	<foreach item="item" index="index" collection="region_ids" open="(" separator="," close=")">  
+  			#{item}  
+ 		</foreach>  
+    	and start_time is not null
+    	and (end_time is null or end_time >= now())
+    	and nums != '0'
+    	order by region_code,end_time
+    </select>
+    
+    <!-- 查询最高数据版本号 -->
+    <select id="getDataVersion" resultType="com.mx.auth.common.model.NdsTopDataVer">
+        select * 
+		from te_nds_top_data_ver 
+		where product_id = #{product_id}
+		and device_no = #{device_no}
+		and region_code = #{region_code}
+    </select>
+    
+    <!-- 查询数据权限 -->
+    <select id="getDataAuthAll" resultType="com.mx.auth.common.model.NdsDataServiceAuth">
+        select *
+    	from te_nds_data_service_auth
+    	where product_id = #{product_id}
+    	and device_no = #{device_no}
+    	and region_code = #{region_code}
+    	and start_time is not null
+    	and (end_time is null or end_time >= now())
+    	and nums != '0'
+    	order by region_code,end_time
+    </select>
+    
+    <!-- 鉴权次数减1更新 -->
+    <update id="updateNums">
+    	update te_nds_data_service_auth set
+    	nums = #{nums}
+    	where auth_id = #{auth_id}
+    </update>
+    
+    <!-- 更新最高版本号 -->
+    <update id="updateNdsDataVer">
+    	update te_nds_top_data_ver set
+    	data_ver = #{data_ver}
+    	where product_id = #{product_id}
+    	and device_no = #{device_no}
+    	and region_code = #{region_code}
+    </update>
+    
+    <!-- 插入激活记录 -->
+    <insert id="insertNdsDataActiveLog">
+    	insert into te_nds_data_active_log(
+    		id,
+    		product_id,
+    		device_no,
+    		soft_ver,
+    		data_ver,
+    		region_code,
+    		active_time,
+    		active_code,
+    		active_type,
+    		active_source
+    	)
+    	values(
+    		#{id},
+    		#{product_id},
+    		#{device_no},
+    		#{soft_ver},
+    		#{data_ver},
+    		#{region_code},
+    		now(),
+    		#{active_code},
+    		#{active_type},
+    		#{active_source}
+    	)
+    </insert>
+    
+    <!-- 查询权限表是否有车机记录 -->
+    <select id="getNdsDataServiceAuthList" resultType="com.mx.auth.common.model.NdsDataServiceAuth">
+        select *
+    	from te_nds_data_service_auth
+    	where product_id = #{product_id}
+    	and device_no = #{device_no}
+    	and auth_type='1'
+    </select>
+    
+    <!-- 查询权限表是否有未激活记录 -->
+    <select id="getNdsDataServiceAuthActiveList" resultType="com.mx.auth.common.model.NdsDataServiceAuth">
+        select *
+    	from te_nds_data_service_auth
+    	where product_id = #{product_id}
+    	and device_no = #{device_no}
+    	and auth_type='1'
+    	and start_time is null
+    </select>
+    
+    <!-- 查询销售激活记录表中是否有此产品系列无号段未激活记录 -->
+    <select id="getNdsDataSellActiveAuthList" resultType="com.mx.auth.common.model.NdsDataSellActiveAuth">
+        select *
+    	from te_nds_data_sell_active_auth
+    	where product_id = #{product_id}
+    	and business_mode = '2'
+    	and nums > 0
+    </select>
+    
+    <!-- 首次激活更新权限表 -->
+    <update id="updateNdsDataServiceAuth">
+    	update te_nds_data_service_auth set
+    	start_time = now(),
+    	end_time = #{end_time}
+    	where auth_id = #{auth_id}
+    </update>
+    
+    <!-- 首次激活插入最高版本表 -->
+    <insert id="insertNdsTopDataVer">
+    	insert into te_nds_top_data_ver(
+    		device_no,
+    		product_id,
+    		region_code,
+    		data_ver
+    	)
+    	values(
+    		#{device_no},
+    		#{product_id},
+    		#{region_code},
+    		#{data_ver}
+    	)
+    </insert>
+    
+    <!-- 首次激活插入设备信息表 -->
+    <insert id="insertDeviceInfo">
+    	insert into te_device_info(
+    		device_no,
+    		product_id,
+    		device_type,
+    		vin,
+    		user_name,
+    		card_no,
+    		mobile_phone,
+    		fixed_phone,
+    		gender,
+    		address,
+    		mail,
+    		create_time,
+    		scheme_id,
+        	oem_id
+    	)
+    	values(
+    		#{device_no},
+    		#{product_id},
+    		#{device_type},
+    		#{vin},
+    		#{user_name},
+    		#{card_no},
+    		#{mobile_phone},
+    		#{fixed_phone},
+    		#{gender},
+    		#{address},
+    		#{mail},
+    		now(),
+    		#{scheme_id},
+        	#{oem_id}
+    	)
+    </insert>
+    
+    <!-- 首次激活更新设备信息表 -->
+    <update id="updateDeviceInfo">
+    	update te_device_info set
+		device_type = #{device_type},
+    	vin = #{vin},
+    	user_name = #{user_name},
+    	card_no = #{card_no},
+    	mobile_phone = #{mobile_phone},
+    	fixed_phone = #{fixed_phone},
+    	gender = #{gender},
+    	address = #{address},
+    	mail = #{mail}
+    	where device_no = #{device_no}
+    	and product_id = #{product_id}
+    </update>
+    
+    <!-- 首次激活插入权限表 -->
+    <insert id="insertNdsDataServiceAuth">
+    	insert into te_nds_data_service_auth(
+    		auth_id,
+    		product_id,
+    		device_no,
+    		auth_order_id,
+    		region_code,
+    		start_time,
+    		end_time,
+    		init_nums,
+    		nums,
+    		years,
+    		data_ver,
+    		auth_type,
+    		auth_rule,
+    		business_mode,
+    		device_type
+    	)
+    	values(
+    		#{auth_id},
+    		#{product_id},
+    		#{device_no},
+    		#{auth_order_id},
+    		#{region_code},
+    		now(),
+    		#{end_time},
+    		#{init_nums},
+    		#{nums},
+    		#{years},
+    		#{data_ver},
+    		#{auth_type},
+    		#{auth_rule},
+    		#{business_mode},
+    		#{device_type}
+    	)
+    </insert>
+    
+    <!-- 更新无号段销售激活次数-1 -->
+    <update id="updateNdsDataSellActiveAuthNums">
+    	update te_nds_data_sell_active_auth set
+    	nums = #{new_nums}
+    	where sell_auth_id = #{sell_auth_id}
+    	and nums = #{old_nums}
+    </update>
+    
+    <select id="getTspAuthFreeTime" resultType="com.mx.auth.common.model.TspAuth">
+    	select a.*,t.free_upg_duration
+    	from te_tsp_auth a, te_tsp t
+    	where t.auth_order_id = a.auth_order_id
+    	and t.service_type = a.service_type
+    	and a.auth_order_id = #{auth_order_id}
+    	and a.product_id = #{product_id}
+    	and a.device_no = #{device_no}
+    </select>
+    
+    <update id="updateTspAuth">
+    	update te_tsp_auth set
+    	start_date = now(),
+    	end_date = #{end_time}
+    	where id = #{id}
+    </update>
+    
+    <select id="getAuthOrderOmeId" resultType="String">
+    	select oem_id from te_auth_order 
+    	where auth_order_id = #{auth_order_id}
+    </select>
+</mapper>

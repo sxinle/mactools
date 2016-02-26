@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.cam.std.dao.StdPaymentModeDao">
+    
+    <select id="getPaymentMode" resultType="com.mx.cam.std.model.PaymentMode">
+        SELECT *
+        FROM std_payment_mode
+    </select>
+    
+    <delete id ="deleteProductPayment">
+    delete from std_product_payment where product_id = #{product_id}
+    </delete>
+    
+    <insert id ="saveProductPayment">
+    insert into std_product_payment (product_id,mode_id)
+    values(#{product_id},#{mode_id})
+    </insert>
+    
+</mapper>

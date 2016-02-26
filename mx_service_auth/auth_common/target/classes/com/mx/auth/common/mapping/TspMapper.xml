@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.auth.common.dao.TspDao">
+
+    <select id="getTsp" resultType="com.mx.auth.common.model.TspInfo">
+        SELECT * 
+        FROM te_tsp
+        where 1=1
+        <if test="auth_order_id != null and auth_order_id != ''">
+            and auth_order_id = #{auth_order_id}
+        </if>
+	</select>
+</mapper>

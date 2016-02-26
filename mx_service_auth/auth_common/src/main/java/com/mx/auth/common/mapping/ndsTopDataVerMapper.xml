@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.auth.common.dao.NdsTopDataVerDao">
+    <insert id="insert">
+        INSERT INTO te_nds_top_data_ver(
+            device_no,
+            product_id,
+            region_code,
+            data_ver
+        )
+        VALUES (
+            #{device_no},
+            #{product_id},
+            #{region_code},
+            #{data_ver}
+        )
+    </insert>
+
+    <select id="findByExample" resultType="com.mx.auth.common.model.NdsTopDataVer">
+        SELECT * FROM te_nds_top_data_ver
+        WHERE product_id = #{product_id}
+        AND device_no = #{device_no}
+        AND region_code = #{region_code}
+    </select>
+
+    <update id="updateDataVer">
+    	UPDATE te_nds_top_data_ver
+    	SET data_ver = #{data_ver}
+    	WHERE device_no = #{device_no}
+    	AND product_id = #{product_id}
+    	AND region_code = #{region_code}
+    </update>
+
+    <update id="fullRegionUpdate">
+    	UPDATE te_nds_top_data_ver
+    	SET data_ver = #{ver.data_ver}
+    	WHERE device_no = #{ver.device_no}
+    	AND product_id = #{ver.product_id}
+    	AND region_code in
+        <foreach item="item" index="index" collection="regions" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </update>
+
+    <select id="getNdsTopDataVerManage" resultType="com.mx.auth.common.model.NdsTopDataVer">
+        SELECT * FROM te_nds_top_data_ver
+        WHERE 1=1
+        <if test = "device_no != null and device_no != ''">
+           and device_no = #{device_no}
+        </if>
+        <if test = "product_id != null and product_id != ''">
+           and product_id = #{product_id}
+        </if>
+        <if test = "region_code != null and region_code != ''">
+           and region_code = #{region_code}
+        </if>
+    </select>
+    <select id="findByDeviceNo" resultType="com.mx.auth.common.model.NdsTopDataVer">
+        SELECT * FROM te_nds_top_data_ver
+        WHERE device_no = #{device_no} AND product_id = #{product_id}
+    </select>
+    
+    <update id="updateTopVerByChangeDevice">
+    	UPDATE te_nds_top_data_ver SET
+    	device_no = #{new_device_no}
+    	WHERE device_no = #{old_device_no}
+    	AND product_id = #{product_id}
+    </update>
+
+</mapper>

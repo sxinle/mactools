@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.auth.common.dao.EncryptionDao">
+    
+    <select id="getEncryptionManage" resultType="com.mx.auth.common.model.Encryption">
+        SELECT
+          e.*, p.product_name,
+          p.act_way
+        FROM
+          te_encryption_info e
+        LEFT JOIN te_product p ON e.product_id = p.product_id
+        WHERE
+        1 = 1
+        <!-- TODO 马自达临时对应，正式发布时需要去掉注释 
+        <if test = "soft_ver != null and soft_ver != ''">
+          AND e.soft_ver = #{soft_ver}
+        </if>
+         -->
+        <if test = "product_id != null and product_id != ''" >
+          AND e.product_id = #{product_id}
+        </if>
+        <if test = "encryption_name != null and encryption_name != ''" >
+          AND e.encryption_name LIKE "%" #{encryption_name}"%"
+        </if>
+    </select>
+    
+    <update id="updateEncryptionManage">
+    	update te_encryption_info set 
+    	encryption_name = #{encryption_name},
+    	encryption_path = #{encryption_path},
+    	encryption_ver = #{encryption_ver}
+    	where soft_ver = #{soft_ver}
+    	and product_id = #{product_id}
+    </update> 
+</mapper>

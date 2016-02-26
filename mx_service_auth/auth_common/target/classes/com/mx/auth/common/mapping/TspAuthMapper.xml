@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.auth.common.dao.TspAuthDao">
+
+    <select id="getServiceAuth" resultType="com.mx.auth.common.model.TspAuth">
+        SELECT * 
+        FROM te_tsp_auth 
+        where product_id = #{product_id} and device_no = #{device_no} and service_type = #{service_type}
+	</select>
+
+    <insert id="addTspAuth">
+    	insert into te_tsp_auth(
+    	    id,
+            service_type,
+            start_date,
+            end_date,
+            create_time,
+            auth_order_id,
+            product_id,
+            device_no,
+            auth_type
+    	)
+    	values(
+    	    #{id},
+            #{service_type},
+            #{start_date},
+            #{end_date},
+            #{create_time},
+            #{auth_order_id},
+            #{product_id},
+            #{device_no},
+            #{auth_type}
+    	)
+	</insert>
+    <select id="getTspFreeTime" resultType="com.mx.auth.common.model.TspInfo">
+		select * from te_tsp where auth_order_id=#{authOrderId}
+	</select>
+
+    <select id="getActiveTspRecordInfo" resultType="com.mx.auth.common.model.TspAuth">
+        SELECT vin,service_code,act_time,max(start_date) as start_date,max(end_date) as end_date
+        FROM te_tsp_auth
+        where
+        1=1
+        <if test="vin != null and vin != ''">
+            and vin = #{vin}
+        </if>
+        <if test="act_time != null and act_time != ''">
+            and act_time = #{act_time}
+        </if>
+        group by vin,service_code
+    </select>
+
+    <update id="updateFirstTspFreeTime">
+        update te_tsp set
+        free_time = #{free_time}
+        where service_code = #{service_code}
+    </update>
+
+    <update id="updateEndDate">
+        UPDATE te_tsp_auth SET
+        <if test="isExpired == 'false'">
+            end_date = date_add(now(), interval 365 day)
+        </if>
+        <if test="isExpired == 'true'">
+            end_date = date_add(now(), interval -365 day)
+        </if>
+        WHERE service_type IN
+        <foreach item="item" collection="items" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        AND product_id = #{productID}
+        AND device_no = #{deviceNo}
+    </update>
+
+    <update id="updateTspEndDate">
+        UPDATE te_tsp_auth SET end_date = #{end_date} where id=#{id}
+    </update>
+
+    <delete id="deleteByDev">
+	    DELETE FROM te_tsp_auth 
+	        WHERE device_no =#{deviceNo} AND product_id = #{productID}
+	</delete>
+
+    <update id="updateTspAuthByChangeDevice">
+        update te_tsp_auth set
+        device_no = #{new_device_no}
+        where device_no = #{old_device_no}
+        and product_id = #{product_id}
+    </update>
+
+    <select id="getTspAuth" resultType="com.mx.auth.common.model.TspAuthInfo">
+        SELECT * FROM te_tsp_auth
+        where 1=1
+        <if test="auth_order_id != null and auth_order_id != ''">
+            and auth_order_id = #{auth_order_id}
+        </if>
+        <if test="product_id != null and product_id != ''">
+            and product_id = #{product_id}
+        </if>
+        <if test="device_no != null and device_no != ''">
+            and device_no = #{device_no}
+        </if>
+        <if test="service_type != null and service_type != ''">
+            and service_type = #{service_type}
+        </if>
+    </select>
+</mapper>

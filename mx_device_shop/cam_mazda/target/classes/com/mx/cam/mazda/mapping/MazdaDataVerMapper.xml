@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mx.cam.mazda.dao.MazdaDataVerDao">
+
+    <select id="getAllVers" resultType="com.mx.cam.mazda.model.DataVer">
+        SELECT * FROM mazda_data_ver;
+    </select>
+
+    <select id="getDataVerManage" resultType="com.mx.cam.mazda.model.DataVer">
+        select * from mazda_data_ver
+        where 1=1
+        <if test = "ver_id != null and ver_id != ''">
+           and ver_id like "%"#{ver_id}"%"
+        </if>
+        <if test = "ver_name != null and ver_name != ''">
+           and ver_name like "%"#{ver_name}"%"
+        </if>
+    </select>
+    
+    <delete id="deleteDataVerManage">
+		delete from mazda_data_ver
+		where ver_id in 
+ 		<foreach  item="item" collection="array" open="(" separator=","  close=")">
+			#{item}
+		</foreach>
+	</delete>
+	
+	<select id="checkDataVerId" resultType="int">
+        SELECT count(*) FROM mazda_data_ver where (ver_id = #{ver_id} or ver_name = #{ver_name})
+        <if test = "id != null and id != ''">
+           and ver_id != #{id}
+        </if>
+    </select>
+
+    <insert id="insertDataVer">
+    	insert into mazda_data_ver(
+    		ver_id,
+    		ver_name
+    	)
+    	values(
+    		#{ver_id},
+    		#{ver_name}
+    	)
+    </insert>
+    
+    <update id="updateDataVer">
+    	update mazda_data_ver set 
+    	ver_id = #{ver_id},
+    	ver_name = #{ver_name}
+    	where ver_id = #{id}
+    </update> 
+    
+</mapper>

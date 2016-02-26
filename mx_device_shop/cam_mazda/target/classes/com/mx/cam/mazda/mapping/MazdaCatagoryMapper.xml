@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mx.cam.mazda.dao.MazdaCatagoryDao">
+
+	<!-- 查询商品类别信息 -->
+    <select id="getCatagoryManage" resultType="com.mx.cam.mazda.model.Catagory">
+        select * from mazda_catagory
+    </select>
+    
+    <!-- 根据商品类别Id删除数据 -->
+    <delete id="deleteCatagoryManage">
+		delete from mazda_catagory
+		where catagory_id in 
+ 		<foreach  item="item" collection="array" open="(" separator=","  close=")">
+			#{item}
+		</foreach>
+	</delete>
+	
+	<!-- 根据商品类别Id来查询是否重复 -->
+	<select id="checkCatagoryId" resultType="int">
+        SELECT count(*) FROM mazda_catagory where (catagory_id = #{catagory_id} or catagory_name = #{catagory_name})
+        <if test = "id != null and id != ''">
+           and catagory_id != #{id}
+        </if>
+    </select>
+    
+    <!-- 保存商品类别信息 -->
+    <insert id="saveCatagory">
+    	insert into mazda_catagory(
+    		catagory_id,
+    		catagory_name
+    	)
+    	values(
+    		#{catagory_id},
+    		#{catagory_name}
+    	)
+    </insert>
+    
+    <!-- 更新商品类别信息 -->
+    <update id="updateCatagory">
+    	update mazda_catagory set 
+    	catagory_id = #{catagory_id},
+    	catagory_name = #{catagory_name}
+    	where catagory_id = #{id}
+    </update>
+    
+</mapper>

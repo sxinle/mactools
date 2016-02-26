@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.cam.std.dao.StdOrderItemDao">
+    
+    <select id="getOrderItem" resultType="com.mx.cam.std.model.OrderItem">
+        SELECT *,
+        (case combo_type WHEN '1' then '期限' WHEN '2' then '次数' WHEN '3' then '版本' else '' end) as combo_type_name
+        FROM std_order_item
+        where order_id = #{order_id}
+    </select>
+    
+</mapper>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.cam.mazda.dao.MazdaOrderDao">
+    
+    <select id="getOrderInfo" resultType="com.mx.cam.mazda.model.Order">
+        SELECT o.order_id,
+        	   o.total_fee,
+        	   o.cash_fee,
+        	   DATE_FORMAT(o.creat_time, '%Y-%m-%d %T') as creat_time,
+        	   DATE_FORMAT(o.payment_time, '%Y-%m-%d %T') as payment_time,
+        	   o.device_no,
+        	   o.payment_mode_id,
+        	   o.order_state_id,
+        	   p.mode_name as payment_mode,
+        	   s.state as order_state,
+        	   o.trade_state,
+        	   o.card_type
+        FROM mazda_order o
+        left join mazda_payment_mode p on o.payment_mode_id = p.mode_id
+        left join mazda_order_state s on o.order_state_id = s.id
+        where o.del_flag = '1'
+        <if test = "order_id != null and order_id != ''">
+           and o.order_id = #{order_id}
+        </if>
+        <if test = "device_no != null and device_no != ''">
+           and device_no = #{device_no}
+        </if>
+        <if test = "payment_mode_id != null and payment_mode_id != ''">
+           and o.payment_mode_id = #{payment_mode_id}
+        </if>
+        <if test = "order_state_id != null and order_state_id != ''">
+           and o.order_state_id = #{order_state_id}
+        </if>
+    </select>
+
+    <select id="getOrder" resultType="com.mx.cam.mazda.model.Order">
+        select o.order_id,
+        o.total_fee,
+        o.cash_fee,
+        o.creat_time,
+        o.payment_time,
+        o.device_no,
+        o.del_flag,
+        o.payment_mode_id,
+        o.order_state_id,
+        o.trade_state,
+        m.mode_name,
+        o.card_type
+        from mazda_order o
+        left join mazda_payment_mode m
+        on o.payment_mode_id=m.mode_id
+        where o.order_id=#{order_id}
+    </select>
+
+    <insert id="insertOrder">
+        insert into mazda_order(
+        order_id,
+        total_fee,
+        cash_fee,
+        creat_time,
+        device_no,
+        del_flag,
+        payment_mode_id,
+        order_state_id,
+        trade_state,
+        card_type
+        )
+        values(
+        #{order_id},
+        #{total_fee},
+        #{cash_fee},
+        now(),
+        #{device_no},
+        #{del_flag},
+        #{payment_mode_id},
+        #{order_state_id},
+        #{trade_state},
+        #{card_type}
+        )
+    </insert>
+
+    <select id="getTradeState" resultType="String">
+        select trade_state from mazda_order where order_id = #{order_id}
+    </select>
+
+    <update id="updateOrder">
+        update mazda_order set
+        <if test="payment_mode_id != null and payment_mode_id != ''">
+            payment_mode_id = #{payment_mode_id},
+        </if>
+        <if test="order_state_id != null and order_state_id != ''">
+            order_state_id = #{order_state_id},
+        </if>
+        <if test="order_state_id == 2">
+            payment_time = #{payment_time},
+        </if>
+        trade_state = #{trade_state}
+        where order_id = #{order_id}
+    </update>
+
+</mapper>

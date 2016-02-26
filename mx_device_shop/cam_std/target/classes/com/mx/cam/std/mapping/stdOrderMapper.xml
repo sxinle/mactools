@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mx.cam.std.dao.StdOrderDao">
+    
+    <select id="getOrderManage" resultType="com.mx.cam.std.model.Order">
+        SELECT o.order_id,
+        	   o.total_fee,
+        	   o.cash_fee,
+        	   DATE_FORMAT(o.creat_time, '%Y-%m-%d %T') as creat_time,
+        	   DATE_FORMAT(o.payment_time, '%Y-%m-%d %T') as payment_time,
+        	   o.device_no,
+        	   o.payment_mode_id,
+        	   o.order_state_id,
+        	   p.mode_name as payment_mode,
+        	   s.state as order_state,
+        	   o.trade_state,
+        	   o.card_type
+        FROM std_order o
+        left join std_payment_mode p on o.payment_mode_id = p.mode_id
+        left join std_order_state s on o.order_state_id = s.id
+        where o.del_flag = '1'
+        <if test = "order_id != null and order_id != ''">
+           and o.order_id = #{order_id}
+        </if>
+        <if test = "device_no != null and device_no != ''">
+           and device_no = #{device_no}
+        </if>
+        <if test = "payment_mode_id != null and payment_mode_id != ''">
+           and o.payment_mode_id = #{payment_mode_id}
+        </if>
+        <if test = "order_state_id != null and order_state_id != ''">
+           and o.order_state_id = #{order_state_id}
+        </if>
+        <if test = "creat_time_start != null and creat_time_start != ''">
+        	and DATE_FORMAT(o.creat_time, '%Y-%m-%d %T') <![CDATA[>=]]> #{creat_time_start}
+        </if>
+        <if test = "creat_time_end != null and creat_time_end != ''">
+        	and DATE_FORMAT(o.creat_time, '%Y-%m-%d %T') <![CDATA[<=]]> #{creat_time_end}
+        </if>
+        <if test = "payment_time_start != null and payment_time_start != ''">
+        	and DATE_FORMAT(o.payment_time, '%Y-%m-%d %T') <![CDATA[>=]]> #{payment_time_start}
+        </if>
+        <if test = "payment_time_end != null and payment_time_end != ''">
+        	and DATE_FORMAT(o.payment_time, '%Y-%m-%d %T') <![CDATA[<=]]> #{payment_time_end}
+        </if>
+        order by o.creat_time desc
+    </select>
+	
+	<!-- 查询订单信息 -->
+	<select id="getOrder" resultType="com.mx.cam.std.model.Order">
+		SELECT o.order_id,
+        	   o.total_fee,
+        	   o.cash_fee,
+        	   DATE_FORMAT(o.creat_time, '%Y-%m-%d %T') as creat_time,
+        	   DATE_FORMAT(o.payment_time, '%Y-%m-%d %T') as payment_time,
+        	   o.device_no,
+        	   o.payment_mode_id,
+        	   o.order_state_id,
+        	   p.mode_name as payment_mode,
+        	   s.state as order_state,
+        	   o.trade_state,
+        	   o.card_type
+        FROM std_order o
+        left join std_payment_mode p on o.payment_mode_id = p.mode_id
+        left join std_order_state s on o.order_state_id = s.id
+		where o.order_id = #{order_id}
+    </select>
+    
+    <!-- 更新订单信息 -->
+    <update id="updateOrder">
+    	update std_order set
+    	<if test="order_state_id != null and order_state_id != ''">
+    	order_state_id = #{order_state_id},
+    	</if>
+    	<if test="order_state_id == 2">
+    	payment_time = #{payment_time},
+    	</if>
+    	trade_state = #{trade_state}
+    	where order_id = #{order_id}
+    </update>
+    
+</mapper>
