@@ -51,8 +51,6 @@ end
 #}}}
   
 #alias for ssh# {{{
-alias ssh58='ssh root@192.168.2.58'
-alias ssh174='ssh root@192.168.3.174'
 #alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
 # }}}
 
@@ -74,7 +72,7 @@ alias lm='ls -Alh --color=auto'
 #environment #{{{
 set -x JAVA_HOME /usr/lib/jvm/tuxjdk-1.80-66/
 set -x UTIL_HOME ~/folder/util
-set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin
+set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin ~/.rvm/bin/
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 set -x PAGER /usr/bin/most
 
@@ -83,3 +81,4 @@ set -x LIBOVERLAY_SCROLLBAR 0
 
 #}}}
 
+rvm default
