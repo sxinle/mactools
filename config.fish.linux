@@ -35,7 +35,7 @@ alias rm='remove'
 function remove
     mv -f $argv ~/.local/share/Trash/files/
 end
-alias rma='/bin/rm $HOME/.local/share/Trash/files/.* -rf; and /bin/rm $HOME/.local/share/Trash/files/* -rf'
+alias rma='/bin/rm $HOME/.local/share/Trash/files/* -rf; and /bin/rm $HOME/.local/share/Trash/files/.* -rf'
 
 alias ca='catFunc'
 function catFunc
