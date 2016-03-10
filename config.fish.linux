@@ -19,6 +19,10 @@ alias top='htop'
 alias reboot='sudo reboot'
 alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
+alias o='openFile'
+function openFile
+    open $argv 2>>/dev/null
+end
 
 alias vin='vim -u NONE '
 alias gvim='gvim -f'
