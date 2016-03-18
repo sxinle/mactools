@@ -1,7 +1,6 @@
 #!/bin/sh
-# change to your location
-#IDEA_HOME=/opt/idea-IU-143.381.42
-IDEA_HOME=/opt/idea-IU-143.1184.17/
+IDEA_HOME=/opt/idea-2016.1/
+export IDEA_JDK=/usr/lib/jvm/tuxjdk-1.80-66
 export JAVA_HOME=/usr/lib/jvm/tuxjdk-1.80-66
 # Note: Can modify $IDEA_HOME/bin/idea{,64}.vmoptions
 # instead of setting here.
