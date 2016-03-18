@@ -1,5 +1,5 @@
 #!/bin/sh
-IDEA_HOME=/opt/idea-2016.1/
+IDEA_HOME=/opt/idea-IU-145.258.11
 export IDEA_JDK=/usr/lib/jvm/tuxjdk-1.80-66
 export JAVA_HOME=/usr/lib/jvm/tuxjdk-1.80-66
 # Note: Can modify $IDEA_HOME/bin/idea{,64}.vmoptions
