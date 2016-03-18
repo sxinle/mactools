@@ -31,11 +31,6 @@
     <identifier>private.shift_esc</identifier>
     <autogen>__KeyToKey__ KeyCode::ESCAPE, VK_SHIFT, KeyCode::BACKQUOTE, VK_SHIFT</autogen>
   </item>
-  <item>
-    <name>cmd+h -> cmd_shift_[</name>
-    <identifier>private.cmd_h</identifier>
-    <autogen>__KeyToKey__ KeyCode::H, VK_COMMAND, KeyCode::BRACKET_LEFT, VK_SHIFT, VK_COMMAND</autogen>
-  </item>
 
   <!--<item>-->
     <!--<name>Swap Space and Tab</name>-->
