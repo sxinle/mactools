@@ -65,20 +65,24 @@
     //--------------------------------------画POI点--------------------------------------------------------
     var pt = new BMap.Point(117.192519, 39.112071);
     var marker = new BMap.Marker(pt, {icon: icon_camare});  // 创建标注
+    marker.onclick = showOverlay;
     map.addOverlay(marker);                                 // 将标注添加到地图中
 
     //--------------------------------------画marker提示信息的自定义覆盖层--------------------------------------
-    var myCompOverlay = new MarkerOverlay(new BMap.Point(117.192519, 39.112071), "位置位置", "问题问题");
-    map.addOverlay(myCompOverlay);
+    var markerOverlay;
+    function showOverlay() {
+        hideOverlay();
+        markerOverlay = new MarkerOverlay(new BMap.Point(117.192519, 39.112071), "位置位置", "问题问题");
+        map.addOverlay(markerOverlay);
+        hideOverlay = function () {
+            map.removeOverlay(markerOverlay);
+        };
+    }
 
     // 创建控件
-	var ranking = new TopRightRanking();
-	// 添加到地图当中
-	map.addControl(ranking);
-
-    function clearOverlay() {
-        map.clearOverlays();
-    }
+    var ranking = new TopRightRanking();
+    // 添加到地图当中
+    map.addControl(ranking);
 
 </script>
 

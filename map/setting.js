@@ -161,6 +161,9 @@ var style = [
 ];
 
 // 自定义覆盖层 【Overlay】==========================================================================================
+hideOverlay = function() {
+    map.removeOverlay(markerOverlay);
+};
 function MarkerOverlay(point, pos, question) {
     this._point = point;
     this.pos = pos;
@@ -203,22 +206,25 @@ MarkerOverlay.prototype.initialize = function (mp) {
     span4.appendChild(document.createTextNode(this.question));
     subDiv.appendChild(span4);
 
+    subDiv.appendChild(document.createElement("br"));
+    subDiv.appendChild(document.createElement("br"));
+
     var button = this._botton = document.createElement("button");
     button.appendChild(document.createTextNode("隐藏"));
-    button.onclick = clearOverlay;
+    button.onclick = hideOverlay;
     subDiv.appendChild(button);
 
     div.appendChild(subDiv);
 
-    map.getPanes().labelPane.appendChild(div);
+    mp.getPanes().labelPane.appendChild(div);
 
     return div;
 }
 MarkerOverlay.prototype.draw = function () {
     var map = this._map;
     var pixel = map.pointToOverlayPixel(this._point);
-    this._div.style.left = pixel.x + "px";
-    this._div.style.top = pixel.y - 300 + "px";
+    this._div.style.left = pixel.x - 120 + "px";
+    this._div.style.top = pixel.y - 260 + "px";
 }
 
 
@@ -238,8 +244,8 @@ TopRightRanking.prototype.initialize = function (map) {
     var div = document.createElement("div");
     div.style.background = "url(06.png) no-repeat";
     div.style.backgroundSize = "contain";
-    div.style.width = "600px";
-    div.style.height = "300px";
+    div.style.width = "300px";
+    div.style.height = "150px";
     // 添加文字说明
     div.appendChild(document.createTextNode("右侧排名"));
     // 设置样式
