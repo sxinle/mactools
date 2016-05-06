@@ -1,5 +1,7 @@
-var markerSize = new BMap.Size(60, 57);
+var markerSize =new BMap.Size(37, 37);
+var markerSmallSize =new BMap.Size(17, 17);
 var icon_camare = new BMap.Icon("02.png", markerSize);
+var icon_camare_s = new BMap.Icon("02s.png", markerSmallSize);
 var icon_truck = new BMap.Icon("03.png", markerSize);
 var icon_taxi = new BMap.Icon("04.png", markerSize);
 var icon_house = new BMap.Icon("05.png", markerSize);
