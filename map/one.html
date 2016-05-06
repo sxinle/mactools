@@ -18,14 +18,38 @@
         #container {
             height: 100%
         }
+
+        .main {
+            opacity: 100;
+            background: url(08.png) no-repeat;
+            background-size: contain;
+            width: 300px;
+            height: 400px;
+        }
+
+        .text {
+            padding-top: 20%;
+            padding-left: 2%;
+            color: #2c80b6;
+            font-size: 5px;
+        }
+
+        .info {
+            color: #75bdea;
+        }
+
+        .Bmap_pop {
+            background: black;
+        }
     </style>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O">
-        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
-        //v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O"
+        //v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O&callback=initialize"
     </script>
+    <script type="text/javascript" src="InfoBox_min.js"></script>
 
     <script type="text/javascript">
-        var markerSize = new BMap.Size(300, 157);
+        var markerSize = new BMap.Size(60, 57);
         var icon_camare = new BMap.Icon("02.png", markerSize);
         var icon_truck = new BMap.Icon("03.png", markerSize);
         var icon_taxi = new BMap.Icon("04.png", markerSize);
@@ -186,6 +210,65 @@
                 }
             }
         ];
+
+        function MarkerOverlay(point) {
+            this._point = point;
+        }
+        MarkerOverlay.prototype = new BMap.Overlay();
+        MarkerOverlay.prototype.initialize = function (mp) {
+            this._map = mp;
+            var div = this._div = document.createElement("div");
+            div.style.position = "absolute"
+            div.style.background = "url(08.png) no-repeat";
+            div.style.backgroundSize = "contain";
+            div.style.width = "600px";
+            div.style.height = "300px";
+            div.style.fontSize = "5px"
+
+            var subDiv = this._subdiv = document.createElement("div");
+            subDiv.style.paddingTop = "20%";
+            subDiv.style.paddingLeft = "2%";
+            subDiv.style.color = "#2c80b6";
+
+            var span1 = this._span1 = document.createElement("span");
+            span1.appendChild(document.createTextNode("位置："));
+            subDiv.appendChild(span1);
+
+            var span2 = this._span2 = document.createElement("span");
+            span2.style.color = "#75bdea";
+            span2.appendChild(document.createTextNode("浑南新区金辉街1号"));
+            subDiv.appendChild(span2);
+
+            subDiv.appendChild(document.createElement("br"));
+            subDiv.appendChild(document.createElement("br"));
+
+            var span3 = this._span3 = document.createElement("span");
+            span3.appendChild(document.createTextNode("位置："));
+            subDiv.appendChild(span3);
+
+            var span4 = this._span4 = document.createElement("span");
+            span4.style.color = "#75bdea";
+            span4.appendChild(document.createTextNode("浑南新区金辉街1号"));
+            subDiv.appendChild(span4);
+
+            var button = this._botton = document.createElement("button");
+            button.onclick = clear;
+            subDiv.appendChild(button);
+
+            div.appendChild(subDiv);
+
+            map.getPanes().labelPane.appendChild(div);
+
+            return div;
+        }
+        MarkerOverlay.prototype.draw = function () {
+            var map = this._map;
+            var pixel = map.pointToOverlayPixel(this._point);
+            this._div.style.left = pixel.x + "px";
+            this._div.style.top = pixel.y - 300 + "px";
+        }
+
+
     </script>
 </head>
 
@@ -206,8 +289,14 @@
     map.addOverlay(marker);              // 将标注添加到地图中
 
 
+    var myCompOverlay = new MarkerOverlay(new BMap.Point(117.192519, 39.112071));
+    map.addOverlay(myCompOverlay);
 
+    function clear() {
+        map.clearOverlays();
+    }
 
 </script>
+
 </body>
 </html>
