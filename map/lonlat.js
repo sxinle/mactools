@@ -843,37 +843,11 @@ var xinxingOffice = [{'no':'8cb5b115-2cdd-4316-876c-813f155e35b0','lat':'39.1077
 var totalOffices = [nanshiOffice, nanyingmenOffice, quanyechangOffice, wudadaoOffice, xiaobailouOffice, xinxingOffice];
 
 
-var centers = [{'center': new BMap.Point(117.191492,39.133722), "desc": "南市街道办事处"},
-    {'center': new BMap.Point(117.190217,39.123619), "desc": "南营门街道办事处"},
-    {'center': new BMap.Point(117.198732,39.130868), "desc": "劝业场街道办事处"},
-    {'center': new BMap.Point(117.207608,39.120064), "desc": "五大道街道办事处"},
-    {'center': new BMap.Point(117.209297,39.126474), "desc": "小白楼街道办事处"},
-    {'center': new BMap.Point(117.192826,39.111285), "desc": "新兴街道办事处"}]
+var centers = [{'center': new BMap.Point(117.192492,39.133722), "desc": "南市", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.192217,39.121619), "desc": "南营门", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.201882,39.130868), "desc": "劝业场", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.207608,39.119064), "desc": "五大道", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.219297,39.126474), "desc": "小白楼", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.192826,39.111285), "desc": "新兴", 'descPos': new BMap.Size(-30, -30)}];
 
-var colorRed = {strokeWeight: 4, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
-var colorGreen = {strokeWeight: 4, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
-var polygons = [];
-for (var i = 0; i < totalOffices.length; i++) {
-    var theme = i % 2 == 0 ? colorRed : colorGreen;
 
-    var points = new Array();
-    totalOffices[i].forEach(function (p) {
-        points.push(new BMap.Point(p.lon, p.lat));
-    })
-    var polygon = new BMap.Polygon(points, theme); //建立多边形覆盖物
-    polygon.centerPoint = centers[i];
-
-    polygon.addEventListener("click", polygonClick);
-    polygons.push(polygon);
-    // map.addOverlay(polygon);  //添加覆盖物
-}
-function polygonClick(e) {
-    polygons.forEach(function (p) {
-        p.setFillOpacity(0.3);
-    });
-    var polygon = e.target;
-    polygon.setFillOpacity(0.6);
-    map.centerAndZoom(polygon.centerPoint.center, 16);
-
-    alert(polygon.centerPoint.desc);
-}
