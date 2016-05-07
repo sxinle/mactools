@@ -33,22 +33,17 @@
     //--------------------------------------画地图设中心点---------------------------------------------------
     var map = new BMap.Map("container", {enableMapClick: false});                    // 创建地图实例,关闭Poi点击
     map.setMapStyle({styleJson: style});
-    map.centerAndZoom(centers[2].center, 14);                           // 初始化地图，设置中心点坐标和地图级别
+    map.centerAndZoom(cameraCenters[2].mapcenter, cameraInitScale);                      // 初始化地图，设置中心点坐标和地图级别
 
     //--------------------------------------画地图缩放控件----------------------------------------------------
     var top_left_navigation = new BMap.NavigationControl(); //左上角，添加默认缩放平移控件
     map.addControl(top_left_navigation);
 
     //--------------------------------------画摄像头---------------------------------------------------------
-    var onlyOneDistCamera = true;// 只画当前区域摄像头flag
-    var currentIdx = 2;
     for (var i = 0; i < newCameras.length; i++) {
-        if (onlyOneDistCamera && currentIdx != i)
-            continue;
-
         newCameras[i].forEach(function (c) {
             var point = new BMap.Point(c.lon, c.lat);
-            var marker = new BMap.Marker(point, {icon: icon_camare_s});  // 创建标注
+            var marker = new BMap.Marker(point, {icon: camera_icons[i]});  // 创建标注
             marker.onclick = function () {
 //                showOverlay(point, street.addr, street.ip);
                 alert('click');
@@ -57,48 +52,19 @@
         })
     }
 
-    //--------------------------------------画行政区域--------------------------------------------------------
-    function polygonClick(e) {
-        polygons.forEach(function (p) {
-            p.setFillOpacity(0.3);
-        });
-        var polygon = e.target;
-        polygon.setFillOpacity(0.6);
-        map.centerAndZoom(polygon.centerPoint.center);
-        alert(polygon.centerPoint.desc);
-    }
-
-    // 画行政区
-    var colorRed = {strokeWeight: 4, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
-    var colorGreen = {strokeWeight: 4, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
-    var polygons = [];
-    for (var i = 0; i < totalOffices.length; i++) {
-        var theme = i % 2 == 0 ? colorRed : colorGreen;
-        var points = new Array();
-        totalOffices[i].forEach(function (p) {
-            points.push(new BMap.Point(p.lon, p.lat));
-        })
-        var polygon = new BMap.Polygon(points, theme); //建立多边形覆盖物
-        polygon.centerPoint = centers[i];
-        polygon.addEventListener("click", polygonClick);
-        polygons.push(polygon);
-        map.addOverlay(polygon);  //添加覆盖物
-    }
-
-    // 画行政区名称
-    centers.forEach(function (e) {
-        var center_p = e.center;
+    //--------------------------------------画摄像头重点区域名称---------------------------------------------------------
+    cameraCenters.forEach(function (e) {
+        var center_p = e.lablecenter;
         var desc = e.desc;
         var opts = {
             position: center_p,    // 指定文本标注所在的地理位置
-            offset: new BMap.Size(-30, -30)    //设置文本偏移量
         }
         var label = new BMap.Label(desc, opts);  // 创建文本标注对象
         label.setStyle({
             border: "none",
             color: "white",
             background: "transparent",
-            fontSize: "8px",
+            fontSize: "18px",
             height: "20px",
             lineHeight: "20px",
             fontFamily: "微软雅黑"
@@ -106,7 +72,57 @@
         map.addOverlay(label);
     });
 
+    //--------------------------------------画行政区域--------------------------------------------------------
+    var needDist = false;
+    if (needDist) {
+        function polygonClick(e) {
+            polygons.forEach(function (p) {
+                p.setFillOpacity(0.3);
+            });
+            var polygon = e.target;
+            polygon.setFillOpacity(0.6);
+            map.centerAndZoom(polygon.centerPoint.center);
+            alert(polygon.centerPoint.desc);
+        }
 
+        // 画行政区
+        var colorRed = {strokeWeight: 4, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
+        var colorGreen = {strokeWeight: 4, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
+        var polygons = [];
+        for (var i = 0; i < totalOffices.length; i++) {
+            var theme = i % 2 == 0 ? colorRed : colorGreen;
+            var points = new Array();
+            totalOffices[i].forEach(function (p) {
+                points.push(new BMap.Point(p.lon, p.lat));
+            })
+            var polygon = new BMap.Polygon(points, theme); //建立多边形覆盖物
+            polygon.centerPoint = centers[i];
+            polygon.addEventListener("click", polygonClick);
+            polygons.push(polygon);
+            map.addOverlay(polygon);  //添加覆盖物
+        }
+
+        // 画行政区名称
+        centers.forEach(function (e) {
+            var center_p = e.center;
+            var desc = e.desc;
+            var opts = {
+                position: center_p,    // 指定文本标注所在的地理位置
+                offset: new BMap.Size(-30, -30)    //设置文本偏移量
+            }
+            var label = new BMap.Label(desc, opts);  // 创建文本标注对象
+            label.setStyle({
+                border: "none",
+                color: "white",
+                background: "transparent",
+                fontSize: "8px",
+                height: "20px",
+                lineHeight: "20px",
+                fontFamily: "微软雅黑"
+            });
+            map.addOverlay(label);
+        });
+    }
 </script>
 
 </body>

@@ -21,51 +21,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="lonlat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lonlat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="990" column="8" selection-start-line="990" selection-start-column="8" selection-end-line="990" selection-end-column="8" />
+              <folding>
+                <element signature="e#156#5866#0" expanded="false" />
+                <element signature="e#5895#7990#0" expanded="false" />
+                <element signature="e#8023#12025#0" expanded="false" />
+                <element signature="e#12051#17764#0" expanded="false" />
+                <element signature="e#17798#23886#0" expanded="false" />
+                <element signature="e#23921#32151#0" expanded="false" />
+                <element signature="e#32183#47418#0" expanded="false" />
+                <element signature="e#47452#53447#0" expanded="false" />
+                <element signature="e#53477#62429#0" expanded="false" />
+                <element signature="e#62465#71530#0" expanded="false" />
+                <element signature="e#71892#72853#0" expanded="false" />
+                <element signature="e#72891#74376#0" expanded="false" />
+                <element signature="e#74415#76519#0" expanded="false" />
+                <element signature="e#76554#79357#0" expanded="false" />
+                <element signature="e#79395#82807#0" expanded="false" />
+                <element signature="e#82841#83805#0" expanded="false" />
+                <element signature="e#84724#86691#0" expanded="false" />
+                <element signature="e#86723#87596#0" expanded="false" />
+                <element signature="e#87626#97572#0" expanded="false" />
+                <element signature="e#97605#99307#0" expanded="false" />
+                <element signature="e#99340#106122#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="camera_zongyiyuan.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/camera_zongyiyuan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera_jiaojiequ.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_jiaojiequ.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera_jiefanglu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_jiefanglu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera_wudadao.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_wudadao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="camera_nanjinglu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_nanjinglu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
+            <state relative-caret-position="332">
+              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -83,16 +75,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/setting.js" />
         <option value="$PROJECT_DIR$/one.html" />
         <option value="$PROJECT_DIR$/allCamare.html" />
         <option value="$PROJECT_DIR$/dist.html" />
-        <option value="$PROJECT_DIR$/lonlat.js" />
+        <option value="$PROJECT_DIR$/setting.js" />
         <option value="$PROJECT_DIR$/camera_jiaojiequ.html" />
-        <option value="$PROJECT_DIR$/camera_zongyiyuan.html" />
+        <option value="$PROJECT_DIR$/lonlat.js" />
         <option value="$PROJECT_DIR$/camera_jiefanglu.html" />
         <option value="$PROJECT_DIR$/camera_nanjinglu.html" />
         <option value="$PROJECT_DIR$/camera_wudadao.html" />
+        <option value="$PROJECT_DIR$/camera_zongyiyuan.html" />
       </list>
     </option>
   </component>
@@ -142,16 +134,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="map" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -181,18 +163,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462541107166</updated>
-      <workItem from="1462541108238" duration="18103000" />
+      <workItem from="1462541108238" duration="21952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18103000" />
+    <option name="totallyTimeSpent" value="21952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1414" height="877" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2103374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2103374" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -220,11 +202,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/002.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -246,147 +223,183 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setting.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="254" column="31" selection-start-line="254" selection-start-column="31" selection-end-line="254" selection-end-column="31" />
-          <folding>
-            <element signature="e#374#3537#0" expanded="false" />
-            <element signature="e#380#523#0" expanded="false" />
-            <element signature="e#475#517#0" expanded="false" />
-            <element signature="e#529#674#0" expanded="false" />
-            <element signature="e#626#668#0" expanded="false" />
-            <element signature="e#680#824#0" expanded="false" />
-            <element signature="e#776#818#0" expanded="false" />
-            <element signature="e#830#976#0" expanded="false" />
-            <element signature="e#928#970#0" expanded="false" />
-            <element signature="e#982#1118#0" expanded="false" />
-            <element signature="e#1070#1112#0" expanded="false" />
-            <element signature="e#1124#1254#0" expanded="false" />
-            <element signature="e#1206#1248#0" expanded="false" />
-            <element signature="e#1260#1403#0" expanded="false" />
-            <element signature="e#1355#1397#0" expanded="false" />
-            <element signature="e#1409#1554#0" expanded="false" />
-            <element signature="e#1506#1548#0" expanded="false" />
-            <element signature="e#1560#1695#0" expanded="false" />
-            <element signature="e#1649#1689#0" expanded="false" />
-            <element signature="e#1701#1845#0" expanded="false" />
-            <element signature="e#1797#1839#0" expanded="false" />
-            <element signature="e#1851#1993#0" expanded="false" />
-            <element signature="e#1945#1987#0" expanded="false" />
-            <element signature="e#1999#2143#0" expanded="false" />
-            <element signature="e#2095#2137#0" expanded="false" />
-            <element signature="e#2149#2288#0" expanded="false" />
-            <element signature="e#2240#2282#0" expanded="false" />
-            <element signature="e#2294#2430#0" expanded="false" />
-            <element signature="e#2382#2424#0" expanded="false" />
-            <element signature="e#2436#2570#0" expanded="false" />
-            <element signature="e#2522#2564#0" expanded="false" />
-            <element signature="e#2576#2709#0" expanded="false" />
-            <element signature="e#2661#2703#0" expanded="false" />
-            <element signature="e#2715#2846#0" expanded="false" />
-            <element signature="e#2798#2840#0" expanded="false" />
-            <element signature="e#2852#2983#0" expanded="false" />
-            <element signature="e#2934#2977#0" expanded="false" />
-            <element signature="e#2989#3119#0" expanded="false" />
-            <element signature="e#3071#3113#0" expanded="false" />
-            <element signature="e#3125#3260#0" expanded="false" />
-            <element signature="e#3211#3254#0" expanded="false" />
-            <element signature="e#3266#3400#0" expanded="false" />
-            <element signature="e#3351#3394#0" expanded="false" />
-            <element signature="e#3406#3535#0" expanded="false" />
-            <element signature="e#3487#3529#0" expanded="false" />
-            <element signature="e#3675#3716#0" expanded="false" />
-            <element signature="e#3939#5594#0" expanded="false" />
-            <element signature="e#5638#5817#0" expanded="false" />
-            <element signature="e#5820#5928#0" expanded="false" />
-            <element signature="e#6611#6618#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        <state relative-caret-position="496">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lonlat.js">
+    <entry file="file://$PROJECT_DIR$/002.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02s.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="1080" column="4" selection-start-line="1080" selection-start-column="4" selection-end-line="1080" selection-end-column="4" />
+        <state relative-caret-position="240">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
           <folding>
-            <element signature="e#155#5865#0" expanded="false" />
-            <element signature="e#5894#7989#0" expanded="false" />
-            <element signature="e#8022#12024#0" expanded="false" />
-            <element signature="e#12050#17763#0" expanded="false" />
-            <element signature="e#17797#23885#0" expanded="false" />
-            <element signature="e#23920#32150#0" expanded="false" />
-            <element signature="e#32182#47417#0" expanded="false" />
-            <element signature="e#47451#53446#0" expanded="false" />
-            <element signature="e#53476#62428#0" expanded="false" />
-            <element signature="e#62464#71529#0" expanded="false" />
-            <element signature="e#71891#72852#0" expanded="false" />
-            <element signature="e#72890#74375#0" expanded="false" />
-            <element signature="e#74414#76518#0" expanded="false" />
-            <element signature="e#76553#79356#0" expanded="false" />
-            <element signature="e#79394#82806#0" expanded="false" />
-            <element signature="e#82840#83804#0" expanded="false" />
-            <element signature="e#84722#86689#0" expanded="false" />
-            <element signature="e#86721#87594#0" expanded="false" />
-            <element signature="e#87624#97570#0" expanded="false" />
-            <element signature="e#97603#99305#0" expanded="false" />
-            <element signature="e#99338#106120#0" expanded="false" />
+            <element signature="e#125#268#0" expanded="false" />
+            <element signature="e#220#262#0" expanded="false" />
+            <element signature="e#274#419#0" expanded="false" />
+            <element signature="e#371#413#0" expanded="false" />
+            <element signature="e#425#569#0" expanded="false" />
+            <element signature="e#521#563#0" expanded="false" />
+            <element signature="e#575#721#0" expanded="false" />
+            <element signature="e#673#715#0" expanded="false" />
+            <element signature="e#727#863#0" expanded="false" />
+            <element signature="e#815#857#0" expanded="false" />
+            <element signature="e#869#999#0" expanded="false" />
+            <element signature="e#951#993#0" expanded="false" />
+            <element signature="e#1005#1148#0" expanded="false" />
+            <element signature="e#1100#1142#0" expanded="false" />
+            <element signature="e#1154#1299#0" expanded="false" />
+            <element signature="e#1251#1293#0" expanded="false" />
+            <element signature="e#1305#1440#0" expanded="false" />
+            <element signature="e#1394#1434#0" expanded="false" />
+            <element signature="e#1446#1590#0" expanded="false" />
+            <element signature="e#1542#1584#0" expanded="false" />
+            <element signature="e#1596#1738#0" expanded="false" />
+            <element signature="e#1690#1732#0" expanded="false" />
+            <element signature="e#1744#1888#0" expanded="false" />
+            <element signature="e#1840#1882#0" expanded="false" />
+            <element signature="e#1894#2033#0" expanded="false" />
+            <element signature="e#1985#2027#0" expanded="false" />
+            <element signature="e#2039#2175#0" expanded="false" />
+            <element signature="e#2127#2169#0" expanded="false" />
+            <element signature="e#2181#2315#0" expanded="false" />
+            <element signature="e#2267#2309#0" expanded="false" />
+            <element signature="e#2321#2454#0" expanded="false" />
+            <element signature="e#2406#2448#0" expanded="false" />
+            <element signature="e#2460#2591#0" expanded="false" />
+            <element signature="e#2543#2585#0" expanded="false" />
+            <element signature="e#2597#2728#0" expanded="false" />
+            <element signature="e#2679#2722#0" expanded="false" />
+            <element signature="e#2734#2864#0" expanded="false" />
+            <element signature="e#2816#2858#0" expanded="false" />
+            <element signature="e#2870#3005#0" expanded="false" />
+            <element signature="e#2956#2999#0" expanded="false" />
+            <element signature="e#3011#3145#0" expanded="false" />
+            <element signature="e#3096#3139#0" expanded="false" />
+            <element signature="e#3151#3280#0" expanded="false" />
+            <element signature="e#3232#3274#0" expanded="false" />
+            <element signature="e#3420#3461#0" expanded="false" />
+            <element signature="e#3684#5339#0" expanded="false" />
+            <element signature="e#5383#5562#0" expanded="false" />
+            <element signature="e#5565#5673#0" expanded="false" />
+            <element signature="e#6356#6363#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/allCamare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        <state relative-caret-position="-208">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02s1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02s2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02s3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02s4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02s5.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/camera_jiaojiequ.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="176">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#2937#4745#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera_jiefanglu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="368">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera_nanjinglu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
+        <state relative-caret-position="368">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera_wudadao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        <state relative-caret-position="368">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lonlat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="990" column="8" selection-start-line="990" selection-start-column="8" selection-end-line="990" selection-end-column="8" />
+          <folding>
+            <element signature="e#156#5866#0" expanded="false" />
+            <element signature="e#5895#7990#0" expanded="false" />
+            <element signature="e#8023#12025#0" expanded="false" />
+            <element signature="e#12051#17764#0" expanded="false" />
+            <element signature="e#17798#23886#0" expanded="false" />
+            <element signature="e#23921#32151#0" expanded="false" />
+            <element signature="e#32183#47418#0" expanded="false" />
+            <element signature="e#47452#53447#0" expanded="false" />
+            <element signature="e#53477#62429#0" expanded="false" />
+            <element signature="e#62465#71530#0" expanded="false" />
+            <element signature="e#71892#72853#0" expanded="false" />
+            <element signature="e#72891#74376#0" expanded="false" />
+            <element signature="e#74415#76519#0" expanded="false" />
+            <element signature="e#76554#79357#0" expanded="false" />
+            <element signature="e#79395#82807#0" expanded="false" />
+            <element signature="e#82841#83805#0" expanded="false" />
+            <element signature="e#84724#86691#0" expanded="false" />
+            <element signature="e#86723#87596#0" expanded="false" />
+            <element signature="e#87626#97572#0" expanded="false" />
+            <element signature="e#97605#99307#0" expanded="false" />
+            <element signature="e#99340#106122#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/camera_zongyiyuan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+        <state relative-caret-position="332">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
           <folding />
         </state>
       </provider>

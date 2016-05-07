@@ -1,5 +1,6 @@
 
 //================OLD VERSION!!!========================= POI摄像头点 ===============================================================
+
 // 食品街
 var foodStreet = [{'order':'1',   'ip':'118.118.3.1','addr':'甘肃路-多伦道-1','dir':'西北角','lon':'117.191268','lat':'39.130923'},
     {'order':'2',   'ip':'118.118.3.2','addr':'甘肃路-多伦道-2','dir':'西北角','lon':'117.191295','lat':'39.130902'},
@@ -850,6 +851,7 @@ var centers = [{'center': new BMap.Point(117.192492,39.133722), "desc": "南市"
     {'center': new BMap.Point(117.192826,39.111285), "desc": "新兴", 'descPos': new BMap.Size(-30, -30)}];
 
 //================================================= POI摄像头点 ===============================================================
+
 // 解放路摄像头
 var ca_jiefanglu = [{'ip':'118.118.2.106','addr':'解放路与保定道交口','dir':'1001080006','lon':'117.220454','lat':'39.129263'},
     {'ip':'118.118.2.107','addr':'解放路与大连道交口','dir':'1001080007','lon':'117.219174','lat':'39.130596'},
@@ -1079,3 +1081,20 @@ var ca_jiaojiequ = [{'ip':'118.118.2.105','addr':'新张自忠路津门公寓(�
     {'ip':'118.118.7.82','addr':'河沿路-卫津路-2','dir':'东北角','lon':'117.186116','lat':'39.107823'}];
 
 var newCameras = [ca_jiefanglu, ca_nanjinglu, ca_wudadao, ca_zongyiyuan, ca_jiaojiequ];
+
+// 摄像头图片
+var cameraSize =new BMap.Size(17, 17);
+var icon_camare_1 = new BMap.Icon("02s1.png", cameraSize);
+var icon_camare_2 = new BMap.Icon("02s2.png", cameraSize);
+var icon_camare_3 = new BMap.Icon("02s3.png", cameraSize);
+var icon_camare_4 = new BMap.Icon("02s4.png", cameraSize);
+var icon_camare_5 = new BMap.Icon("02s5.png", cameraSize);
+var camera_icons = [icon_camare_1, icon_camare_2, icon_camare_3, icon_camare_4, icon_camare_5];
+// 终点区域中心点
+var cameraCenters = [{'mapcenter': new BMap.Point(117.217598,39.128665), 'lablecenter':new BMap.Point(117.217998,39.129665), 'desc': '解放路'},
+                     {'mapcenter': new BMap.Point(117.20495,39.12399), 'lablecenter':new BMap.Point(117.20095,39.12499), 'desc': '南京路'},
+                     {'mapcenter': new BMap.Point(117.205704,39.114557), 'lablecenter':new BMap.Point(117.205704,39.114557), 'desc': '五大道'},
+                     {'mapcenter': new BMap.Point(117.186876,39.124802), 'lablecenter':new BMap.Point(117.188876,39.122802), 'desc': '总医院'},
+                     {'mapcenter': new BMap.Point(117.226042,39.123683), 'lablecenter':new BMap.Point(117.226042,39.123683), 'desc': '交界区'}];
+
+var cameraInitScale = 16;
