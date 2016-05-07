@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="allCamare.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/allCamare.html">
+      <file leaf-file-name="dist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+            <state relative-caret-position="400">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,9 @@
       <list>
         <option value="$PROJECT_DIR$/setting.js" />
         <option value="$PROJECT_DIR$/one.html" />
-        <option value="$PROJECT_DIR$/lonlat.js" />
         <option value="$PROJECT_DIR$/allCamare.html" />
+        <option value="$PROJECT_DIR$/dist.html" />
+        <option value="$PROJECT_DIR$/lonlat.js" />
       </list>
     </option>
   </component>
@@ -114,7 +115,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -135,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462541107166</updated>
-      <workItem from="1462541108238" duration="5599000" />
+      <workItem from="1462541108238" duration="12629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5599000" />
+    <option name="totallyTimeSpent" value="12629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1414" height="877" extended-state="6" />
@@ -168,7 +169,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -182,50 +185,141 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setting.js">
+    <entry file="file://$PROJECT_DIR$/tmp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="224" column="37" selection-start-line="224" selection-start-column="37" selection-end-line="224" selection-end-column="37" />
-          <folding>
-            <element signature="e#374#3537#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lonlat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="582" column="109" selection-start-line="582" selection-start-column="109" selection-end-line="582" selection-end-column="109" />
-          <folding>
-            <element signature="e#24#5734#0" expanded="false" />
-            <element signature="e#5763#7858#0" expanded="false" />
-            <element signature="e#7891#11893#0" expanded="false" />
-            <element signature="e#11919#17632#0" expanded="false" />
-            <element signature="e#17666#23754#0" expanded="false" />
-            <element signature="e#23789#32019#0" expanded="false" />
-            <element signature="e#32051#47286#0" expanded="false" />
-            <element signature="e#47320#53315#0" expanded="false" />
-            <element signature="e#53345#62297#0" expanded="false" />
-            <element signature="e#62318#71383#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/one.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="496">
+          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/allCamare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="60" column="56" selection-start-line="60" selection-start-column="56" selection-end-line="60" selection-end-column="56" />
+        <state relative-caret-position="304">
+          <caret line="62" column="79" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/setting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="240" column="46" selection-start-line="240" selection-start-column="46" selection-end-line="240" selection-end-column="46" />
+          <folding>
+            <element signature="e#374#3537#0" expanded="false" />
+            <element signature="e#380#523#0" expanded="false" />
+            <element signature="e#475#517#0" expanded="false" />
+            <element signature="e#529#674#0" expanded="false" />
+            <element signature="e#626#668#0" expanded="false" />
+            <element signature="e#680#824#0" expanded="false" />
+            <element signature="e#776#818#0" expanded="false" />
+            <element signature="e#830#976#0" expanded="false" />
+            <element signature="e#928#970#0" expanded="false" />
+            <element signature="e#982#1118#0" expanded="false" />
+            <element signature="e#1070#1112#0" expanded="false" />
+            <element signature="e#1124#1254#0" expanded="false" />
+            <element signature="e#1206#1248#0" expanded="false" />
+            <element signature="e#1260#1403#0" expanded="false" />
+            <element signature="e#1355#1397#0" expanded="false" />
+            <element signature="e#1409#1554#0" expanded="false" />
+            <element signature="e#1506#1548#0" expanded="false" />
+            <element signature="e#1560#1695#0" expanded="false" />
+            <element signature="e#1649#1689#0" expanded="false" />
+            <element signature="e#1701#1845#0" expanded="false" />
+            <element signature="e#1797#1839#0" expanded="false" />
+            <element signature="e#1851#1993#0" expanded="false" />
+            <element signature="e#1945#1987#0" expanded="false" />
+            <element signature="e#1999#2143#0" expanded="false" />
+            <element signature="e#2095#2137#0" expanded="false" />
+            <element signature="e#2149#2288#0" expanded="false" />
+            <element signature="e#2240#2282#0" expanded="false" />
+            <element signature="e#2294#2430#0" expanded="false" />
+            <element signature="e#2382#2424#0" expanded="false" />
+            <element signature="e#2436#2570#0" expanded="false" />
+            <element signature="e#2522#2564#0" expanded="false" />
+            <element signature="e#2576#2709#0" expanded="false" />
+            <element signature="e#2661#2703#0" expanded="false" />
+            <element signature="e#2715#2846#0" expanded="false" />
+            <element signature="e#2798#2840#0" expanded="false" />
+            <element signature="e#2852#2983#0" expanded="false" />
+            <element signature="e#2934#2977#0" expanded="false" />
+            <element signature="e#2989#3119#0" expanded="false" />
+            <element signature="e#3071#3113#0" expanded="false" />
+            <element signature="e#3125#3260#0" expanded="false" />
+            <element signature="e#3211#3254#0" expanded="false" />
+            <element signature="e#3266#3400#0" expanded="false" />
+            <element signature="e#3351#3394#0" expanded="false" />
+            <element signature="e#3406#3535#0" expanded="false" />
+            <element signature="e#3487#3529#0" expanded="false" />
+            <element signature="e#3675#3716#0" expanded="false" />
+            <element signature="e#3939#5594#0" expanded="false" />
+            <element signature="e#5638#5817#0" expanded="false" />
+            <element signature="e#5820#5928#0" expanded="false" />
+            <element signature="e#6318#6796#0" expanded="false" />
+            <element signature="e#6611#6618#0" expanded="false" />
+            <element signature="e#6671#6702#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lonlat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="851" column="0" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+          <folding>
+            <element signature="e#163#5873#0" expanded="false" />
+            <element signature="e#5902#7997#0" expanded="false" />
+            <element signature="e#8030#12032#0" expanded="false" />
+            <element signature="e#12058#17771#0" expanded="false" />
+            <element signature="e#17805#23893#0" expanded="false" />
+            <element signature="e#23928#32158#0" expanded="false" />
+            <element signature="e#32190#47425#0" expanded="false" />
+            <element signature="e#47459#53454#0" expanded="false" />
+            <element signature="e#53484#62436#0" expanded="false" />
+            <element signature="e#62472#71537#0" expanded="false" />
+            <element signature="e#71899#72860#0" expanded="false" />
+            <element signature="e#72898#74383#0" expanded="false" />
+            <element signature="e#74422#76526#0" expanded="false" />
+            <element signature="e#76561#79364#0" expanded="false" />
+            <element signature="e#79402#82814#0" expanded="false" />
+            <element signature="e#82848#83812#0" expanded="false" />
+            <element signature="e#83951#84389#0" expanded="false" />
+            <element signature="e#84642#85052#0" expanded="false" />
+            <element signature="e#84768#84826#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

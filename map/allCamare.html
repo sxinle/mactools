@@ -81,6 +81,30 @@
     // 添加到地图当中
     map.addControl(ranking);
 
+
+    //--------------------------------------画行政区域--------------------------------------
+    var colorRed = {strokeWeight: 4, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
+    var colorGreen = {strokeWeight: 4, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
+    for (var i = 0; i < totalOffices.length; i++) {
+        var theme = i % 2 == 0 ? colorRed : colorGreen;
+
+        var points = new Array();
+        totalOffices[i].forEach(function (p) {
+            points.push(new BMap.Point(p.lon, p.lat));
+        })
+        var polygon = new BMap.Polygon(points, theme); //建立多边形覆盖物
+
+        polygon.addEventListener("click", polygonClick);
+
+        map.addOverlay(polygon);  //添加覆盖物
+
+    }
+
+    function polygonClick() {
+        alert(point);
+    }
+
+
 </script>
 
 </body>

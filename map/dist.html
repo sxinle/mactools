@@ -24,6 +24,7 @@
         //v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O&callback=initialize"
     </script>
     <script src="setting.js"></script>
+    <script src="lonlat.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
     var map = new BMap.Map("container", {enableMapClick: false});                    // 创建地图实例,关闭Poi点击
     map.setMapStyle({styleJson: style});
     var point = new BMap.Point(117.192519, 39.112071);      // 创建点坐标
-    map.centerAndZoom(point, 15);                           // 初始化地图，设置中心点坐标和地图级别
+    map.centerAndZoom(point, 16);                           // 初始化地图，设置中心点坐标和地图级别
 
     // 比例尺改变,更改图标大小
     map.addEventListener("zoomend", zoomend);
@@ -51,36 +52,18 @@
     var top_left_navigation = new BMap.NavigationControl(); //左上角，添加默认缩放平移控件
     map.addControl(top_left_navigation);
 
-    //--------------------------------------画POI点--------------------------------------------------------
-    var pt = new BMap.Point(117.192519, 39.112071);
-    var marker = new BMap.Marker(pt, {icon: icon_camare});  // 创建标注
-    marker.onclick = function () {
-        showOverlay(pt, "位置11111", "问题11111");
-    }
-    map.addOverlay(marker);                                 // 将标注添加到地图中
-
-    var pt2 = new BMap.Point(117.199519, 39.119071);
-    var marker2 = new BMap.Marker(pt2, {icon: icon_truck});  // 创建标注
-    marker2.onclick = function () {
-        showOverlay(pt2, "位置22222", "问题22222");
-    }
-    map.addOverlay(marker2);                                 // 将标注添加到地图中
-
-    //--------------------------------------画marker提示信息的自定义覆盖层--------------------------------------
-    var markerOverlay;
-    function showOverlay(point, pos, question) {
-        hideOverlay();
-        markerOverlay = new MarkerOverlay(point, pos, question);
-        map.addOverlay(markerOverlay);
-        hideOverlay = function () {
-            map.removeOverlay(markerOverlay);
-        };
-    }
 
     // 创建控件
     var ranking = new TopRightRanking();
     // 添加到地图当中
     map.addControl(ranking);
+
+
+    //--------------------------------------画行政区域--------------------------------------
+    polygons.forEach(function (p) {
+        map.addOverlay(p);  //添加覆盖物
+    });
+
 
 </script>
 
