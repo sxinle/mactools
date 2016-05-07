@@ -21,11 +21,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dist.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dist.html">
+      <file leaf-file-name="camera_zongyiyuan.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/camera_zongyiyuan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state relative-caret-position="364">
+              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera_jiaojiequ.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera_jiaojiequ.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera_jiefanglu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera_jiefanglu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera_wudadao.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera_wudadao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="camera_nanjinglu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/camera_nanjinglu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -46,8 +86,13 @@
         <option value="$PROJECT_DIR$/setting.js" />
         <option value="$PROJECT_DIR$/one.html" />
         <option value="$PROJECT_DIR$/allCamare.html" />
-        <option value="$PROJECT_DIR$/lonlat.js" />
         <option value="$PROJECT_DIR$/dist.html" />
+        <option value="$PROJECT_DIR$/lonlat.js" />
+        <option value="$PROJECT_DIR$/camera_jiaojiequ.html" />
+        <option value="$PROJECT_DIR$/camera_zongyiyuan.html" />
+        <option value="$PROJECT_DIR$/camera_jiefanglu.html" />
+        <option value="$PROJECT_DIR$/camera_nanjinglu.html" />
+        <option value="$PROJECT_DIR$/camera_wudadao.html" />
       </list>
     </option>
   </component>
@@ -115,7 +160,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -136,12 +181,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1462541107166</updated>
-      <workItem from="1462541108238" duration="16063000" />
+      <workItem from="1462541108238" duration="18103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16063000" />
+    <option name="totallyTimeSpent" value="18103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1414" height="877" extended-state="6" />
@@ -197,14 +242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/allCamare.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="62" column="79" selection-start-line="62" selection-start-column="79" selection-end-line="62" selection-end-column="79" />
           <folding />
         </state>
       </provider>
@@ -268,35 +305,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lonlat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="845" column="47" selection-start-line="845" selection-start-column="47" selection-end-line="845" selection-end-column="47" />
+        <state relative-caret-position="632">
+          <caret line="1080" column="4" selection-start-line="1080" selection-start-column="4" selection-end-line="1080" selection-end-column="4" />
           <folding>
-            <marker date="1462598701000" expanded="false" signature="163:5873" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="5902:7997" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="8030:12032" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="12058:17771" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="17805:23893" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="23928:32158" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="32190:47425" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="47459:53454" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="53484:62436" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="62472:71537" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="71899:72860" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="72898:74383" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="74422:76526" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="76561:79364" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="79402:82814" placeholder="[...]" />
-            <marker date="1462598701000" expanded="false" signature="82848:83812" placeholder="[...]" />
+            <element signature="e#155#5865#0" expanded="false" />
+            <element signature="e#5894#7989#0" expanded="false" />
+            <element signature="e#8022#12024#0" expanded="false" />
+            <element signature="e#12050#17763#0" expanded="false" />
+            <element signature="e#17797#23885#0" expanded="false" />
+            <element signature="e#23920#32150#0" expanded="false" />
+            <element signature="e#32182#47417#0" expanded="false" />
+            <element signature="e#47451#53446#0" expanded="false" />
+            <element signature="e#53476#62428#0" expanded="false" />
+            <element signature="e#62464#71529#0" expanded="false" />
+            <element signature="e#71891#72852#0" expanded="false" />
+            <element signature="e#72890#74375#0" expanded="false" />
+            <element signature="e#74414#76518#0" expanded="false" />
+            <element signature="e#76553#79356#0" expanded="false" />
+            <element signature="e#79394#82806#0" expanded="false" />
+            <element signature="e#82840#83804#0" expanded="false" />
+            <element signature="e#84722#86689#0" expanded="false" />
+            <element signature="e#86721#87594#0" expanded="false" />
+            <element signature="e#87624#97570#0" expanded="false" />
+            <element signature="e#97603#99305#0" expanded="false" />
+            <element signature="e#99338#106120#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist.html">
+    <entry file="file://$PROJECT_DIR$/allCamare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="364">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera_jiaojiequ.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera_jiefanglu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera_nanjinglu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="32" column="101" selection-start-line="32" selection-start-column="101" selection-end-line="32" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera_wudadao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/camera_zongyiyuan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
           <folding />
         </state>
       </provider>
