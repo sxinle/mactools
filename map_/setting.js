@@ -166,16 +166,16 @@ var style = [
 hideOverlay = function() {
     map.removeOverlay(markerOverlay);
 };
-function MarkerOverlay(point, pos, question) {
+function MarkerOverlay(point, addr, dir, ip, dist) {
     this._point = point;
-    this.pos = pos;
-    this.question = question;
+    this.addr = addr;
+    this.dir = dir;
+    this.ip = ip;
+    this.dist = dist;
 }
 MarkerOverlay.prototype = new BMap.Overlay();
 MarkerOverlay.prototype.initialize = function (mp) {
     this._map = mp;
-
-
 
     var div = this._div = document.createElement("div");
     div.style.position = "relative"
@@ -200,7 +200,7 @@ MarkerOverlay.prototype.initialize = function (mp) {
     var span2 = this._span2 = document.createElement("span");
     span2.style.color = "#75bdea";
     span2.style.margin="5px 0";
-    span2.appendChild(document.createTextNode(this.pos));
+    span2.appendChild(document.createTextNode(this.addr));
     subDiv.appendChild(span2);
 
     subDiv.appendChild(document.createElement("br"));
@@ -215,9 +215,39 @@ MarkerOverlay.prototype.initialize = function (mp) {
     var span4 = this._span4 = document.createElement("span");
     span4.style.color = "#75bdea";
     span4.style.margin="5px 0";
-    var str = isNaN(this.question) ? this.question : "未知方位";
+    var str = isNaN(this.dir) ? this.dir : "未知方位";
     span4.appendChild(document.createTextNode(str));
     subDiv.appendChild(span4);
+
+    subDiv.appendChild(document.createElement("br"));
+    subDiv.appendChild(document.createElement("br"));
+
+    var span5 = this._span5 = document.createElement("span");
+    span5.appendChild(document.createTextNode("区域："));
+    span5.style.margin="5px 0";
+
+    subDiv.appendChild(span5);
+
+    var span6 = this._span6 = document.createElement("span");
+    span6.style.color = "#75bdea";
+    span6.style.margin="5px 0";
+    span6.appendChild(document.createTextNode(this.dist));
+    subDiv.appendChild(span6);
+
+    subDiv.appendChild(document.createElement("br"));
+    subDiv.appendChild(document.createElement("br"));
+
+    var span7 = this._span7 = document.createElement("span");
+    span7.appendChild(document.createTextNode("IP："));
+    span7.style.margin="5px 0";
+
+    subDiv.appendChild(span7);
+
+    var span8 = this._span8 = document.createElement("span");
+    span8.style.color = "#75bdea";
+    span8.style.margin="5px 0";
+    span8.appendChild(document.createTextNode(this.ip));
+    subDiv.appendChild(span8);
 
     subDiv.appendChild(document.createElement("br"));
     subDiv.appendChild(document.createElement("br"));
@@ -297,8 +327,8 @@ window.scores = scores;
 var data = scores.shift();
 window.data = data;
 TopRightRanking.prototype.initialize = function (map) {
-   var div = document.createElement("div");   
-    div.style.right = '0px'; 
+   var div = document.createElement("div");
+    div.style.right = '0px';
     div.style.width = "100%";
 
 
@@ -360,7 +390,7 @@ TopRightRanking.prototype.initialize = function (map) {
         title.style.textAlign = 'center';
         var txt = document.createTextNode("百日会展成绩趋势  ("+row.name+")");
         title.appendChild(txt);
-        detailpane.appendChild(title);        
+        detailpane.appendChild(title);
 
         var retbtn = document.createElement("button");
         retbtn.color = "#000"
@@ -387,13 +417,13 @@ TopRightRanking.prototype.initialize = function (map) {
             detailpane.style.display = 'none';
             sumarypane.style.display = 'block';
             //fixme show are reloc map
-            map.centerAndZoom(centers[2].center, 14);    
+            map.centerAndZoom(centers[2].center, 14);
             fillareas();
         }
 
         retbtn.addEventListener("click",returnaction);
         retbtn.addEventListener("touchend",returnaction);
-        
+
         var svg = document.createElement("iframe");
         svg.style.border = '0px';
         svg.style.width="100%";
@@ -406,7 +436,7 @@ TopRightRanking.prototype.initialize = function (map) {
         svg.style.height="100px";
         detailpane.appendChild(svg);
         detailpane.appendChild(retbtn);
-        div.appendChild(detailpane);      
+        div.appendChild(detailpane);
     };
 
     window.fillareas = function(){
@@ -420,7 +450,7 @@ TopRightRanking.prototype.initialize = function (map) {
                 console.log(name,"green");
                 p.setFillColor('green');
                 p.setStrokeColor('green');
-            }else{                
+            }else{
                 p.setFillColor('red');
                 p.setStrokeColor('red');
             }
@@ -433,12 +463,12 @@ TopRightRanking.prototype.initialize = function (map) {
         var row = document.createElement("div");
 
         if(rd.name!=="单位"){
-            row.addEventListener("touchstart", function(){ 
+            row.addEventListener("touchstart", function(){
                 row.style.background = 'rgba(224, 219, 219, 0.18)';
             });
 
 
-            var detailAction = function(e){ 
+            var detailAction = function(e){
                 console.log(e.target);
                 window.sss = e;
                 row.style.background = 'transparent';
@@ -448,8 +478,8 @@ TopRightRanking.prototype.initialize = function (map) {
 
                 // select[0].setFillColor('lightblue');
                 //fixme 中心点定位，then polygon.hide();
-                map.centerAndZoom(select[0].centerPoint.center, 16);    
-                polygon.hide();                      
+                map.centerAndZoom(select[0].centerPoint.center, 16);
+                polygon.hide();
                      // 初始化地图，设置中心点坐标和地图级别
 
                 showDetail(rd);
@@ -500,8 +530,8 @@ TopRightRanking.prototype.initialize = function (map) {
 
 
     appendRow({name:"单位",total:"得分",order:"排名"});
-    data.scores.forEach(function(d){        
-        appendRow(d);    
+    data.scores.forEach(function(d){
+        appendRow(d);
     });
     div.appendChild(sumarypane);
 

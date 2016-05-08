@@ -37,9 +37,9 @@
 
 
     var markerOverlay;
-    function showOverlay(point, pos, question) {
+    function showOverlay(point, addr, dir, ip, dist) {
         hideOverlay();
-        markerOverlay = new MarkerOverlay(point, pos, question);
+        markerOverlay = new MarkerOverlay(point, addr, dir, ip, dist);
         map.addOverlay(markerOverlay);
         hideOverlay = function () {
             map.removeOverlay(markerOverlay);
@@ -51,19 +51,27 @@
 
     //--------------------------------------画摄像头---------------------------------------------------------
     for (var i = 0; i < newCameras.length; i++) {
+        if(i != 3) {// 只显示一个区域的
+            continue;
+        }
         newCameras[i].forEach(function (c) {
             var point = new BMap.Point(c.lon, c.lat);
             var marker = new BMap.Marker(point, {icon: camera_icons[i]});  // 创建标注
             marker.onclick = function () {
-                showOverlay(point, c.addr, c.dir);
+                showOverlay(point, c.addr, c.dir, c.ip, '总医院');
                 map.centerAndZoom(point, cameraInitScale===18?cameraInitScale:cameraInitScale+2);  
             }
+            var label = new BMap.Label(c.addr, {offset: new BMap.Size(20, -10)});
+            label.setStyle({ color: "white", border: "none", background: "none"});
+            marker.setLabel(label);
             map.addOverlay(marker);                                 // 将标注添加到地图中
         })
     }
 
     //--------------------------------------画摄像头重点区域名称---------------------------------------------------------
-    cameraCenters.forEach(function (e) {
+    for(var i = 0; i<cameraCenters.length; i++) {
+        if(i != 3) continue;
+        var e = cameraCenters[i];
         var center_p = e.lablecenter;
         var desc = e.desc;
         var opts = {
@@ -80,7 +88,7 @@
             fontFamily: "微软雅黑"
         });
         map.addOverlay(label);
-    });
+    }
 
     //--------------------------------------画行政区域--------------------------------------------------------
     var needDist = false;
