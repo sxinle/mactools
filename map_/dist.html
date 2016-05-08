@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Hello, World</title>
+    <title>百日会展-成绩展示</title>
     <style type="text/css">
         html {
             height: 100%
@@ -18,13 +18,24 @@
         #container {
             height: 100%
         }
+
+
+
+    .axis path,
+    .axis line,
+    .line {
+        stroke: #000;
+        fill: none;
+    }
     </style>
+
+
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O">
-        //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O"
-        //v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=TKjIzns3qyTjZngvFx1SCL3GsGTlMI4O&callback=initialize"
     </script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="setting.js"></script>
     <script src="lonlat.js"></script>
+
 </head>
 
 <body>
@@ -67,9 +78,12 @@
     }
 
     // 画行政区
-    var colorRed = {strokeWeight: 4, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
-    var colorGreen = {strokeWeight: 4, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
+    var colorRed = {strokeWeight: 2, strokeColor: "red", fillColor: "red", fillOpacity: 0.3};
+    var colorGreen = {strokeWeight: 2, strokeColor: "green", fillColor: "green", fillOpacity: 0.3};
+
     var polygons = [];
+
+
     for (var i = 0; i < totalOffices.length; i++) {
         var theme = i % 2 == 0 ? colorRed : colorGreen;
         var points = new Array();
@@ -78,10 +92,15 @@
         })
         var polygon = new BMap.Polygon(points, theme); //建立多边形覆盖物
         polygon.centerPoint = centers[i];
+        polygon.tagname = centers[i].desc;
         polygon.addEventListener("click", polygonClick);
+
         polygons.push(polygon);
         map.addOverlay(polygon);  //添加覆盖物
     }
+    window.map = map;
+
+    window.polygons = polygons;
 
     // 画行政区名称
     centers.forEach(function (e) {
@@ -96,13 +115,19 @@
             border: "none",
             color: "white",
             background: "transparent",
-            fontSize: "8px",
+            fontSize: "12px",
             height: "20px",
             lineHeight: "20px",
             fontFamily: "微软雅黑"
         });
+
         map.addOverlay(label);
     });
+
+
+    fillareas();
+
+
 
 
 

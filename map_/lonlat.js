@@ -843,12 +843,12 @@ var xinxingOffice = [{'no':'8cb5b115-2cdd-4316-876c-813f155e35b0','lat':'39.1077
 
 var totalOffices = [nanshiOffice, nanyingmenOffice, quanyechangOffice, wudadaoOffice, xiaobailouOffice, xinxingOffice];
 
-var centers = [{'center': new BMap.Point(117.192492,39.133722), "desc": "南市", 'descPos': new BMap.Size(-30, -30)},
-    {'center': new BMap.Point(117.192217,39.121619), "desc": "南营门", 'descPos': new BMap.Size(-30, -30)},
-    {'center': new BMap.Point(117.201882,39.130868), "desc": "劝业场", 'descPos': new BMap.Size(-30, -30)},
-    {'center': new BMap.Point(117.207608,39.119064), "desc": "五大道", 'descPos': new BMap.Size(-30, -30)},
-    {'center': new BMap.Point(117.219297,39.126474), "desc": "小白楼", 'descPos': new BMap.Size(-30, -30)},
-    {'center': new BMap.Point(117.192826,39.111285), "desc": "新兴", 'descPos': new BMap.Size(-30, -30)}];
+var centers = [{'center': new BMap.Point(117.192492,39.133722), "desc": "南市街", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.192217,39.121619), "desc": "南营门街", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.201882,39.130868), "desc": "劝业场街", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.207608,39.119064), "desc": "五大道街", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.219297,39.126474), "desc": "小白楼街", 'descPos': new BMap.Size(-30, -30)},
+    {'center': new BMap.Point(117.192826,39.111285), "desc": "新兴街", 'descPos': new BMap.Size(-30, -30)}];
 
 //================================================= POI摄像头点 ===============================================================
 
