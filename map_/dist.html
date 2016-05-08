@@ -44,7 +44,8 @@
     //--------------------------------------画地图设中心点---------------------------------------------------
     var map = new BMap.Map("container", {enableMapClick: false});                    // 创建地图实例,关闭Poi点击
     map.setMapStyle({styleJson: style});
-    map.centerAndZoom(centers[2].center, 14);                           // 初始化地图，设置中心点坐标和地图级别
+//    map.centerAndZoom(centers[2].center, 14);                           // 初始化地图，设置中心点坐标和地图级别
+    map.centerAndZoom(new BMap.Point(117.201882,39.100868), 14);                           // 初始化地图，设置中心点坐标和地图级别
 
     // 比例尺改变,更改图标大小
     //    map.addEventListener("zoomend", zoomend);

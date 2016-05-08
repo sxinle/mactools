@@ -21,6 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dist.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="c_jfl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c_jfl.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,8 +44,8 @@
       <file leaf-file-name="lonlat.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lonlat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="1099" column="4" selection-start-line="1099" selection-start-column="4" selection-end-line="1099" selection-end-column="4" />
+            <state relative-caret-position="280">
+              <caret line="847" column="15" selection-start-line="847" selection-start-column="15" selection-end-line="847" selection-end-column="15" />
               <folding>
                 <element signature="e#156#5866#0" expanded="false" />
                 <element signature="e#5895#7990#0" expanded="false" />
@@ -93,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_zyy.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="c_zyy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c_zyy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+            <state relative-caret-position="304">
+              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -117,7 +127,6 @@
       <list>
         <option value="$PROJECT_DIR$/one.html" />
         <option value="$PROJECT_DIR$/allCamare.html" />
-        <option value="$PROJECT_DIR$/dist.html" />
         <option value="$PROJECT_DIR$/lonlat.js" />
         <option value="$PROJECT_DIR$/setting.js" />
         <option value="$PROJECT_DIR$/c_jfl.html" />
@@ -125,6 +134,7 @@
         <option value="$PROJECT_DIR$/c_njl.html" />
         <option value="$PROJECT_DIR$/c_wdd.html" />
         <option value="$PROJECT_DIR$/c_zyy.html" />
+        <option value="$PROJECT_DIR$/dist.html" />
       </list>
     </option>
   </component>
@@ -264,12 +274,12 @@
       <option name="presentableId" value="Default" />
       <updated>1462541107166</updated>
       <workItem from="1462541108238" duration="12633000" />
-      <workItem from="1462686339496" duration="3651000" />
+      <workItem from="1462686339496" duration="4013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16284000" />
+    <option name="totallyTimeSpent" value="16646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="23" width="1414" height="877" extended-state="0" />
@@ -353,14 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-980">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -464,36 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lonlat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="1099" column="4" selection-start-line="1099" selection-start-column="4" selection-end-line="1099" selection-end-column="4" />
-          <folding>
-            <element signature="e#156#5866#0" expanded="false" />
-            <element signature="e#5895#7990#0" expanded="false" />
-            <element signature="e#8023#12025#0" expanded="false" />
-            <element signature="e#12051#17764#0" expanded="false" />
-            <element signature="e#17798#23886#0" expanded="false" />
-            <element signature="e#23921#32151#0" expanded="false" />
-            <element signature="e#32183#47418#0" expanded="false" />
-            <element signature="e#47452#53447#0" expanded="false" />
-            <element signature="e#53477#62429#0" expanded="false" />
-            <element signature="e#62465#71530#0" expanded="false" />
-            <element signature="e#71892#72853#0" expanded="false" />
-            <element signature="e#72891#74376#0" expanded="false" />
-            <element signature="e#74415#76519#0" expanded="false" />
-            <element signature="e#76554#79357#0" expanded="false" />
-            <element signature="e#79395#82807#0" expanded="false" />
-            <element signature="e#82841#83805#0" expanded="false" />
-            <element signature="e#84777#86744#0" expanded="false" />
-            <element signature="e#86776#87649#0" expanded="false" />
-            <element signature="e#87679#97625#0" expanded="false" />
-            <element signature="e#97658#99360#0" expanded="false" />
-            <element signature="e#99393#106175#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c_jfl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -528,8 +500,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/c_zyy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+        <state relative-caret-position="304">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lonlat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="847" column="15" selection-start-line="847" selection-start-column="15" selection-end-line="847" selection-end-column="15" />
+          <folding>
+            <element signature="e#156#5866#0" expanded="false" />
+            <element signature="e#5895#7990#0" expanded="false" />
+            <element signature="e#8023#12025#0" expanded="false" />
+            <element signature="e#12051#17764#0" expanded="false" />
+            <element signature="e#17798#23886#0" expanded="false" />
+            <element signature="e#23921#32151#0" expanded="false" />
+            <element signature="e#32183#47418#0" expanded="false" />
+            <element signature="e#47452#53447#0" expanded="false" />
+            <element signature="e#53477#62429#0" expanded="false" />
+            <element signature="e#62465#71530#0" expanded="false" />
+            <element signature="e#71892#72853#0" expanded="false" />
+            <element signature="e#72891#74376#0" expanded="false" />
+            <element signature="e#74415#76519#0" expanded="false" />
+            <element signature="e#76554#79357#0" expanded="false" />
+            <element signature="e#79395#82807#0" expanded="false" />
+            <element signature="e#82841#83805#0" expanded="false" />
+            <element signature="e#84777#86744#0" expanded="false" />
+            <element signature="e#86776#87649#0" expanded="false" />
+            <element signature="e#87679#97625#0" expanded="false" />
+            <element signature="e#97658#99360#0" expanded="false" />
+            <element signature="e#99393#106175#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
           <folding />
         </state>
       </provider>
