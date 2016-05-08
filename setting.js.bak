@@ -129,7 +129,7 @@ var style = [
         "featureType": "road",
         "elementType": "all",
         "stylers": {
-            "visibility": "on"
+            "visibility": "off"
         }
     },
     {
@@ -157,7 +157,7 @@ var style = [
         "featureType": "poi",
         "elementType": "all",
         "stylers": {
-            "visibility": "off"
+            "visibility": "on"
         }
     }
 ];
