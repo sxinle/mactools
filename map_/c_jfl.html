@@ -62,7 +62,7 @@
                 map.centerAndZoom(point, cameraInitScale === 18 ? cameraInitScale : cameraInitScale + 2);
             }
             var label = new BMap.Label(c.addr, {offset: new BMap.Size(20, -10)});
-            label.setStyle({ color: "white", border: "none", background: "none"});
+            label.setStyle({ color: "#75bdea", border: "none", background: "#002e46"});
             marker.setLabel(label);
             map.addOverlay(marker);                                 // 将标注添加到地图中
         })
