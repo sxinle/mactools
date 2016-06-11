@@ -25,7 +25,7 @@ alias vin='vim -u NONE '
 alias gvim='gvim -f'
 alias nload='nload -m'
 
-alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
+alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.8.0.jar $1'
 alias luke='cd /opt/luke;./luke.sh'
 
 alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
@@ -71,7 +71,7 @@ alias lm='ls -Alh --color=auto'
 #}}}
 
 #environment #{{{
-set -x JAVA_HOME /usr/lib/jvm/tuxjdk-1.80-66/
+set -x JAVA_HOME /usr/lib/jvm/tuxjdk/
 set -x UTIL_HOME ~/folder/util
 set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin ~/.rvm/bin/
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
