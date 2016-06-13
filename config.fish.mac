@@ -78,8 +78,8 @@ set -x ANDROID_SDK_HOME /usr/local/android-sdk
 set -x SCALA_HOME /usr/local/scala-2.11.7
 set -x BREW_HOME /usr/local/homebrew
 
-set -x RVM_HOME ~/.rvm/
-source $RVM_HOME/.rvm/scripts/rvm
+set -x RVM_HOME ~/.rvm
+#source $RVM_HOME/scripts/rvm
 
 set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -x PATH $BREW_HOME/bin $RVM_HOME/bin $PATH 
