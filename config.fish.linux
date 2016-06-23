@@ -38,6 +38,11 @@ function remove
 end
 alias rma='/bin/rm $HOME/.local/share/Trash/files/* -rf; and /bin/rm $HOME/.local/share/Trash/files/.* -rf'
 
+alias b="bright"
+function bright
+    xrandr --output VGA1 --brightness $argv
+end
+
 alias ca='catFunc'
 function catFunc
     #cat $argv | iconv -f gbk -t utf8
