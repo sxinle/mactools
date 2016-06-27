@@ -77,8 +77,9 @@ alias lm='ls -Alh --color=auto'
 
 #environment #{{{
 set -x JAVA_HOME /usr/lib/jvm/tuxjdk/
+set -x ANDROID_HOME /opt/android/Sdk/
 set -x UTIL_HOME ~/folder/util
-set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin ~/.rvm/bin/ /opt/nwjs-v0.15.2-linux-x64/
+set -x PATH $PATH $UTIL_HOME/mactools $JAVA_HOME/bin ~/.rvm/bin/ /opt/nwjs-v0.15.2-linux-x64/ $ANDROID_HOME/platform-tools/ $ANDROID_HOME/tools/
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 set -x PAGER /usr/bin/most
 
