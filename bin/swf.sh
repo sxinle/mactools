@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rootDir=/home/hsong/folder/util/mactools/swf
+rootDir=/home/hsong/folder/util/mactools/bin/swf
 
 filePath=`pwd`'/'$1
 
