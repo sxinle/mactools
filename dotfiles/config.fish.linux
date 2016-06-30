@@ -20,9 +20,15 @@ alias reboot='sudo reboot'
 alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
 alias o='open . 2>>/dev/null'
+alias t='tmux attach'
 
 alias vin='vim -u NONE '
-alias gvim='gvim -f'
+
+alias gvim='gv'
+function gv
+    /usr/bin/gvim $argv 2>>/dev/null
+end
+
 alias nload='nload -m'
 
 alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.8.0.jar $1'
