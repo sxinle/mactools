@@ -1,0 +1,24 @@
+#!/bin/bash
+gconftool-2 -s -t int /apps/guake/style/background/transparency $1
+
+#solarized="#002B36"
+#ambience="#300a24"
+#none="#000000"
+
+#echo "1) solarized"
+#echo "2) ambience"
+#echo "3) none"
+
+#read choose
+
+#case "$choose" in  
+    #1)  
+        #gconftool-2 -s -t string /apps/guake/style/background/color $solarized
+        #;;  
+    #2)  
+        #gconftool-2 -s -t string /apps/guake/style/background/color $ambience
+        #;;  
+    #*)  
+        #gconftool-2 -s -t string /apps/guake/style/background/color $none
+        #;;  
+#esac  
