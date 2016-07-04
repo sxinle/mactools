@@ -29,7 +29,3 @@ nnoremap Y y$
 nnoremap [c :action VcsShowPrevChangeMarker<cr>
 nnoremap ]c :action VcsShowNextChangeMarker<cr>
 
-nnoremap <leader>fu :action ShowUsages<cr>
-"nnoremap <leader><leader>w :action AceJumpAction<cr>
-
-
