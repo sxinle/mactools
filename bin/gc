@@ -25,6 +25,8 @@ if [ "$2" != "" ]; then
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_1
             ;;  
     esac  
+
+    guake -p
 fi
 
 #solarized="#002B36"
