@@ -16,6 +16,21 @@ set fish_plugins brew rvm
 
 #user alias#{{{
 
+#alias list#{{{
+
+#alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
+alias ll='ls -lF'
+alias l.='ls -A'
+alias l='ls -CF'
+alias s='ls -F'
+alias j='ls -F'
+alias lsj='ls -F'
+alias jls='ls -F'
+alias sl='ls -F'
+alias lm='ls -Alh --color=auto'
+
+#}}}
+
 alias reboot='sudo reboot'
 alias halt='sudo halt'
 alias ..='cd .. ;and ls'
@@ -49,28 +64,6 @@ alias openSpolight='sudo launchctl load -w /System/Library/LaunchDaemons/com.app
 alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 
 #}}}
-  
-#alias for ssh# {{{
-alias sshdp='ssh -p7862 root@124.95.160.85'
-#alias ln68nds='sudo mount //192.168.2.68/ndsdata-release /mnt/ndsdata-release/'
-#alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
-#alias ln58nds='sshfs -o workaround=rename root@192.168.2.58:/home/nds_navi_data /mnt/ndsdata-release/'
-#alias ln58s10='sshfs -o workaround=rename root@192.168.2.58:/home/s10_navi_data /mnt/s10-release/'
-# }}}
-
-#alias list#{{{
-
-alias ll='ls -lF'
-alias l.='ls -A'
-alias l='ls -CF'
-alias s='ls -F'
-alias j='ls -F'
-alias lsj='ls -F'
-alias jls='ls -F'
-alias sl='ls -F'
-alias lm='ls -Alh --color=auto'
-
-#}}}
 
 #environment #{{{
 set -x UTIL_HOME ~/folder/util
@@ -83,7 +76,7 @@ set -x RVM_HOME ~/.rvm
 
 set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
 set -x PATH $BREW_HOME/bin $RVM_HOME/bin $PATH 
-set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools $UTIL_HOME $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
+set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools/bin $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
 
 set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman /usr/local/homebrew/share/man $MANPATH
 set -x PAGER /usr/local/homebrew/Cellar/most/5.0.0a/bin/most
