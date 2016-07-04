@@ -14,6 +14,21 @@ set -g OMF_CONFIG $HOME/.config/omf
 
 #user alias#{{{
 
+#alias list#{{{
+alias ll='ls -lF'
+alias l.='ls -A'
+alias l='ls -CF'
+alias s='ls -F'
+alias j='ls -F'
+alias lsj='ls -F'
+alias slj='ls -F'
+alias jls='ls -F'
+alias sl='ls -F'
+alias lm='ls -Alh --color=auto'
+#}}}
+
+alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
+
 alias ie='wine /home/hsong/.wine/dosdevices/c:/Program\ Files/Internet\ Explorer/iexplore.exe'
 alias top='htop'
 alias reboot='sudo reboot'
@@ -21,13 +36,6 @@ alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
 alias o='open . 2>>/dev/null'
 alias t='tmux -2 attach'
-
-alias vin='vim -u NONE '
-
-alias gvim='gv'
-function gv
-    /usr/bin/gvim $argv 2>>/dev/null
-end
 
 alias nload='nload -m'
 
@@ -38,6 +46,13 @@ alias dropcache='su -c "echo 3 > /proc/sys/vm/drop_caches"'
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 
 alias su='sudo su -'
+
+alias vin='vim -u NONE '
+alias gvim='vimFiles'
+function vimFiles
+    /usr/bin/gvim $argv 2>>/dev/null
+end
+
 alias rm='remove'
 function remove
     mv -f $argv ~/.local/share/Trash/files/
@@ -60,24 +75,6 @@ function shareFunc
     chmod 777 $argv;
     cp -r $argv ~/.share
 end
-#}}}
-  
-#alias for ssh# {{{
-#alias ln58grid='sshfs -o workaround=rename root@192.168.4.193:/home/share/QMMqAwQOuy.uucin.com /mnt/gis_data/'
-# }}}
-
-#alias list#{{{
-
-alias ll='ls -lF'
-alias l.='ls -A'
-alias l='ls -CF'
-alias s='ls -F'
-alias j='ls -F'
-alias lsj='ls -F'
-alias slj='ls -F'
-alias jls='ls -F'
-alias sl='ls -F'
-alias lm='ls -Alh --color=auto'
 
 #}}}
 
