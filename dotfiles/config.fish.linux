@@ -91,4 +91,4 @@ set -x LIBOVERLAY_SCROLLBAR 0
 
 #}}}
 
-rvm default
+#rvm default
