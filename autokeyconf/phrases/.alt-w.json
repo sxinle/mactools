@@ -1,5 +1,5 @@
 {
-    "usageCount": 9, 
+    "usageCount": 16, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "alt-w", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": null, 
+        "regex": "chromium-browser.chromium-browser", 
         "isRecursive": false
     }, 
     "type": "phrase", 
