@@ -1,7 +1,13 @@
 #!/bin/sh
+
+#===不加有可能不能输入中文
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE="fcitx"
+#===不加有可能不能输入中文
+
 IDEA_HOME=/opt/IDEA
-export IDEA_JDK=/usr/lib/jvm/tuxjdk
-export JAVA_HOME=/usr/lib/jvm/tuxjdk
+export IDEA_JDK=/usr/lib/jvm/fontfix-jdk
+export JAVA_HOME=/usr/lib/jvm/fontfix-jdk
 # Note: Can modify $IDEA_HOME/bin/idea{,64}.vmoptions
 # instead of setting here.
 # "-Dawt.useSystemAAFontSettings=on" seems worse to me
