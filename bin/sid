@@ -2,7 +2,7 @@
 
 echo -e "\n================sync folder/util...================\n"
 cd ~/folder/util/mactools
-if [ $# != 0  ] ; then
+if [ $1 == "a"  ] ; then
     git add . && git commit -am "update config" && git push origin master
 else
     git status&&git pull
@@ -10,7 +10,7 @@ fi
 
 echo -e "\n================sync .vim/dotvim...================\n"
 cd ~/.vim/dotvim
-if [ $# != 0  ] ; then
+if [ $1 == "a"  ] ; then
     git add . && git commit -am "cmt" && git push origin master
 else
     git status && git pull 
