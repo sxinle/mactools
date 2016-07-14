@@ -19,4 +19,4 @@ vim +PlugUpgrade +PlugUpdate
 
 
 svn songh 6jR9_tNM
--server -XX:PermSize=1024M -XX:MaxPermSize=4096M
+-server -XX:PermSize=1024M -XX:MaxPermSize=10240M -XX:-UseGCOverheadLimit
