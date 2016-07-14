@@ -18,5 +18,6 @@ vim +PlugUpgrade +PlugUpdate
 #0okm)OKM9ijn(IJN
 
 
-svn songh 6jR9_tNM
--server -XX:PermSize=1024M -XX:MaxPermSize=10240M -XX:-UseGCOverheadLimit
+#svn songh 6jR9_tNM
+#-server -XX:PermSize=1024M -XX:MaxPermSize=10240M -XX:-UseGCOverheadLimit
+# 加在cygwin前面 JAVA_OPTS="$JAVA_OPTS -Xms4096m -Xmx10240m"
