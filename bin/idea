@@ -1,8 +1,9 @@
 #!/bin/sh
 
 #===不加有可能不能输入中文
-export XMODIFIERS="@im=fcitx"
-export QT_IM_MODULE="fcitx"
+#export GTK_IM_MODULE="fcitx"
+#export QT_IM_MODULE="fcitx"
+#export XMODIFIERS=@im="fcitx"
 #===不加有可能不能输入中文
 
 IDEA_HOME=/opt/IDEA
