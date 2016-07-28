@@ -13,7 +13,8 @@ export JAVA_HOME=/usr/lib/jvm/fontfix-jdk
 # instead of setting here.
 # "-Dawt.useSystemAAFontSettings=on" seems worse to me
 # "-Dsun.java2d.xrender=true" makes fonts darker
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true"
+#export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true"
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.xrender=true -Dswing.aatext=true"
 # Having this set makes menu font size smaller (wtf?)
 export GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 # Ubuntu global menu integration
