@@ -4,11 +4,13 @@ gconftool-2 -s -t int /apps/guake/style/background/transparency $1
 theme_1="Solarized Dark Higher Contrast"
 theme_2="Github"
 theme_3="Misterioso"
+theme_4="Clrs"
 
 if [ "$2" != "" ]; then
     echo "Guake Themes: 1) solarized dark"
     echo "              2) Github"
     echo "              3) Misterioso"
+    echo "              4) Clrs"
     
     read theme_r
     case "$theme_r" in  
@@ -20,6 +22,9 @@ if [ "$2" != "" ]; then
             ;;  
         3)  
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_3
+            ;;  
+        4)  
+            gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_4
             ;;  
         *)  
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_1
