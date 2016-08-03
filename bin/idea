@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #===不加有可能不能输入中文
-#export GTK_IM_MODULE="fcitx"
-#export QT_IM_MODULE="fcitx"
+export GTK_IM_MODULE="fcitx"
+export QT_IM_MODULE="fcitx"
 #export XMODIFIERS=@im="fcitx"
 #===不加有可能不能输入中文
 
@@ -14,7 +14,7 @@ export JAVA_HOME=/usr/lib/jvm/fontfix-jdk
 # "-Dawt.useSystemAAFontSettings=on" seems worse to me
 # "-Dsun.java2d.xrender=true" makes fonts darker
 #export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true"
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.xrender=true -Dswing.aatext=true"
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true"
 # Having this set makes menu font size smaller (wtf?)
 export GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 # Ubuntu global menu integration
