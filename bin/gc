@@ -5,17 +5,19 @@ theme_1="Solarized Dark Higher Contrast"
 theme_2="Github"
 theme_3="Misterioso"
 theme_4="Clrs"
+theme_5="Solarized Light"
 
 if [ "$2" != "" ]; then
     echo "Guake Themes: 1) solarized dark"
     echo "              2) Github"
     echo "              3) Misterioso"
     echo "              4) Clrs"
+    echo "              5) solarized Light"
     
     read theme_r
     case "$theme_r" in  
         1)  
-            gconftool-2 -s -t string /apps/guake/style/font/palette_name "$theme_1"
+            gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_1
             ;;  
         2)  
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_2
@@ -25,6 +27,9 @@ if [ "$2" != "" ]; then
             ;;  
         4)  
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_4
+            ;;  
+        5)  
+            gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_5
             ;;  
         *)  
             gconftool-2 -s -t string /apps/guake/style/font/palette_name $theme_1
