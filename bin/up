@@ -24,3 +24,9 @@ vim +PlugUpgrade +PlugUpdate
 
 # 远程调试  catalina.sh 第一行+
 #JAVA_OPTS='-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005'
+
+# jprofiler 远程监控
+#LD_LIBRARY_PATH="/opt/jprofiler9/bin/linux-x64/:$LD_LIBRARY_PATH"  
+#export LD_LIBRARY_PATH  
+#CATALINA_OPTS="-agentlib:jprofilerti=port=8849,nowait,id=101 -Xbootclasspath/a:/opt/jprofiler9/bin/agent.jar $CATALINA_OPTS"  
+#export CATALINA_OPTS
