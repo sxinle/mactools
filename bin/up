@@ -33,3 +33,6 @@ vim +PlugUpgrade +PlugUpdate
 #CATALINA_OPTS="-agentlib:jprofilerti=port=8849,nowait -Xbootclasspath/a:/opt/jprofiler9/bin/agent.jar $CATALINA_OPTS"
 #export CATALINA_OPTS
 
+#echo 1 >/proc/sys/net/ipv4/ip_forward
+#sudo arpspoof -i enp2s0 -t 192.168.15.18 192.168.15.1
+#ip.dst == 192.168.2.23 and not tcp.port in {80 25} and ip.addr == 192.168.15.64
