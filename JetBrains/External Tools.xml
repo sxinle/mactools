@@ -6,25 +6,11 @@
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
-  <tool name="dict" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="$USER_HOME$/folder/util/mactools/dict.py" />
-      <option name="PARAMETERS" value="$SelectedText$" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
-    </exec>
-  </tool>
   <tool name="mvim-log" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="gvim" />
       <option name="PARAMETERS" value="n +delete +put &quot;+set ft=log&quot;" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
-    </exec>
-  </tool>
-  <tool name="initPkg" description="初始化MVC分层目录..." showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="$USER_HOME$/folder/util/mactools/initPkg.sh" />
-      <option name="PARAMETERS" value="$FileDir$" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/folder/util/mactools" />
     </exec>
   </tool>
 </toolSet>
