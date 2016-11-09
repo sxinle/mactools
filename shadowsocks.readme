@@ -13,3 +13,5 @@ git clone https://github.com/sxinle/mactools
 
 
 numix theme & moka icon theme
+sudo apt-get install fontconfig-infinality
+/etc/fonts/infinality/infctl.sh setstyle linux
