@@ -1,11 +1,5 @@
 #!/bin/sh
 
-#===不加有可能不能输入中文
-export GTK_IM_MODULE="fcitx"
-export QT_IM_MODULE="fcitx"
-#export XMODIFIERS=@im="fcitx"
-#===不加有可能不能输入中文
-
 IDEA_HOME=/opt/IDEA
 #export IDEA_JDK=/usr/lib/jvm/fontfix-jdk
 #export JAVA_HOME=/usr/lib/jvm/fontfix-jdk
