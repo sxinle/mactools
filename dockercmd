@@ -7,3 +7,8 @@ docker rm (docker ps -a -q)
 -q  quiet  
 
 docker rmi ( remove images )
+
+docker export $CONTAINER_ID > ubuntu_nginx.tar
+cat ubuntu_nginx.tar | docker import - test/uginx:v1.0
+
+sudo docker commit <container_id> local/ubuntu:16.04
