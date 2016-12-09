@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export JAVA_TOOL_OPTIONS=-javaagent:/usr/local/javaagent/JrebelForAndroidCrack.jar
+/Users/hsong/Applications/Android\ Studio.app/Contents/MacOS/studio
