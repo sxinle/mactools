@@ -1,5 +1,5 @@
 {
-    "usageCount": 52, 
+    "usageCount": 58, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "alt-w", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "Mail.Thunderbird|iptux.Iptux|chromium-browser.chromium-browser", 
+        "regex": "Mail.Thunderbird|iptux.Iptux|chromium-browser.Chromium-browser", 
         "isRecursive": false
     }, 
     "type": "phrase", 
