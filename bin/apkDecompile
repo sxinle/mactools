@@ -1,4 +1,10 @@
 #!/bin/bash
 
 shellPath=$(cd `dirname $0`; pwd)
-java -jar $shellPath/../apktool_2.2.1.jar -s -f d $1
+
+echo "=======================apktool===================="
+java -jar $shellPath/../apk_decompile/apktool_2.2.1.jar -f d $1
+
+echo "=======================dex2jar===================="
+$shellPath/../apk_decompile/dex2jar-2.1-SNAPSHOT/d2j-dex2jar.sh $1
+
