@@ -1,0 +1,4 @@
+#!/bin/bash
+
+shellPath=$(cd `dirname $0`; pwd)
+java -jar $shellPath/../apktool_2.2.1.jar -s -f d $1
