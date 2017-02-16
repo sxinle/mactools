@@ -47,7 +47,7 @@ alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 
 alias su='sudo su -'
 
-alias vin='vim -u NONE '
+alias vi='vim -u NONE '
 alias gvim='vimFiles'
 function vimFiles
     /usr/bin/gvim $argv 2>>/dev/null
