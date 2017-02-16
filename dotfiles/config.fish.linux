@@ -36,6 +36,7 @@ alias halt='sudo shutdown -h now'
 alias ..='cd .. ;and ls'
 alias o='open . 2>>/dev/null'
 alias t='tmux -2 attach'
+alias te='/home/hsong/folder/util/mactools/work/conv.sh'
 
 alias nload='nload -m'
 
