@@ -48,6 +48,7 @@ public class Mcode2Lon {
     static void setCoords() {
         Map<String, String> map = new HashMap<>();
         map.put("沈阳", "1137956355,385338756");
+        map.put("北京", "1072865920,367979200");
         map.put("大连", "1120768960,358644160");
         map.put("广州", "1043763222,213273805");
         map.put("兰州", "957012203,332385251");
@@ -57,6 +58,10 @@ public class Mcode2Lon {
         List<String> keys = new ArrayList<>();
         Set<String> k = map.keySet();
         keys.addAll(k);
+
+        //for(int i = 0; i< keys.size(); i++) {
+            //System.out.println( i + "__" + keys.get(i));
+        //}
 
         Scanner s = new Scanner(System.in);
         String line = s.nextLine();
