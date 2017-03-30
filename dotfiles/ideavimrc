@@ -10,22 +10,22 @@ let mapleader = ','
 inoremap jj <ESC>
 vnoremap ii <ESC>
 
-"inoremap <c-o> <ESC>o
-inoremap <C-e> <ESC>A
-inoremap <C-a> <ESC>I
-inoremap <C-b> <Left>
-inoremap <C-f> <Right>
-
 nnoremap <leader>w :w<CR>
-nnoremap <leader>q :q<CR>
 nnoremap <leader><Space> :nohl<CR>
-
 nnoremap # *
-
-nnoremap <tab> <c-w>w
-
+nnoremap <Tab> <c-w>w
 nnoremap Y y$
 
-nnoremap [c :action VcsShowPrevChangeMarker<cr>
-nnoremap ]c :action VcsShowNextChangeMarker<cr>
+set surround "ys, cs, ds, S
+
+nnoremap U :action $Redo<CR>
+nnoremap <leader><leader>w :action AceAction<CR>
+nnoremap zc :action CollapseBlock<CR>
+inoremap <c-v> :action EditorPasteSimple<CR>
+
+"for test action
+"nnoremap <leader><leader>a :action Emmet<CR>
+
+
+
 
