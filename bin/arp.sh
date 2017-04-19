@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 ip=$1
 #echo $ip
 echo "sudo arpspoof -i enp2s0 -t $ip 192.168.15.1" # tell $0 i'm gataway
