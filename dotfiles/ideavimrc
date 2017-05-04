@@ -15,6 +15,7 @@ nnoremap <leader><Space> :nohl<CR>
 nnoremap # *
 nnoremap <Tab> <c-w>w
 nnoremap Y y$
+nnoremap p "+gp
 
 set surround "ys, cs, ds, S
 
