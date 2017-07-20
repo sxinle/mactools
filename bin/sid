@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo -e "\n================sync folder/util...================\n"
-cd ~/folder/util/mactools
+cd ~/Desktop/folder/util/mactools
 if [ $1x = "a"x ] ; then
     git add . && git commit -am "update config" && git push origin master
 else
