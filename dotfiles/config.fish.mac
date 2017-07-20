@@ -35,6 +35,8 @@ alias reboot='sudo reboot'
 alias halt='sudo halt'
 alias ..='cd .. ;and ls'
 
+alias ports='lsof -nP -iTCP -sTCP:LISTEN'
+
 alias vin='vim -u NONE '
 alias vi='vim'
 alias gvim='gvim -f'
