@@ -68,7 +68,7 @@ alias k80='lsof -i :8080|tail -n 1|cut -d " " -f 5|xargs kill -9'
 #}}}
 
 #environment #{{{
-set -x UTIL_HOME ~/Desktop/folder/util
+set -x UTIL_HOME ~/folder/util
 set -x ANDROID_SDK_HOME /usr/local/android-sdk
 set -x SCALA_HOME /usr/local/scala-2.11.7
 set -x BREW_HOME /usr/local/homebrew
