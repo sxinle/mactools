@@ -78,7 +78,7 @@ function fish_prompt
   #printf '>'
   set_color -o yellow
   #printf '   '
-  printf '    2 '
+  printf '    '
 
   set_color normal
 end
