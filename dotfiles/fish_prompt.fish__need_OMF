@@ -15,7 +15,7 @@ function fish_prompt
   ##printf '%s ' (hostname|cut -d . -f 1)
   #set_color $fish_color_autosuggestion[1]
   set_color green
-  printf '   '
+  printf '    '
   set_color -o red
   printf '[ '
   set_color -o cyan
@@ -78,7 +78,7 @@ function fish_prompt
   #printf '>'
   set_color -o yellow
   #printf '   '
-  printf '   '
+  printf '    2 '
 
   set_color normal
 end
