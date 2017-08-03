@@ -1,0 +1,39 @@
+{
+    "title": "Caps and return to ctrl. Ctrl to caps.",
+    "rules": [{
+        "description": "Command+Tab <-> Alt+Tab",
+        "manipulators": [{
+            "type": "basic",
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "tab",
+                "modifiers": [
+                    "left_option"
+                ]
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "tab",
+                "modifiers": {
+                    "mandatory": [
+                        "left_option"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "tab",
+                "modifiers": [
+                    "left_command"
+                ]
+            }]
+        }]
+    }]
+}
