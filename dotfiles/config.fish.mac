@@ -52,8 +52,9 @@ alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 alias su='sudo su -'
 alias rm='remove'
 function remove
-    mv -f $argv ~/.Trash;
+    mv -f $argv ~/.Trash/;
 end
+alias rma='/bin/rm -rf ~/.Trash/*'
 
 #MacOSX alias
 alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'

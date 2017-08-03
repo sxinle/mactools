@@ -1,1 +1,0 @@
-../ssi-server/ssi_server.py

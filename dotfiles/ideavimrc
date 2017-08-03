@@ -8,6 +8,7 @@ set scrolloff=5
 let mapleader = ','
 
 inoremap jj <ESC>
+inoremap F F
 vnoremap ii <ESC>
 
 nnoremap <leader>w :w<CR>
