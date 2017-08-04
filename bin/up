@@ -9,3 +9,4 @@ vim +PlugUpgrade +PlugUpdate
 
 #cib Aa1!
 #https://account.jetbrains.com/licenses cock1     | p.
+#osascript -e 'id of app "MacVim"'
