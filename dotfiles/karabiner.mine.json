@@ -45,7 +45,7 @@
       ]
     },
     {
-      "description": "CTRL+p/n/h/l <-> 上/下/左/右 [左右仅仅对Shortcut Bar生效]",
+      "description": "CTRL+p/n/h/l <-> 上/下/左/右 [unless iterm2]",
       "manipulators": [
         {
           "type": "basic",
@@ -96,9 +96,9 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com.fiplab.shortcutbar"
+                "com.googlecode.iterm2"
               ]
             }
           ]
@@ -120,9 +120,9 @@
           ],
           "conditions": [
             {
-              "type": "frontmost_application_if",
+              "type": "frontmost_application_unless",
               "bundle_identifiers": [
-                "com.fiplab.shortcutbar"
+                "com.googlecode.iterm2"
               ]
             }
           ]
