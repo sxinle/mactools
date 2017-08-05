@@ -270,6 +270,41 @@
           ]
         }
       ]
+    },
+    {
+      "description": "ShortCat 快捷键",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f10",
+              "modifiers": [
+                "left_shift",
+                "left_control",
+                "left_option",
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "com.jetbrains.intellij"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
