@@ -2,50 +2,7 @@
   "title": "KeyRemap配置",
   "rules": [
     {
-      "description": "CMD+TAB 切换，For HyperSwitch",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": [
-                "left_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "CTRL+p/n/h/l <-> 上/下/左/右 [unless iterm2]",
+      "description": "CTRL+p/n/h/l <-> 上/下/左/右 [unless iterm2,macvim,idea]",
       "manipulators": [
         {
           "type": "basic",
@@ -99,7 +56,8 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "com.googlecode.iterm2",
-                "org.vim.MacVim"
+                "org.vim.MacVim",
+                "com.jetbrains.intellij"
               ]
             }
           ]
