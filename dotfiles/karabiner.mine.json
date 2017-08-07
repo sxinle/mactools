@@ -90,6 +90,30 @@
       ]
     },
     {
+      "description": "CMD+ESC 反向切换",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "escape",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Vim和IDEA CMD+h/l，Tab切换",
       "manipulators": [
         {
@@ -149,12 +173,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "description": "IDEA-> CMD+SHIFT+H/L -> 前进/后退",
-      "manipulators": [
+        },
         {
           "type": "basic",
           "from": {
@@ -228,6 +247,33 @@
               "key_code": "return_or_enter"
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "d",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.jetbrains.intellij"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -267,22 +313,25 @@
       ]
     },
     {
-      "description": "CMD+ESC 反向切换",
+      "description": "Alfred 替换 Spolight",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "escape",
+            "key_code": "spacebar",
             "modifiers": {
               "mandatory": [
-                "left_command"
+                "left_control"
               ]
             }
           },
           "to": [
             {
-              "key_code": "grave_accent_and_tilde",
+              "key_code": "p",
               "modifiers": [
+                "left_control",
+                "left_shift",
+                "left_option",
                 "left_command"
               ]
             }
