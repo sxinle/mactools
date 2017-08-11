@@ -82,7 +82,8 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "com.googlecode.iterm2",
-                "org.vim.MacVim"
+                "org.vim.MacVim",
+                "com.jetbrains.intellij"
               ]
             }
           ]
