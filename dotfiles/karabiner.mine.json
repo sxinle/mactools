@@ -57,7 +57,8 @@
               "bundle_identifiers": [
                 "com.googlecode.iterm2",
                 "org.vim.MacVim",
-                "com.jetbrains.intellij"
+                "com.jetbrains.intellij",
+                "com.google.android.studio"
               ]
             }
           ]
@@ -83,7 +84,8 @@
               "bundle_identifiers": [
                 "com.googlecode.iterm2",
                 "org.vim.MacVim",
-                "com.jetbrains.intellij"
+                "com.jetbrains.intellij",
+                "com.google.android.studio"
               ]
             }
           ]
@@ -141,6 +143,7 @@
               "bundle_identifiers": [
                 "^org\\.vim\\..*",
                 "com.jetbrains.intellij",
+                "com.google.android.studio",
                 "com.googlecode.iterm2"
               ]
             }
@@ -170,6 +173,7 @@
               "bundle_identifiers": [
                 "^org\\.vim\\..*",
                 "com.jetbrains.intellij",
+                "com.google.android.studio",
                 "com.googlecode.iterm2"
               ]
             }
@@ -199,7 +203,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.jetbrains.intellij"
+                "com.jetbrains.intellij",
+                "com.google.android.studio"
               ]
             }
           ]
@@ -228,7 +233,8 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "com.jetbrains.intellij"
+                "com.jetbrains.intellij",
+                "com.google.android.studio"
               ]
             }
           ]
@@ -246,41 +252,6 @@
           "to": [
             {
               "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "ShortCat 快捷键",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "semicolon",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f10",
-              "modifiers": [
-                "left_shift",
-                "left_control",
-                "left_option",
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.jetbrains.intellij"
-              ]
             }
           ]
         }

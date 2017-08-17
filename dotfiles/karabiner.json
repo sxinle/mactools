@@ -12,92 +12,6 @@
                 },
                 "rules": [
                     {
-                        "description": "CMD+ESC 反向切换",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "ShortCat 快捷键",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "com.jetbrains.intellij"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f10",
-                                        "modifiers": [
-                                            "left_shift",
-                                            "left_control",
-                                            "left_option",
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Alfred 替换 Spolight",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "p",
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_shift",
-                                            "left_option",
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "CTRL+p/n/h/l <-> 上/下/左/右 [unless iterm2,macvim,idea]",
                         "manipulators": [
                             {
@@ -138,7 +52,8 @@
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
                                             "org.vim.MacVim",
-                                            "com.jetbrains.intellij"
+                                            "com.jetbrains.intellij",
+                                            "com.google.android.studio"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -164,7 +79,8 @@
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
                                             "org.vim.MacVim",
-                                            "com.jetbrains.intellij"
+                                            "com.jetbrains.intellij",
+                                            "com.google.android.studio"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -187,6 +103,30 @@
                         ]
                     },
                     {
+                        "description": "CMD+ESC 反向切换",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Vim和IDEA CMD+h/l，Tab切换",
                         "manipulators": [
                             {
@@ -195,6 +135,7 @@
                                         "bundle_identifiers": [
                                             "^org\\.vim\\..*",
                                             "com.jetbrains.intellij",
+                                            "com.google.android.studio",
                                             "com.googlecode.iterm2"
                                         ],
                                         "type": "frontmost_application_if"
@@ -224,6 +165,7 @@
                                         "bundle_identifiers": [
                                             "^org\\.vim\\..*",
                                             "com.jetbrains.intellij",
+                                            "com.google.android.studio",
                                             "com.googlecode.iterm2"
                                         ],
                                         "type": "frontmost_application_if"
@@ -251,7 +193,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "com.jetbrains.intellij"
+                                            "com.jetbrains.intellij",
+                                            "com.google.android.studio"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -280,7 +223,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "com.jetbrains.intellij"
+                                            "com.jetbrains.intellij",
+                                            "com.google.android.studio"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -317,6 +261,33 @@
                                 "to": [
                                     {
                                         "key_code": "return_or_enter"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Alfred 替换 Spolight",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "p",
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_shift",
+                                            "left_option",
+                                            "left_command"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
