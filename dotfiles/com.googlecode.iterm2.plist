@@ -39561,9 +39561,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>45 178 599 505 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>482 217 918 512 0 0 1440 877 </string>
+	<string>482 178 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>25 0 1411 877 0 0 1440 877 </string>
+	<string>272 153 921 571 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2_selection</key>
@@ -39573,6 +39573,10 @@
 	<key>NeverWarnAboutShortLivedSessions_66760191-7ACB-4802-B399-B8599A8E8F5F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_66760191-7ACB-4802-B399-B8599A8E8F5F_selection</key>
+	<integer>0</integer>
+	<key>NeverWarnAboutShortLivedSessions_A9E80C8C-E237-4844-B9A1-CC70E1EF45B2</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_A9E80C8C-E237-4844-B9A1-CC70E1EF45B2_selection</key>
 	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
@@ -40178,7 +40182,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>线上SSH</string>
+			<string>线上服务器</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco_Linux-Airline 12</string>
 			<key>Non-ASCII Anti Aliased</key>
