@@ -204,7 +204,7 @@
                         ]
                     },
                     {
-                        "description": "CTRL+p/n/h/l/w <-> 上/下/左/右 [unless iterm2,macvim,idea]",
+                        "description": "CTRL+p/n/h/l/w/u",
                         "manipulators": [
                             {
                                 "from": {
@@ -317,6 +317,36 @@
                                         "key_code": "delete_or_backspace",
                                         "modifiers": [
                                             "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.googlecode.iterm2",
+                                            "org.vim.MacVim",
+                                            "com.jetbrains.intellij",
+                                            "com.google.android.studio"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": [
+                                            "left_command"
                                         ]
                                     }
                                 ],
