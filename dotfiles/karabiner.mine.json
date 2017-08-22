@@ -204,6 +204,7 @@
                 "^org\\.vim\\..*",
                 "com.jetbrains.intellij",
                 "com.google.android.studio",
+                "com.jetbrains.WebStorm",
                 "com.googlecode.iterm2"
               ]
             }
@@ -234,6 +235,7 @@
                 "^org\\.vim\\..*",
                 "com.jetbrains.intellij",
                 "com.google.android.studio",
+                "com.jetbrains.WebStorm",
                 "com.googlecode.iterm2"
               ]
             }
@@ -264,7 +266,8 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "com.jetbrains.intellij",
-                "com.google.android.studio"
+                "com.google.android.studio",
+                "com.jetbrains.WebStorm"
               ]
             }
           ]
@@ -294,7 +297,8 @@
               "type": "frontmost_application_if",
               "bundle_identifiers": [
                 "com.jetbrains.intellij",
-                "com.google.android.studio"
+                "com.google.android.studio",
+                "com.jetbrains.WebStorm"
               ]
             }
           ]
