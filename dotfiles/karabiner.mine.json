@@ -48,7 +48,7 @@
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [
