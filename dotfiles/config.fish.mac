@@ -48,16 +48,13 @@ alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 alias su='sudo su -'
 alias rm='remove'
 function remove
-    mv -f $argv ~/.Trash/;
+    mv -bf $argv ~/.Trash/;
 end
-alias rma='/bin/rm -rf ~/.Trash/*.*'
+alias rma='bash -c "/bin/rm -rf ~/.Trash/* && /bin/rm -rf ~/.Trash/.*"'
 
 #MacOSX alias
 alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
 alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;killall Dock'
-alias disSpolight='sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle Search.Bundle.hide;killall SystemUIServer'
-alias openSpolight='sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.metadata.mds.plist;cd /System/Library/CoreServices/;sudo mv Search.Bundle.hide Search.Bundle'
-
 #}}}
 
 #environment #{{{
