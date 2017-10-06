@@ -50,7 +50,7 @@ alias rm='remove'
 function remove
     mv -bf $argv ~/.Trash/;
 end
-alias rma='bash -c "/bin/rm -rf ~/.Trash/* && /bin/rm -rf ~/.Trash/.*"'
+alias rma='bash -c "/bin/rm -rf ~/.Trash/* && /bin/rm -rf ~/.Trash/.[^.]*"'
 
 #MacOSX alias
 alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'

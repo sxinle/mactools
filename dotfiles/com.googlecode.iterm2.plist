@@ -39524,7 +39524,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAc7AAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -39569,7 +39569,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>45 178 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>266 191 918 512 0 0 1440 877 </string>
+	<string>271 238 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -39811,7 +39811,7 @@
 			<key>Columns</key>
 			<integer>128</integer>
 			<key>Command</key>
-			<string>/usr/bin/expect ~/.ssh/hosts</string>
+			<string>~/.ssh/expects</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -40192,7 +40192,7 @@
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
-			<string>线上服务器</string>
+			<string>sessions</string>
 			<key>Non Ascii Font</key>
 			<string>Monaco_Linux-Airline 12</string>
 			<key>Non-ASCII Anti Aliased</key>
@@ -42794,7 +42794,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-28T12:00:37Z</date>
+	<date>2017-10-06T11:25:15Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
