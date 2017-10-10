@@ -39569,7 +39569,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>45 178 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>271 165 918 512 0 0 1440 877 </string>
+	<string>271 87 918 512 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -40597,7 +40597,7 @@
 			<key>Columns</key>
 			<integer>128</integer>
 			<key>Command</key>
-			<string>/usr/local/homebrew/bin/tmux</string>
+			<string>/usr/local/homebrew/bin/tmux attach</string>
 			<key>Cursor Color</key>
 			<dict>
 				<key>Alpha Component</key>

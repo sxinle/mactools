@@ -34,6 +34,7 @@ alias lm='ls -Alh --color=auto'
 alias ..='cd .. ;and ls'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
+alias essh='~/.ssh/expects'
 
 alias vin='vim -u NONE '
 alias gvim='mvim -f'
