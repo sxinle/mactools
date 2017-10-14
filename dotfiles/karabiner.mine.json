@@ -153,30 +153,6 @@
       ]
     },
     {
-      "description": "CMD+ESC 反向切换",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "escape",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "grave_accent_and_tilde",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Vim和IDEA CMD+h/l，Tab切换",
       "manipulators": [
         {
@@ -350,4 +326,3 @@
     }
   ]
 }
-
