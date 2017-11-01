@@ -76,6 +76,7 @@ set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman /usr/local/homeb
 set -x PAGER /usr/local/homebrew/Cellar/most/5.0.0a/bin/most
 
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
+#eval (docker-machine env default)
 
 #}}}
 
