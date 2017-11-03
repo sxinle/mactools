@@ -39569,17 +39569,17 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>307 406 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>365 219 735 438 0 0 1440 900 </string>
+	<string>365 219 735 438 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>422 381 620 392 0 0 1440 900 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>45 247 606 469 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>306 348 770 429 0 0 1440 900 </string>
+	<string>306 369 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>25 23 1415 854 0 0 1440 877 </string>
+	<string>271 129 922 595 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2_selection</key>
@@ -44376,7 +44376,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-26T06:22:29Z</date>
+	<date>2017-11-01T01:45:17Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -44416,7 +44416,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1503718272</real>
+	<real>1509030016</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
