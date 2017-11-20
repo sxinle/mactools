@@ -12,8 +12,6 @@ set -g OMF_CONFIG $HOME/.config/omf
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
-bass source /Users/hsong/Applications/Findspot.app/Contents/Resources/shell.sh
-
 set fish_plugins brew rvm
 
 [ -f /usr/local/homebrew/share/autojump/autojump.fish ]; and source /usr/local/homebrew/share/autojump/autojump.fish
