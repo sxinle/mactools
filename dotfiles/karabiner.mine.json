@@ -153,7 +153,7 @@
       ]
     },
     {
-      "description": "Vim和IDEA CMD+h/l，Tab切换",
+      "description": "Vim+IDEA+Chrome CMD+h/l，Tab切换",
       "manipulators": [
         {
           "type": "basic",
@@ -217,6 +217,64 @@
             }
           ]
         },
+
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option",
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.google.Chrome"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_option",
+                "left_command"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com.google.Chrome"
+              ]
+            }
+          ]
+        },
+
         {
           "type": "basic",
           "from": {
@@ -279,6 +337,7 @@
             }
           ]
         },
+
         {
           "type": "basic",
           "from": {
