@@ -39573,13 +39573,13 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>422 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>45 419 599 388 0 0 1440 877 </string>
+	<string>45 301 697 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>331 137 918 512 0 0 1440 877 </string>
+	<string>305 412 958 451 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>25 0 1415 877 0 0 1440 877 </string>
+	<string>271 127 922 572 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2_selection</key>
@@ -41893,7 +41893,7 @@
 				</dict>
 			</array>
 			<key>Space</key>
-			<integer>0</integer>
+			<integer>-1</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -42906,7 +42906,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-09T08:24:30Z</date>
+	<date>2017-12-08T04:59:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>

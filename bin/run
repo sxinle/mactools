@@ -1,0 +1,34 @@
+#!/bin/bash
+
+case $1 in  
+    redis)  
+        echo 'redis-server /usr/local/homebrew/etc/redis.conf'
+        redis-server /usr/local/homebrew/etc/redis.conf
+        ;;  
+    postgresql)  
+        echo 'pg_ctl -D /usr/local/homebrew/var/postgresql@9.6 start'
+        pg_ctl -D /usr/local/homebrew/var/postgresql@9.6 start
+        ;;  
+    mysql)  
+        echo 'mysql.server start'
+        mysql.server start
+        ;;  
+    vsftpd)  
+        echo 'sudo vsftpd'
+        sudo vsftpd
+        ;;  
+    mongodb)
+        echo 'mongod --config /usr/local/homebrew/etc/mongod.conf'
+        mongod --config /usr/local/homebrew/etc/mongod.conf
+        ;;
+    nginx)
+        echo 'nginx'
+        nginx
+        ;;
+    *)  
+        echo $"Usage: run {redis | postgresql | mysql | vsftpd | mongodb | nginx}"  
+        exit 1  
+        ;;
+esac 
+
+
