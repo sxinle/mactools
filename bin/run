@@ -19,7 +19,7 @@ case $1 in
         ;;  
     mongodb)
         echo 'mongod --config /usr/local/homebrew/etc/mongod.conf'
-        mongod --config /usr/local/homebrew/etc/mongod.conf
+        sudo mongod --config /usr/local/homebrew/etc/mongod.conf
         ;;
     nginx)
         echo 'nginx'

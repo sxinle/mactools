@@ -32,6 +32,7 @@ alias lm='ls -Alh --color=auto'
 #}}}
 
 alias ..='cd .. ;and ls'
+alias tailf='tail -f'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias essh='~/.ssh/expects'
