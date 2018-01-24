@@ -3,7 +3,7 @@
 yellow='\033[1;33m'
 normal='\033[0m'
 
-echo -e "\n${yellow}================  sync folder/util/ ... ================\n${normal}"
+echo -e "${yellow}================  sync folder/util/  ================${normal}"
 cd ~/folder/util/mactools
 if [ $1x = "a"x ] ; then
     git add . && git commit -am "update config" && git push origin master
@@ -11,7 +11,7 @@ else
     git status && git pull
 fi 
 
-echo -e "\n${yellow}================  sync .vim/dotvim/ ... ================\n${normal}"
+echo -e "${yellow}================  sync .vim/dotvim/  ================${normal}"
 cd ~/.vim/dotvim
 if [ $1x = "a"x ] ; then
     git add . && git commit -am "cmt" && git push origin master
@@ -19,7 +19,7 @@ else
     git status && git pull 
 fi 
 
-echo -e "\n${yellow}================  sync ~/.ssh/ ... ================\n${normal}"
+echo -e "${yellow}================  sync ~/.ssh/  =====================${normal}"
 cd ~/.vim/dotvim
 if [ $1x = "a"x ] ; then
     git add . && git commit -am "cmt" && git push origin master
