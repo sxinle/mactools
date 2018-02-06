@@ -20,7 +20,7 @@ else
 fi 
 
 echo -e "${yellow}================  sync ~/.ssh/  =====================${normal}"
-cd ~/.vim/dotvim
+cd ~/.ssh
 if [ $1x = "a"x ] ; then
     git add . && git commit -am "cmt" && git push origin master
 else
