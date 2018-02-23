@@ -1,7 +1,7 @@
 {
   "alfredtheme" : {
     "result" : {
-      "textSpacing" : 5,
+      "textSpacing" : 4,
       "subtext" : {
         "size" : 12,
         "colorSelected" : "#FFFFFFC4",
@@ -27,7 +27,7 @@
     },
     "search" : {
       "paddingVertical" : 0,
-      "background" : "#FFFFFF00",
+      "background" : "#FFFFFFFF",
       "spacing" : 0,
       "text" : {
         "size" : 34,
@@ -43,7 +43,7 @@
       "width" : 590,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
-      "blur" : 10,
+      "blur" : 12,
       "roundness" : 3,
       "paddingVertical" : 0
     },
