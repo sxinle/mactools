@@ -14,11 +14,11 @@
         "font" : "System",
         "color" : "#480069FF"
       },
-      "backgroundSelected" : "#016BDEFF",
+      "backgroundSelected" : "#0432FFFF",
       "text" : {
         "size" : 18,
         "colorSelected" : "#FFFFFFFF",
-        "font" : "System",
+        "font" : "System Light",
         "color" : "#000000E5"
       },
       "iconPaddingHorizontal" : 4,
@@ -32,15 +32,15 @@
       "text" : {
         "size" : 34,
         "colorSelected" : "#000000FF",
-        "font" : "System",
+        "font" : "System Light",
         "color" : "#000000FF"
       },
       "backgroundSelected" : "#B2D7FFFF"
     },
     "window" : {
-      "color" : "#FFFFFFE5",
+      "color" : "#FFFFFFFF",
       "paddingHorizontal" : 0,
-      "width" : 650,
+      "width" : 590,
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 10,
