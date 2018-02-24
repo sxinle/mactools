@@ -44,7 +44,7 @@
       "borderPadding" : 0,
       "borderColor" : "#0000007F",
       "blur" : 12,
-      "roundness" : 3,
+      "roundness" : -29,
       "paddingVertical" : 0
     },
     "credit" : "hsong",
