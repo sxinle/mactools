@@ -1,387 +1,320 @@
 {
-  "title": "KeyRemap配置",
-  "rules": [
-    {
-      "description": "CTRL+p/n/h/l/w/u",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow"
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "org.vim.MacVim",
-                "com.jetbrains.intellij",
-                "com.google.android.studio"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "org.vim.MacVim",
-                "com.jetbrains.intellij",
-                "com.google.android.studio"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "w",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "org.vim.MacVim",
-                "com.jetbrains.intellij",
-                "com.google.android.studio"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "org.vim.MacVim",
-                "com.jetbrains.intellij",
-                "com.google.android.studio"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Vim+IDEA+Chrome CMD+h/l，Tab切换",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "h",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.vim\\..*",
-                "com.jetbrains.intellij",
-                "com.google.android.studio",
-                "com.jetbrains.WebStorm",
-                "com.googlecode.iterm2"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^org\\.vim\\..*",
-                "com.jetbrains.intellij",
-                "com.google.android.studio",
-                "com.jetbrains.WebStorm",
-                "com.googlecode.iterm2"
-              ]
-            }
-          ]
-        },
+    "title": "KeyRemap配置",
+    "rules": [{
+        "description": "CTRL+p/n/h/l/w/u/m",
+        "manipulators": [{
+            "type": "basic",
+            "from": {
+                "key_code": "p",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "up_arrow"
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "n",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "down_arrow"
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "h",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "delete_or_backspace"
+            }],
+            "conditions": [{
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                    "com.googlecode.iterm2",
+                    "org.vim.MacVim",
+                    "com.jetbrains.intellij",
+                    "com.google.android.studio"
+                ]
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "l",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "right_arrow"
+            }],
+            "conditions": [{
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                    "com.googlecode.iterm2",
+                    "org.vim.MacVim",
+                    "com.jetbrains.intellij",
+                    "com.google.android.studio"
+                ]
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "w",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "delete_or_backspace",
+                "modifiers": [
+                    "left_option"
+                ]
+            }],
+            "conditions": [{
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                    "com.googlecode.iterm2",
+                    "org.vim.MacVim",
+                    "com.jetbrains.intellij",
+                    "com.google.android.studio"
+                ]
+            }]
+        }, {
+            "type": "basic",
+            "from": {
+                "key_code": "u",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "delete_or_backspace",
+                "modifiers": [
+                    "left_command"
+                ]
+            }],
+            "conditions": [{
+                "type": "frontmost_application_unless",
+                "bundle_identifiers": [
+                    "com.googlecode.iterm2",
+                    "org.vim.MacVim",
+                    "com.jetbrains.intellij",
+                    "com.google.android.studio"
+                ]
+            }]
+        }]
+    }, {
+        "description": "Vim+IDEA+Chrome CMD+h/l，Tab切换",
+        "manipulators": [{
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "h",
+                    "modifiers": [
+                        "left_option"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^org\\.vim\\..*",
+                        "com.jetbrains.intellij",
+                        "com.google.android.studio",
+                        "com.jetbrains.WebStorm",
+                        "com.googlecode.iterm2"
+                    ]
+                }]
+            }, {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "l",
+                    "modifiers": [
+                        "left_option"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "^org\\.vim\\..*",
+                        "com.jetbrains.intellij",
+                        "com.google.android.studio",
+                        "com.jetbrains.WebStorm",
+                        "com.googlecode.iterm2"
+                    ]
+                }]
+            },
 
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
             {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_option",
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.google.Chrome"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_option",
-                "left_command"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.google.Chrome"
-              ]
-            }
-          ]
-        },
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                        "left_option",
+                        "left_command"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "com.google.Chrome"
+                    ]
+                }]
+            }, {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "right_arrow",
+                    "modifiers": [
+                        "left_option",
+                        "left_command"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "com.google.Chrome"
+                    ]
+                }]
+            },
 
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "h",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          },
-          "to": [
             {
-              "key_code": "h",
-              "modifiers": [
-                "left_option",
-                "left_shift"
-              ]
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command",
+                            "left_shift"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "h",
+                    "modifiers": [
+                        "left_option",
+                        "left_shift"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "com.jetbrains.intellij",
+                        "com.google.android.studio",
+                        "com.jetbrains.WebStorm"
+                    ]
+                }]
+            }, {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_command",
+                            "left_shift"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "l",
+                    "modifiers": [
+                        "left_option",
+                        "left_shift"
+                    ]
+                }],
+                "conditions": [{
+                    "type": "frontmost_application_if",
+                    "bundle_identifiers": [
+                        "com.jetbrains.intellij",
+                        "com.google.android.studio",
+                        "com.jetbrains.WebStorm"
+                    ]
+                }]
+            }, {
+                "type": "basic",
+                "from": {
+                    "key_code": "m",
+                    "modifiers": {
+                        "mandatory": [
+                            "left_control"
+                        ]
+                    }
+                },
+                "to": [{
+                    "key_code": "return_or_enter"
+                }]
             }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.jetbrains.intellij",
-                "com.google.android.studio",
-                "com.jetbrains.WebStorm"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "l",
-            "modifiers": {
-              "mandatory": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "l",
-              "modifiers": [
-                "left_option",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "com.jetbrains.intellij",
-                "com.google.android.studio",
-                "com.jetbrains.WebStorm"
-              ]
-            }
-          ]
-        },
-
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "m",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "return_or_enter"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Alfred 替换 Spolight",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "spacebar",
-            "modifiers": {
-              "mandatory": [
-                "left_control"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "p",
-              "modifiers": [
-                "left_control",
-                "left_shift",
-                "left_option",
-                "left_command"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+        ]
+    }, {
+        "description": "Alfred 替换 Spolight",
+        "manipulators": [{
+            "type": "basic",
+            "from": {
+                "key_code": "spacebar",
+                "modifiers": {
+                    "mandatory": [
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [{
+                "key_code": "p",
+                "modifiers": [
+                    "left_control",
+                    "left_shift",
+                    "left_option",
+                    "left_command"
+                ]
+            }]
+        }]
+    }]
 }
