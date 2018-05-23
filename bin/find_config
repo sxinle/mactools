@@ -1,0 +1,11 @@
+#!/bin/bash
+
+findName=*$1*
+#echo $findName
+
+find ~/Library/Application\ Support/ -iname $findName
+find ~/Library/Preferences/ -iname $findName
+
+sudo find /Library/Application\ Support/ -iname $findName
+sudo find /Library/Preferences/ -iname $findName
+
