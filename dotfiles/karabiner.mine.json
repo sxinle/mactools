@@ -145,6 +145,7 @@
                     "type": "frontmost_application_if",
                     "bundle_identifiers": [
                         "^org\\.vim\\..*",
+                        "com.jetbrains.pycharm",
                         "com.jetbrains.intellij",
                         "com.google.android.studio",
                         "com.jetbrains.WebStorm",
@@ -171,6 +172,7 @@
                     "type": "frontmost_application_if",
                     "bundle_identifiers": [
                         "^org\\.vim\\..*",
+                        "com.jetbrains.pycharm",
                         "com.jetbrains.intellij",
                         "com.google.android.studio",
                         "com.jetbrains.WebStorm",
