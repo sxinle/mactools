@@ -5,7 +5,10 @@ findName=*$1*
 
 find ~/Library/Application\ Support/ -iname $findName
 find ~/Library/Preferences/ -iname $findName
+find ~/Library/Caches/ -iname $findName
+
 
 sudo find /Library/Application\ Support/ -iname $findName
 sudo find /Library/Preferences/ -iname $findName
+find /Library/Caches/ -iname $findName
 
