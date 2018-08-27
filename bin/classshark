@@ -1,0 +1,3 @@
+#!/bin/bash
+
+java -jar ~/folder/util/mactools/apk_decompile/ClassyShark.jar
