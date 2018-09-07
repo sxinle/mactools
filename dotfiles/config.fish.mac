@@ -37,7 +37,7 @@ alias tailf='tail -f'
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias essh='~/.ssh/expects'
 
-alias vin='vim -u NONE '
+alias vi='vim -u NONE '
 alias gvim='mvim -f'
 alias nload='nload -m'
 alias clang='/usr/local/clang-3.7/bin/clang'

@@ -39584,15 +39584,15 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>365 219 735 438 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>422 363 620 392 0 0 1440 877 </string>
+	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>45 382 606 469 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>210 236 918 494 0 0 1440 877 </string>
+	<string>210 343 918 452 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>275 150 922 572 0 0 1440 877 </string>
+	<string>275 0 922 550 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2_selection</key>
@@ -41124,7 +41124,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.26902561865482233</real>
+			<real>0.29270701142131983</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -41142,7 +41142,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>12</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/hsong/Desktop</string>
 		</dict>
@@ -42916,8 +42916,10 @@
 	<integer>8</integer>
 	<key>RightOption</key>
 	<integer>3</integer>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
@@ -42925,7 +42927,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-08-03T02:01:47Z</date>
+	<date>2018-09-07T07:52:32Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -46106,7 +46108,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.7</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>3</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
