@@ -13,6 +13,13 @@ nnoremap <leader><Space> :nohl<CR>
 nnoremap # *
 nnoremap <Tab> <c-w>w
 nnoremap Y y$
-nnoremap p "+gp
+
+if has('unnamedplus')               " 使用系统剪切板(需要编译时加入+X11特性)
+    set clipboard=unnamedplus,unnamed
+else                                " 类似Map <C-c>,<C-v>
+    "set clipboard+=unnamed
+    "vnoremap y "+y
+    "nnoremap p "+gp
+endif
 
 
