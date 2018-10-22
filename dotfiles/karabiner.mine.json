@@ -69,7 +69,8 @@
                     "com.googlecode.iterm2",
                     "org.vim.MacVim",
                     "com.jetbrains.intellij",
-                    "com.google.android.studio"
+                    "com.google.android.studio",
+                    "com.apple.dt.Xcode"
                 ]
             }]
         }, {
