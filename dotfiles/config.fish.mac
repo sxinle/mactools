@@ -35,7 +35,7 @@ alias ..='cd .. ;and ls'
 alias tailf='tail -f'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
-alias e='~/.ssh/expects'
+alias e='~/.ssh/main.tcl'
 
 alias vi='vim -u NONE '
 alias gvim='mvim -f'
