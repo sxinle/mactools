@@ -3,14 +3,6 @@
 yellow='\033[1;33m'
 normal='\033[0m'
 
-echo -e "${yellow}================  sync ~/.ssh  ================${normal}"
-cd ~/.ssh
-if [ $1x = "a"x ] ; then
-    git add . && git commit -am "update config" && git push origin master
-else
-    git status && git pull
-fi 
-
 echo -e "${yellow}================  sync folder/util/  ================${normal}"
 cd ~/folder/util/mactools
 if [ $1x = "a"x ] ; then
