@@ -33,7 +33,7 @@ alias lm='ls -Alh --color=auto'
 
 alias ..='cd .. ;and ls'
 alias tailf='tail -f'
-alias curl='curl -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
+alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
