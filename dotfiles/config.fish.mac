@@ -37,7 +37,7 @@ alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
-alias t='~/.ssh/tunnel/tunnel.tcl'
+alias t='~/.ssh/openssh/tunnel.tcl'
 
 alias vi='vim -u NONE '
 alias gvim='mvim -f'
