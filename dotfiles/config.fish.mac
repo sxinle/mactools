@@ -41,6 +41,7 @@ alias t='~/.ssh/openssh/tunnel.tcl'
 
 alias useproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
 alias noproxy='set --erase http_proxy; and set --erase https_proxy'
+alias pegasdebug='adb reverse tcp:8081 tcp:8081; and adb reverse tcp:8080 tcp:8080'
 
 alias vi='vim -u NONE '
 alias gvim='mvim -f'
