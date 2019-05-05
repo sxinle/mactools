@@ -42,6 +42,8 @@ alias t='~/.ssh/openssh/tunnel.tcl'
 alias useproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
 alias noproxy='set --erase http_proxy; and set --erase https_proxy'
 alias pegasdebug='adb reverse tcp:8081 tcp:8081; and adb reverse tcp:8080 tcp:8080'
+alias r-pegas-admin='echo "pachiraAABC%^&56798";and cd ~/workspace/pegas/pegas-f-admin; and npm run build; and scp -r -P2222 dist/* hsong@localhost:/home/hsong/admin/'
+alias r-pegas-shop='echo "pachiraAABC%^&56798";and cd ~/workspace/pegas/pegas-f-shop; and npm run build; and scp -r -P2222 dist/* hsong@localhost:/home/hsong/shop/'
 
 alias vi='vim -u NONE '
 alias gvim='mvim -f'
