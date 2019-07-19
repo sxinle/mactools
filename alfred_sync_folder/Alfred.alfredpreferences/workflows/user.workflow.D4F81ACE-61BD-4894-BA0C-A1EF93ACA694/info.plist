@@ -318,8 +318,27 @@ rm {query}</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string>.*</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>690252FF-FAAC-4BEA-968A-58EFB314E945</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
-				<string></string>
+				<string>com.google.chrome</string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
@@ -331,25 +350,6 @@ rm {query}</string>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
 			<string>CA75DB4E-7B9E-48A4-B9D9-41EB73E9B3F0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^~</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>690252FF-FAAC-4BEA-968A-58EFB314E945</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -403,9 +403,9 @@ rm {query}</string>
 		<key>690252FF-FAAC-4BEA-968A-58EFB314E945</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>515</integer>
+			<integer>355</integer>
 		</dict>
 		<key>6B0F6A32-751F-4071-A1E8-76A2E9486962</key>
 		<dict>
@@ -435,9 +435,9 @@ rm {query}</string>
 		<key>C71F6B1F-B812-40C8-BACB-0EB3112F9C3B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>330</integer>
 			<key>ypos</key>
-			<integer>515</integer>
+			<integer>405</integer>
 		</dict>
 		<key>CA75DB4E-7B9E-48A4-B9D9-41EB73E9B3F0</key>
 		<dict>
