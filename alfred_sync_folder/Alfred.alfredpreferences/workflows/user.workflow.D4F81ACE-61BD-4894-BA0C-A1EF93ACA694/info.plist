@@ -403,9 +403,9 @@ rm {query}</string>
 		<key>690252FF-FAAC-4BEA-968A-58EFB314E945</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>250</integer>
 			<key>ypos</key>
-			<integer>355</integer>
+			<integer>375</integer>
 		</dict>
 		<key>6B0F6A32-751F-4071-A1E8-76A2E9486962</key>
 		<dict>
