@@ -26,4 +26,4 @@ nnoremap <leader><leader>w :action AceAction<CR>
 "for test action
 "nnoremap <leader><leader>a :action Emmet<CR>
 
-set clipboard+=ideaput
+set clipboard+=ideaputset ideajoinset clipboard+=ideaput
