@@ -27,3 +27,4 @@ nnoremap <leader><leader>w :action AceAction<CR>
 "nnoremap <leader><leader>a :action Emmet<CR>
 
 set clipboard+=ideaputset ideajoinset clipboard+=ideaput
+set ideajoin
