@@ -530,7 +530,7 @@ end run</string>
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>~/Applications/iTerm.app</string>
+					<string>~/Applications/Google Chrome.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -538,7 +538,7 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>6ABA552A-252A-4F06-859A-2148CF1D1E2D</string>
+			<string>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -609,7 +609,7 @@ end run</string>
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>~/Applications/Google Chrome.app</string>
+					<string>~/Applications/iTerm.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -617,7 +617,7 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</string>
+			<string>6ABA552A-252A-4F06-859A-2148CF1D1E2D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
