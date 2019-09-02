@@ -39594,7 +39594,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>25 23 1414 854 0 0 1440 877 </string>
+	<string>25 23 1415 854 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_247D1EF0-89A7-47CA-B264-C75F74B5F2F2_selection</key>
@@ -39838,13 +39838,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.026950567960739136</real>
+				<real>0.2196078431372549</real>
 				<key>Color Space</key>
-				<string>Calibrated</string>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<real>0.058823529411764705</real>
 				<key>Red Component</key>
-				<real>0.98594832420349121</real>
+				<real>1</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -43051,13 +43051,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.2196078431372549</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.058823529411764705</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.91764705882352937</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -44456,7 +44456,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>522987186.87683302</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -45253,7 +45253,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-14T05:27:34Z</date>
+	<date>2019-08-15T05:07:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Secure Input</key>
@@ -45294,7 +45294,7 @@
 	<integer>10</integer>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Profiles</string>
+		<string>Command History</string>
 	</array>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
