@@ -52,7 +52,7 @@ alias nload='nload -m'
 alias clang='/usr/local/clang-3.7/bin/clang'
 
 alias top='htop'
-alias clj='rlwrap java -jar ~/folder/util/lib/clojure-1.7.0.jar $1'
+alias clj='rlwrap clojure $1'
 
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 
@@ -93,3 +93,5 @@ set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 
 #}}}
 
+#eval (jenv init -)
+status --is-interactive; and source (jenv init -|psub)
