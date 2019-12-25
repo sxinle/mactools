@@ -83,7 +83,7 @@ set -x PATH $BREW_HOME/bin $RVM_HOME/bin $PATH
 set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools/bin $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
 
 set -x MANPATH /usr/local/homebrew/opt/coreutils/libexec/gnuman /usr/local/homebrew/share/man $MANPATH
-set -x PAGER /usr/local/homebrew/Cellar/most/5.0.0a/bin/most
+set -x PAGER /usr/local/homebrew/Cellar/most/5.1.0/bin/most
 
 set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 
@@ -95,3 +95,4 @@ set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 
 #eval (jenv init -)
 status --is-interactive; and source (jenv init -|psub)
+alias man='tldr'
