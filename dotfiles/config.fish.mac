@@ -96,3 +96,5 @@ set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 #eval (jenv init -)
 status --is-interactive; and source (jenv init -|psub)
 alias man='tldr'
+alias dldaemon='aria2c --conf-path=/Users/hsong/.aria2.conf -D; and open https://wapznw.gitee.io/aria2desktop/'
+alias dl='aria2c'
