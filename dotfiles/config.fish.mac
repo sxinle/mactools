@@ -47,7 +47,6 @@ alias r-pegas-shop='echo "pachiraAABC%^&56798  scp -r -P2222 dist/* hsong@localh
 alias wechat='open -n /Users/hsong/Applications/WeChat.app/Contents/MacOS/WeChat';
 
 alias vi='vim -u NONE '
-alias gvim='mvim -f'
 alias nload='nload -m'
 alias clang='/usr/local/clang-3.7/bin/clang'
 
@@ -79,6 +78,7 @@ set -x RVM_HOME ~/.rvm
 #source $RVM_HOME/scripts/rvm
 
 set -x PATH /usr/local/homebrew/opt/coreutils/libexec/gnubin $PATH
+set -x PATH /Users/hsong/Applications/MacVim.app/Contents/bin $PATH
 set -x PATH $BREW_HOME/bin $RVM_HOME/bin $PATH 
 set -x PATH $PATH $SCALA_HOME/bin $UTIL_HOME/mactools/bin $ANDROID_SDK_HOME/platform-tools $ANDROID_SDK_HOME/tools
 
