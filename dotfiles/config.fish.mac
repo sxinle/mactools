@@ -98,3 +98,4 @@ status --is-interactive; and source (jenv init -|psub)
 alias man='tldr'
 alias dldaemon='aria2c --conf-path=/Users/hsong/.aria2.conf -D; and open https://wapznw.gitee.io/aria2desktop/'
 alias dl='aria2c'
+alias clXcode='du -sh ~/Library/Developer/CoreSimulator/Devices; and xcrun simctl delete unavailable; and du -sh ~/Library/Developer/CoreSimulator/Devices'
