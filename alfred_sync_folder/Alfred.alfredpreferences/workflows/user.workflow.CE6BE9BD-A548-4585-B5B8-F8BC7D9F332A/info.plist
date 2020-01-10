@@ -127,7 +127,7 @@
 	<key>variables</key>
 	<dict>
 		<key>brightness_levels</key>
-		<string>20,40,60,80,100</string>
+		<string>0,10,20,30</string>
 		<key>keyword_max</key>
 		<string>max</string>
 		<key>keyword_min</key>
@@ -137,7 +137,7 @@
 		<key>show_min</key>
 		<string>false</string>
 		<key>value_max</key>
-		<string>100</string>
+		<string>95</string>
 		<key>value_min</key>
 		<string>0</string>
 	</dict>

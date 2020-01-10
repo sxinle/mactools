@@ -35,13 +35,13 @@ keyword_max = os.environ.get('keyword_max', 'max')
 
 def main(wf):
     user_input = wf.args[0]
-    error = 'Enter value between 0 and 100, or "%s" or "%s".' % (keyword_min,
+    error = 'Enter value between 0 and 95, or "%s" or "%s".' % (keyword_min,
                                                                  keyword_max)
 
     if (user_input and not keyword_min.startswith(user_input) and
             not keyword_max.startswith(user_input)):
         try:
-            if int(user_input) <= 100 and int(user_input) >= 0:
+            if int(user_input) <= value_max and int(user_input) >= value_min:
                 wf.add_item('%s%%' % user_input,
                             arg='%s' % (int(user_input) / 100.0), valid=True)
             else:
