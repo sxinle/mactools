@@ -68,7 +68,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>change blacklit</string>
+				<string>键盘背光调节</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
