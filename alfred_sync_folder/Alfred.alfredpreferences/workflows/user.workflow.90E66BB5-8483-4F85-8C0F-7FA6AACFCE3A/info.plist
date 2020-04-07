@@ -86,11 +86,18 @@ end alfred_script</string>
 		<key>94C35390-E575-4CF7-B208-536021A56051</key>
 		<dict>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>185</integer>
 			<key>ypos</key>
 			<integer>250</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>val</key>
+		<string>40</string>
+	</dict>
+	<key>version</key>
+	<string></string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
