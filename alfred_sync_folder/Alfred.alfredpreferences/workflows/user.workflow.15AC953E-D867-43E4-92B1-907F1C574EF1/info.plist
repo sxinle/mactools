@@ -62,7 +62,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5A47C0C2-99B3-422E-BDE2-1537F974BB41</key>
+		<key>6ABA552A-252A-4F06-859A-2148CF1D1E2D</key>
+		<array/>
+		<key>749C53A5-C596-4806-9E0C-DABF1CFE0CBB</key>
+		<array/>
+		<key>8625DC1E-DAAC-4EE0-8FB3-01DF833D43DB</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -75,10 +79,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6ABA552A-252A-4F06-859A-2148CF1D1E2D</key>
-		<array/>
-		<key>749C53A5-C596-4806-9E0C-DABF1CFE0CBB</key>
-		<array/>
 		<key>AC64056A-0119-4174-8039-BED705C54473</key>
 		<array>
 			<dict>
@@ -110,6 +110,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>749C53A5-C596-4806-9E0C-DABF1CFE0CBB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>17BD0AAC-37B5-4C30-AF1F-94D8C1439513</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -165,7 +178,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>FFB4CBAA-A53F-4B1B-9B26-A2C48DDCCF98</string>
+				<string>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -192,19 +205,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6ABA552A-252A-4F06-859A-2148CF1D1E2D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FFB4CBAA-A53F-4B1B-9B26-A2C48DDCCF98</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>04DAF79E-5BA2-4791-8B8C-802BDE333DED</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -472,23 +472,6 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>~/Applications/wechatwebdevtools.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>04DAF79E-5BA2-4791-8B8C-802BDE333DED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -500,11 +483,11 @@ end run</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>14</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>E</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -515,7 +498,7 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>5A47C0C2-99B3-422E-BDE2-1537F974BB41</string>
+			<string>8625DC1E-DAAC-4EE0-8FB3-01DF833D43DB</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -534,7 +517,24 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>FFB4CBAA-A53F-4B1B-9B26-A2C48DDCCF98</string>
+			<string>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/wechatwebdevtools.app</string>
+				</array>
+				<key>toggle</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>17BD0AAC-37B5-4C30-AF1F-94D8C1439513</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -694,11 +694,11 @@ end run</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>Q</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -739,26 +739,26 @@ Hotkeys are stripped on import, to ensure that they don't clash with your existi
 A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
 	<key>uidata</key>
 	<dict>
-		<key>04DAF79E-5BA2-4791-8B8C-802BDE333DED</key>
-		<dict>
-			<key>xpos</key>
-			<integer>625</integer>
-			<key>ypos</key>
-			<integer>370</integer>
-		</dict>
 		<key>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>185</integer>
 			<key>ypos</key>
+			<integer>570</integer>
+		</dict>
+		<key>17BD0AAC-37B5-4C30-AF1F-94D8C1439513</key>
+		<dict>
+			<key>xpos</key>
 			<integer>485</integer>
+			<key>ypos</key>
+			<integer>415</integer>
 		</dict>
 		<key>2A5568B9-4907-43C5-B652-8EF338E045D9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>650</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>575</integer>
 		</dict>
 		<key>2F9F1463-E39D-4435-A005-1F8B3D23CB15</key>
 		<dict>
@@ -784,23 +784,16 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>534C3726-16D3-4EF2-B5F3-45858F9B96D6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>805</integer>
+			<integer>790</integer>
 			<key>ypos</key>
-			<integer>490</integer>
-		</dict>
-		<key>5A47C0C2-99B3-422E-BDE2-1537F974BB41</key>
-		<dict>
-			<key>xpos</key>
-			<integer>55</integer>
-			<key>ypos</key>
-			<integer>370</integer>
+			<integer>575</integer>
 		</dict>
 		<key>6ABA552A-252A-4F06-859A-2148CF1D1E2D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>505</integer>
+			<integer>490</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>570</integer>
 		</dict>
 		<key>723D45F9-84D0-4660-A690-2C1FD53C1432</key>
 		<dict>
@@ -823,12 +816,19 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
+		<key>8625DC1E-DAAC-4EE0-8FB3-01DF833D43DB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>55</integer>
+			<key>ypos</key>
+			<integer>385</integer>
+		</dict>
 		<key>AC64056A-0119-4174-8039-BED705C54473</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<integer>50</integer>
 			<key>ypos</key>
-			<integer>645</integer>
+			<integer>730</integer>
 		</dict>
 		<key>B3C97F75-CEAC-44D6-B45C-571740289484</key>
 		<dict>
@@ -840,9 +840,9 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>C07DCF9D-767E-4262-8599-A162C9EEB16E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>215</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<integer>645</integer>
+			<integer>730</integer>
 		</dict>
 		<key>C248C288-98E2-4FFE-8546-CA6D4B88F1EE</key>
 		<dict>
@@ -850,6 +850,13 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<integer>520</integer>
 			<key>ypos</key>
 			<integer>165</integer>
+		</dict>
+		<key>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>410</integer>
+			<key>ypos</key>
+			<integer>390</integer>
 		</dict>
 		<key>D3078DB4-3A8E-4B33-9C88-6FF982E3608B</key>
 		<dict>
@@ -868,23 +875,16 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>DAD433C2-6B49-4697-AFD5-4611F891A715</key>
 		<dict>
 			<key>xpos</key>
-			<integer>55</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>485</integer>
+			<integer>570</integer>
 		</dict>
 		<key>EEE789AA-AA0E-479C-AD54-2775A3F3C5C5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>350</integer>
+			<integer>335</integer>
 			<key>ypos</key>
-			<integer>485</integer>
-		</dict>
-		<key>FFB4CBAA-A53F-4B1B-9B26-A2C48DDCCF98</key>
-		<dict>
-			<key>xpos</key>
-			<integer>525</integer>
-			<key>ypos</key>
-			<integer>400</integer>
+			<integer>570</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "select * from (select row_.*,rownum rownum_ from (\n\n) row_ where rownum <= 80) where rownum_>70",
+    "uid" : "49EB8062-0D04-423A-87EB-42DBC3FC62ED",
+    "name" : "oracle_page",
+    "keyword" : ""
+  }
+}

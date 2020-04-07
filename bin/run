@@ -6,8 +6,9 @@ case $1 in
         redis-server /usr/local/homebrew/etc/redis.conf&
         ;;  
     postgresql)  
-        echo 'pg_ctl -D /usr/local/homebrew/var/postgresql@9.6 start'
-        pg_ctl -D /usr/local/homebrew/var/postgresql@9.6 start
+        #echo 'pg_ctl -D /usr/local/homebrew/var/postgresql@9.6 start'
+        echo 'pg_ctl -D /usr/local/homebrew/var/postgres start'
+        pg_ctl -D /usr/local/homebrew/var/postgres start
         ;;  
     mysql)  
         echo 'mysql.server start'
