@@ -5,6 +5,7 @@
 	<key>fallbacks</key>
 	<array>
 		<string>features.websearch.google.fallback</string>
+		<string>features.websearch.custom.21C12A60-D8E2-41BD-82B3-66B617A48153.fallback</string>
 		<string>features.websearch.custom.F579C720-514E-4D3A-8396-63A8200C6044.fallback</string>
 	</array>
 	<key>showContacts</key>
