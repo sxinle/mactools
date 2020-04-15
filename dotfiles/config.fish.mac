@@ -81,7 +81,7 @@ set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 
 set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 
-eval (docker-machine env dev)
+eval (docker-machine env default)
 
 #}}}
 
