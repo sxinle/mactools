@@ -17,6 +17,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>28B478E1-B668-4EC6-8C9A-DE679835C162</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>dhs</string>
+			<key>text</key>
+			<string>docker hub search {query}</string>
+			<key>url</key>
+			<string>https://hub.docker.com/search?q={query}&amp;type=image</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>F579C720-514E-4D3A-8396-63A8200C6044</key>
 		<dict>
 			<key>enabled</key>
