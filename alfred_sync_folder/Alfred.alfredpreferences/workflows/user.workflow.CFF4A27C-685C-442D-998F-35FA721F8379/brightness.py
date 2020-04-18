@@ -61,7 +61,8 @@ def main(wf):
         wf.add_item('%s%%' % i, arg='%s' % (i / 100.0), valid=True)
 
     try:
-        current_value = os.popen('./brightness').readline()
+        rets = os.popen('./brightness -l').readlines()
+        current_value = rets[1][22:]
         current = int(100 * float(current_value))
         wf.add_item('Current brightness: %s%%' % current, valid=False)
     except ValueError:

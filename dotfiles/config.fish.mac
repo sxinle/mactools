@@ -52,6 +52,7 @@ alias clj='rlwrap clojure $1'
 
 alias ntpdate='sudo ntpdate asia.pool.ntp.org'
 
+alias btree='brew deps --installed --tree'
 alias su='sudo su -'
 alias rm='remove'
 function remove
@@ -81,7 +82,7 @@ set -x CLASSPATH $CLASSPATH $UTIL_HOME/lib/* .
 
 set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 
-eval (docker-machine env default)
+#eval (docker-machine env default)
 
 #}}}
 

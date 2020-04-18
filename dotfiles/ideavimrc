@@ -31,4 +31,4 @@ set clipboard+=ideaputset ideajoinset clipboard+=ideaput
 set ideajoin
 
 "highlight Cursor guifg=#EEEEEE guibg=#ff0f38
-
+set ideastatusicon=disabled
