@@ -60,6 +60,9 @@ function remove
 end
 alias rma='bash -c "/bin/rm -rf ~/.Trash/* && /bin/rm -rf ~/.Trash/.[^.]*"'
 
+alias corsChrome='open -n -a /Users/hsong/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
+alias wechat='open -n /Users/hsong/Applications/WeChat.app/Contents/MacOS/WeChat'
+
 #MacOSX alias
 #alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
 #alias openDash='defaults write com.apple.dashboard mcx-disabled -boolean false;killall Dock'

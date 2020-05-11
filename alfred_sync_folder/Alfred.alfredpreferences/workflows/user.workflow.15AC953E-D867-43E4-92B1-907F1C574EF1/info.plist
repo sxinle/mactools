@@ -749,9 +749,9 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>17BD0AAC-37B5-4C30-AF1F-94D8C1439513</key>
 		<dict>
 			<key>xpos</key>
-			<integer>485</integer>
+			<integer>630</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>405</integer>
 		</dict>
 		<key>2A5568B9-4907-43C5-B652-8EF338E045D9</key>
 		<dict>
@@ -854,9 +854,9 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>515</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>395</integer>
 		</dict>
 		<key>D3078DB4-3A8E-4B33-9C88-6FF982E3608B</key>
 		<dict>

@@ -165,9 +165,9 @@ end alfred_script</string>
 		<key>07FD9812-C0F5-4E42-8CB5-A3670C4109E7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>200</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>35</integer>
 		</dict>
 		<key>688172A1-FDC4-4D6F-B858-830CFA480FCB</key>
 		<dict>
@@ -186,9 +186,9 @@ end alfred_script</string>
 		<key>E24C2B66-CD65-41FC-9C1B-1B779D8234DB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>435</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>35</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
