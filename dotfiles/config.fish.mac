@@ -16,6 +16,12 @@ set fish_plugins brew rvm
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
+function nvm
+   bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
+end
+set -x NVM_DIR ~/.nvm
+nvm use default --silent
+
 #user alias#{{{
 
 #alias list#{{{
@@ -47,6 +53,7 @@ alias wechat='open -n /Users/hsong/Applications/WeChat.app/Contents/MacOS/WeChat
 alias vi='vim -u NONE '
 alias nload='nload -m'
 
+alias man='tldr'
 alias top='htop'
 alias clj='rlwrap clojure $1'
 
@@ -60,8 +67,8 @@ function remove
 end
 alias rma='bash -c "/bin/rm -rf ~/.Trash/* && /bin/rm -rf ~/.Trash/.[^.]*"'
 
+alias clXcode='du -sh ~/Library/Developer/CoreSimulator/Devices; and xcrun simctl delete unavailable; and du -sh ~/Library/Developer/CoreSimulator/Devices'
 alias corsChrome='open -n -a /Users/hsong/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
-alias wechat='open -n /Users/hsong/Applications/WeChat.app/Contents/MacOS/WeChat'
 
 #MacOSX alias
 #alias disDash='defaults write com.apple.dashboard mcx-disabled -boolean true;killall Dock'
@@ -91,5 +98,3 @@ set -x TIME_STYLE '+%Y-%m-%d %H:%M:%S'
 
 #eval (jenv init -)
 status --is-interactive; and source (jenv init -|psub)
-alias man='tldr'
-alias clXcode='du -sh ~/Library/Developer/CoreSimulator/Devices; and xcrun simctl delete unavailable; and du -sh ~/Library/Developer/CoreSimulator/Devices'
