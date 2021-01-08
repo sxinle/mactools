@@ -43,7 +43,7 @@ alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 alias whb='~/clear.sh'
 
 alias jj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q && cd -'
-alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn compile && cd -'
+alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn compile && cd - && killall chromedriver'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
