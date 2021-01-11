@@ -42,10 +42,10 @@ alias tailf='tail -f'
 alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 alias whb='~/clear.sh'
 
-alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 alias jj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q && cd -'
 alias jjcc='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJCC" -q && cd -'
-alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn compile && cd - && killall chromedriver'
+alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && cd - && killall chromedriver'
+alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
