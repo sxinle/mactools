@@ -68,7 +68,7 @@
                 "bundle_identifiers": [
                     "com.googlecode.iterm2",
                     "org.vim.MacVim",
-                    "com.jetbrains.intellij",
+                    "com.jetbrains.intellij_xxx",
                     "com.google.android.studio",
                     "com.apple.dt.Xcode"
                 ]

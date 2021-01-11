@@ -80,7 +80,7 @@
                                         "bundle_identifiers": [
                                             "com.googlecode.iterm2",
                                             "org.vim.MacVim",
-                                            "com.jetbrains.intellij",
+                                            "com.jetbrains.intellij_xxxx",
                                             "com.google.android.studio"
                                         ],
                                         "type": "frontmost_application_unless"
