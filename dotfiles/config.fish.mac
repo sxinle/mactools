@@ -44,7 +44,7 @@ alias whb='~/clear.sh'
 
 alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 alias jj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q && cd -'
-alias jjcc='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJCC" -q && cd -'
+alias jjcc='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJCC" -q && cd - | less'
 alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn compile && cd - && killall chromedriver'
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
