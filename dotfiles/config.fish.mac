@@ -42,6 +42,8 @@ alias tailf='tail -f'
 alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 alias whb='~/clear.sh'
 
+## 基金
+alias jh='echo "avaliable cmds: [cjj / syncm / jj / jjcc / zj]"'
 alias jj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q && cd -'
 alias jjcc='jjcc'
 function jjcc
@@ -51,6 +53,8 @@ function jjcc
 end
 alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && cd - && killall chromedriver'
 alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
+alias zj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdZj" -q && cd -'
+## 基金
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
