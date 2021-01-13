@@ -54,6 +54,7 @@ end
 alias syncm='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && cd - && killall chromedriver'
 alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 alias zj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdZj" -q && cd -'
+alias all='zj && jjcc 1 && jj'
 ## 基金
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
