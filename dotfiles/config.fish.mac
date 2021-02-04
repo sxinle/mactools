@@ -52,7 +52,7 @@ function jjcc
     cd -;
 end
 alias jjfg='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJFg" -q && cd '
-alias syncm='jjchartc && cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && cd - && killall chromedriver'
+alias syncm='jjchartc && cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && git commit -am "cmt" && git push && cd - && killall chromedriver'
 alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 alias zj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdZj" -q && cd -'
 alias jjchartc='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSync2Js" -q'
