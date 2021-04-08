@@ -63,7 +63,7 @@ alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
 alias e='~/.ssh/openssh/main.tcl'
 alias t='~/.ssh/openssh/tunnel.tcl'
 
-alias useproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias useproxy='export http_proxy=http://127.0.0.1:7890 https_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890'
 alias noproxy='set --erase http_proxy; and set --erase https_proxy'
 alias pegasdebug='adb reverse tcp:8081 tcp:8081; and adb reverse tcp:8080 tcp:8080'
 alias wechat='open -n /Users/hsong/Applications/WeChat.app/Contents/MacOS/WeChat';

@@ -8,6 +8,19 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
+		<key>08DFDD2D-1840-44B9-B198-5F8B9911F97C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D70C9635-515F-481F-83BE-D2A7DD940D43</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</key>
 		<array/>
 		<key>2A5568B9-4907-43C5-B652-8EF338E045D9</key>
@@ -71,6 +84,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>D70C9635-515F-481F-83BE-D2A7DD940D43</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A597805D-758D-4452-9019-D77CE9FFE02B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D3111E94-C56A-4C4E-B77F-D0F57C490269</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -166,6 +192,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A597805D-758D-4452-9019-D77CE9FFE02B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -401,11 +437,11 @@ end run</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>12</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>Q</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -419,23 +455,6 @@ end run</string>
 			<string>B0A8439E-6E7F-4A79-BF50-934A98ACAE68</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>~/Applications/Cocos/Creator/2.4.3/CocosCreator.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>EB81754B-57D9-4CD0-A655-34094916F59D</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -454,6 +473,23 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>F68AC279-7016-4444-9406-78DECE92C5E6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/Cocos/Creator/2.4.3/CocosCreator.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>EB81754B-57D9-4CD0-A655-34094916F59D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -507,11 +543,11 @@ end alfred_script</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>0</integer>
+				<integer>12</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>524288</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>Q</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -542,6 +578,123 @@ end alfred_script</string>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
 			<string>CE90AA32-1F9F-47BA-803C-2C970C8FF0FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/Android Studio.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>D3111E94-C56A-4C4E-B77F-D0F57C490269</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>3</integer>
+				<key>argumenttext</key>
+				<string>Android Studio</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>A</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>08DFDD2D-1840-44B9-B198-5F8B9911F97C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string>Android Studio1</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>A597805D-758D-4452-9019-D77CE9FFE02B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>19</integer>
+				<key>hotmod</key>
+				<integer>524288</integer>
+				<key>hotstring</key>
+				<string>2</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>DAD433C2-6B49-4697-AFD5-4611F891A715</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>~/Applications/Google Chrome.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -592,54 +745,6 @@ end alfred_script</string>
 			<string>EEE789AA-AA0E-479C-AD54-2775A3F3C5C5</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>19</integer>
-				<key>hotmod</key>
-				<integer>524288</integer>
-				<key>hotstring</key>
-				<string>2</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>DAD433C2-6B49-4697-AFD5-4611F891A715</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>~/Applications/Google Chrome.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -698,6 +803,13 @@ Hotkeys are stripped on import, to ensure that they don't clash with your existi
 A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
 	<key>uidata</key>
 	<dict>
+		<key>08DFDD2D-1840-44B9-B198-5F8B9911F97C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>510</integer>
+		</dict>
 		<key>131DC1C8-5226-41A6-A462-E9BA5DA7F20C</key>
 		<dict>
 			<key>xpos</key>
@@ -710,7 +822,7 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>xpos</key>
 			<integer>635</integer>
 			<key>ypos</key>
-			<integer>385</integer>
+			<integer>380</integer>
 		</dict>
 		<key>2A5568B9-4907-43C5-B652-8EF338E045D9</key>
 		<dict>
@@ -750,9 +862,9 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>6ABA552A-252A-4F06-859A-2148CF1D1E2D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>205</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>650</integer>
 		</dict>
 		<key>723D45F9-84D0-4660-A690-2C1FD53C1432</key>
 		<dict>
@@ -775,6 +887,13 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>ypos</key>
 			<integer>385</integer>
 		</dict>
+		<key>A597805D-758D-4452-9019-D77CE9FFE02B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>530</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
 		<key>B0A8439E-6E7F-4A79-BF50-934A98ACAE68</key>
 		<dict>
 			<key>xpos</key>
@@ -787,7 +906,7 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>xpos</key>
 			<integer>520</integer>
 			<key>ypos</key>
-			<integer>295</integer>
+			<integer>290</integer>
 		</dict>
 		<key>C248C288-98E2-4FFE-8546-CA6D4B88F1EE</key>
 		<dict>
@@ -801,7 +920,14 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>xpos</key>
 			<integer>525</integer>
 			<key>ypos</key>
-			<integer>415</integer>
+			<integer>410</integer>
+		</dict>
+		<key>D3111E94-C56A-4C4E-B77F-D0F57C490269</key>
+		<dict>
+			<key>xpos</key>
+			<integer>640</integer>
+			<key>ypos</key>
+			<integer>500</integer>
 		</dict>
 		<key>D70C9635-515F-481F-83BE-D2A7DD940D43</key>
 		<dict>
@@ -827,16 +953,16 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 		<key>EEE789AA-AA0E-479C-AD54-2775A3F3C5C5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>460</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>650</integer>
 		</dict>
 		<key>F68AC279-7016-4444-9406-78DECE92C5E6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<integer>630</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>260</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
