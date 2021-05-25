@@ -25,6 +25,10 @@ case $1 in
         echo 'nginx'
         nginx
         ;;
+    rabbitmq)
+        echo 'rabbitmq'
+        brew services start rabbitmq
+        ;;
     *)  
         echo $"Usage: run {redis | postgresql | mysql | vsftpd | mongodb | nginx}"  
         exit 1  
