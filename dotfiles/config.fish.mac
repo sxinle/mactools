@@ -54,6 +54,7 @@ end
 alias jjzcSync='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJZC" -q && cd '
 alias jjfg='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJFg" -q && cd '
 alias syncm='jjchartc && jjhs300gz && cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && git commit -am "cmt" && git push && cd - && killall chromedriver'
+alias chromeSync='mvn exec:java -Dexec.mainClass="com.terminal.CmdSyncM" -q && mvn clean compile && git commit -am "cmt" && git push && cd - && killall chromedrive'
 alias cjj='cd ~/workspace/demo/automns/ && mvn clean compile && cd -'
 alias zj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdZj" -q && cd -'
 alias zd='zd'
