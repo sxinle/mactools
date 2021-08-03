@@ -43,7 +43,7 @@ alias curl='curl -i -v -w "@/Users/hsong/folder/util/mactools/curl_format.txt"'
 alias whb='~/clear.sh'
 
 ## 基金
-alias jh='echo "avaliable cmds: 【cjj / syncm / jj / jjcc / jjfg(基金风格) / zj / jjchartc / jjzcSync(重仓) / cesuan(回测) / zd(涨跌比) / jjhs300gz(股/债收益) 】"'
+alias jh='echo "avaliable cmds: 【cjj / syncm / jj / jjcc / jjfg(基金风格) / zj / jjchartc / jjzcSync(重仓) / cesuan(回测) / zd(涨跌比) / jjhs300gz(股/债收益) / chromeSync(同步持仓) 】"'
 alias jj='cd ~/workspace/demo/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q && cd -'
 alias jjcc='jjcc'
 function jjcc
