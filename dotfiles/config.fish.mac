@@ -143,6 +143,8 @@ function gitCount
     read -l -P '结束commit: ' endNo
     if test "$startNo" = "" -a "$endNo" = ""
         git log --numstat --pretty="%H" --author=$git-user | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
+    else if test "$startNo" = "" -a "$endNo" != ""
+        git log --numstat --pretty="%H" --author=$git-user $endNo | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
     else
         git log --numstat --pretty="%H" --author=$git-user $startNo..$endNo | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'
     end
