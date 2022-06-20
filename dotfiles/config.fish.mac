@@ -72,6 +72,40 @@ function cesuan
     mvn exec:java -Dexec.mainClass="com.terminal.CmdCeSuan" -Dexec.args="$argv" -q
     cd -;
 end
+
+alias jsdt='computeDingTou'
+function computeDingTou(){
+	#echo $1 $2 $3
+    first=`compute $*`
+    echo
+	echo $first
+    a=`echo $first | cut -d ":" -f 3 | cut -d "\"" -f 2 | sed -e 's/,//g' -e 's/\.00//g'`
+    #echo $a
+	echo '--------------------------------------------------------------------------------------------------'
+	second=`dingtou $*`
+    echo $second
+	echo '=================================='
+    b=`echo $second | cut -d "|" -f 3 | sed -e 's/,//g' -e 's/\.00//g'`
+    #echo $b
+    echo $a '+' $b '=' `echo $a+$b | bc`
+}
+
+
+alias js='compute'
+function compute() {
+	#echo $1 $2 $3
+	/usr/bin/curl.exe -s 'https://fundztapi.eastmoney.com/FundWebServices/FundSylCalculator.aspx?fc='$3'&stime='$1'&etime='$2'&stype=1&sgfl=0.0015&shfl=0&sg=400000&lx=1&_=1653889097000' -H 'Connection: keep-alive' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36' -H 'Accept: */*' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: no-cors' -H 'Referer: https://data.eastmoney.com/money/calc/CalcFundKF.html' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8' -H 'Cookie: qgqp_b_id=3e958e38c17133d564f9dffa5b17fc18; HAList=a-sh-600148-%u957F%u6625%u4E00%u4E1C; em_hq_fls=js; ASP.NET_SessionId=vibooukmui4dn4dzkwompq0k' --compressed
+
+}
+
+alias dt='dingtou'
+function dingtou() {
+	/usr/bin/curl.exe -s 'https://fund.eastmoney.com/data/FundInvestCaculator_AIPDatas.aspx?fcode='$3'&sdate='$1'&edate='$2'&shdate=&round=1&dtr=1&p=0.15&je=5000&stype=1&needfirst=2&jsoncallback=FundDTSY.result' -H 'Connection: keep-alive' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36' -H 'Accept: */*' -H 'Sec-Fetch-Site: same-site' -H 'Sec-Fetch-Mode: no-cors' -H 'Referer: https://data.eastmoney.com/money/calc/CalcFundKF.html' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: zh-CN,zh;q=0.9,en;q=0.8' -H 'Cookie: qgqp_b_id=3e958e38c17133d564f9dffa5b17fc18; HAList=a-sh-600148-%u957F%u6625%u4E00%u4E1C; em_hq_fls=js; ASP.NET_SessionId=vibooukmui4dn4dzkwompq0k' --compressed | cut -d "|" -f 3,7,4,6
+}
+
+alias jp='cd /C/Users/uf100435/IdeaProjects/automns/ && mvn exec:java -Dexec.mainClass="com.terminal.CmdJJ" -q -Dexec.args="123" && cd -'
+
+
 ## 基金
 
 alias pos='sudo lsof -nP -iTCP -sTCP:LISTEN'
